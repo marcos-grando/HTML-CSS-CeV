@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap'); /* Signika Negative */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap'); /* Nunito Sans */
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Playpen+Sans:wght@100..800&family=Shantell+Sans:ital,wght,BNCE,INFM,SPAC@0,300..800,-100..100,0..100,0..100;1,300..800,-100..100,0..100,0..100&display=swap'); /* Playpen Sans */
+
+@font-face {
+    font-family: 'Berkshire Swash';
+    src: url('fontes/BerkshireSwash-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.colors {
+    color: #060e16 #039faa #c2b69d  #fcf8eb;
+}
+.fonts {
+    font-family: 'Berkshire Swash', sans-serif;
+    font-family: 'Playpen Sans', sans-serif;
+}
+.utilidades {
+    background-attachment: fixed; /* Fixa o fundo quando descemos a página*/
+    margin:auto;    /* organiza automaticamente de forma centralizada*/
+    padding: 2%;    /* distância em borda das informações*/
+    /* padding = distância interna da borda 
+        margin = distância externa da borda*/
+    display: inline-block; /*tudo na mesma linha, útil em divs*/
+}

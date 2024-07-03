@@ -1,0 +1,184 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap'); /* Signika Negative */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap'); /* Nunito Sans */
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Playpen+Sans:wght@100..800&family=Shantell+Sans:ital,wght,BNCE,INFM,SPAC@0,300..800,-100..100,0..100,0..100;1,300..800,-100..100,0..100,0..100&display=swap'); /* Playpen Sans */
+
+@font-face {
+    font-family: 'Berkshire Swash';
+    src: url('zStyle/fontes/BerkshireSwash-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+body{
+    background-color: #c2b69d;
+    font-family: 'Signika Negative', 'Nunito Sans', 'Playpen Sans', sans-serif;
+}
+
+header{
+    /*background-image: linear-gradient(180deg, #060e16, #060e16, #142f4b);*/
+    background-image: linear-gradient(180deg, #039faa, #09656b);
+    color: #fcf8eb;
+    text-align: center; 
+    padding: 10px 0px;
+    border-color: #060e16;
+}
+h1{
+    font-size: 2.7em;
+    font-weight: 500;
+}
+header>h3{
+    font-weight: 300;
+    font-style: italic;
+    margin-top: 10px;
+}
+header>nav{
+    text-align: left;
+    margin-top: 22px;
+    margin-bottom: -6px;
+    padding-left: 12%;
+}
+header>nav>div{
+    display: inline;
+    background-color: transparent;
+    padding: 0px 10px;
+}
+header>nav>div:hover{
+    background-color: #039faa;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px #c2b69d;
+    border: 1.5px solid #c2b69d;
+    padding: 0px 12px;
+}
+header>nav>div>a{
+    color: #fcf8eb;
+    font-family: 'Berkshire Swash', sans-serif;
+    text-decoration: solid;
+}
+header>nav>div>a:hover{
+    color: #060e16;
+    text-decoration: solid;
+    font-weight: 500;
+}
+
+main{
+    display: block;
+    background-color: #fcf8eb;
+    background-attachment: fixed;
+    margin: 0px 12%;
+    padding: 10px 30px;
+    box-shadow: 0px 0px 7px #060e1663;
+}
+main>section>h3,h2{
+    color: #fcf8eb;
+    background-image: linear-gradient(90deg, #039faa, #039faa25, #039faa00);
+    margin: 15px 0px 5px 0px;
+    padding-left: 10px;
+}
+main>section>p{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 3px;
+}
+div#img{
+    text-align: center;
+    padding: 0px 2%;
+}
+div>img.img{
+    display: inline;
+    max-width: 200px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    margin: 0px -30px;
+}
+div#imgprincipal{
+    text-align: center;
+}
+div#imgprincipal>img{
+    display: inline;
+    max-width: 90%;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+div#video{
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9, padrão dos vídeos */
+    height: 0;
+    overflow: hidden;
+    margin-bottom:20px;
+}
+div#video>iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+div#lista{
+    background-color: #09656b;
+    border-radius: 0px 20px 20px 20px;
+    padding: 1px 10px;
+}
+div#lista>h3{
+    color: #fcf8eb;
+    background-image: linear-gradient(90deg, #060e16, transparent 60%);
+    font-family: 'Signika Negative', 'Nunito Sans', 'Playpen Sans', sans-serif;
+    font-weight: 500;
+    margin-top: 10px;
+    margin: 15px 0px 5px 0px;
+    padding-left: 10px;
+}
+ul{
+    background-color: #039faa;
+    margin-left: 19px;
+    margin-right: 55%;
+    margin-bottom: 12px;
+    padding: 4px 4px 4px 22px;
+    box-shadow: 0px 0px 7px #060e1663;
+    border-radius: 0px 7px 7px 7px;
+}
+li>a,ul>p{
+    color: #fcf8eb;
+    font-family: 'Playpen Sans', sans-serif;
+    text-decoration: solid;
+}
+li{
+    background-image: linear-gradient(90deg, #09656b, transparent);
+    padding-left: 5px;
+}
+li>a:hover{
+    background-color: #039faa;
+    /*border-left: 0.14em solid #060e16;
+    border-right: 0.14em solid #060e16;*/
+    box-shadow: 0px 0px 2px #060e16;
+    padding: 0px 4px;
+}
+div#lista>p{
+    font-size: 0.9em;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #fcf8eb;
+    padding: 0px 19px 5px 19px;
+}
+
+footer>h3{
+    background-color: #039faa;
+    color: #060e16;
+    text-align: right;
+    margin: 25px 0px;
+    padding: 1px 12.6% 1px 0px;
+    box-shadow: 0px 0px 2px #060e16;
+}

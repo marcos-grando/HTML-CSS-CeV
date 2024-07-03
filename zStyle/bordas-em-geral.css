@@ -1,0 +1,50 @@
+/* Abaixos algumas das principais configurações de bordas em CSS (border, margin, padding, outline)
+    Irei usar as configurações individuais seguida da simplificação usando Short Hand */
+
+/* Em Short Hand, eu preciso seguir uma sequências das configurações (cima > direita > esquerda > baixo),
+    (width > style > color), entre outras. */
+
+/*Ainda em Short Hand quando as configs são apenas tamanhos, posso simplificar usando:
+    1 config -> todas as laterais possuem o mesmo tamanho
+    2 config -> cima/baixo = 1ª config / esq/dir = 2ª config  
+    4 config -> cada lado receberá tamanho especificado
+*/
+/*SEMPRE COMEÇAR COM ESSE * ABAIXO, dessa forma retiro as bordas forçadas pelo navegador*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.border{
+    border-width: 10px;
+    border-style: solid;
+    border-color: darkgray;
+
+    /*Usando 'Short Hand'*/
+    border: 10px solid darkgray;
+}
+.padding{
+    padding-top: 10px;
+    padding-right: 12px;
+    padding-bottom: 9px;
+    padding-left: 15px;
+
+    /*Usando 'Short Hand'*/
+    padding: 10px 12px 9px 15px; /* 4 configs */
+}
+.margin{
+    margin-top: 15px;
+    margin-right: 12px;
+    margin-bottom: 15px;
+    margin-left: 12px;
+
+    /*Usando 'Short Hand'*/
+    margin: 15px 12px; /* 2 configs */
+
+}
+.outline{
+    outline-width: 10px;
+    outline-style: dashed;
+    outline-color: snow;
+}

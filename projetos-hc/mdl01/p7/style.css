@@ -1,0 +1,14 @@
+body {
+    background-color: #060e16;
+    font-family: Tahoma, sans-serif, Verdana;
+}
+h1{
+    background-color: #000000;
+    color: #039faa;
+}   
+h2, h3, a{
+    color: #039faa;
+}
+p, ol, ul {
+    color: #fcf8eb;
+}

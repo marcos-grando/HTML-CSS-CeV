@@ -1,0 +1,20 @@
+Mod01
+Conceitos básicos, preparação do ambiente,
+semântica da HTML5, textos, títulos, ligações,
+multimídia, estilos
+
+Mod02
+Fundamentos do design, psicologia das cores,
+tipografia, elementos CSS, modelo de caixas,
+wireframe, responsividade
+
+Mod03
+Versionamento de software, tabelas,
+hospedagem de sites estáticos.
+
+Mod04
+Quadros em linha, formulários, 
+medias queries, mobile first.
+
+Mod05
+Flexbox, Grid Layout, Projeto final.

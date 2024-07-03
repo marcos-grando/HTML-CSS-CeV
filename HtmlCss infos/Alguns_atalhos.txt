@@ -1,0 +1,10 @@
+ctrl + setas  -----------> seleciona caractere por caractere 
+ctrl + shift + setas  ---> seleciona palavra por palavra
+shift + end  ------------> seleciona do ponto inicial até o final da linha
+ctrl + shift + end  -----> seleciona do ponto inicial até o final do documento
+
+
+F2 + tag selecionada ----> permite mudar o nome da tag
+
+
+MY KEYB --> ctrl + alt + numpad_0

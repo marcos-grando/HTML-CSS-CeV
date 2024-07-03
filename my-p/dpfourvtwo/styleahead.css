@@ -1,0 +1,93 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap'); /* Signika Negative */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap'); /* Nunito Sans */
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Playpen+Sans:wght@100..800&family=Shantell+Sans:ital,wght,BNCE,INFM,SPAC@0,300..800,-100..100,0..100,0..100;1,300..800,-100..100,0..100,0..100&display=swap'); /* Playpen Sans */
+@font-face {
+    font-family: 'Berkshire Swash';
+    src: url('zStyle/fontes/BerkshireSwash-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+body{
+    background-color: #c2b69d;
+    font-family: 'Signika Negative', 'Nunito Sans', 'Playpen Sans', sans-serif;
+}
+
+header{
+    min-width: 320px;
+    max-width: 100%;
+    width: 100%;
+}
+div#header{
+    background-image: linear-gradient(180deg, #039faa, #09656b);
+    box-shadow: 0px 0px 11px #060e16a9;
+    border-color: #060e16;
+    margin: 0px auto 0px auto;
+    padding: 10px 30px;
+}
+h1{
+    color: #fcf8eb;
+    text-align: center; 
+    font-size: 2.7em;
+    font-weight: 500;
+}
+header>div#header>h3{
+    color: #fcf8eb;
+    text-align: center; 
+    font-weight: 300;
+    font-style: italic;
+    margin-top: 10px;
+}
+header>div#header>nav{
+    padding: 0px 0px;
+    text-align: left;
+    margin-top: 22px;
+    margin-bottom: -6px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 320px;
+    max-width: 718px;
+}
+header>div#header>nav>div{
+    display: inline;    
+}
+header>div#header>nav>div>a{
+    padding: 2px 4px 4px 4px;
+    color: #fcf8eb;
+    font-family: 'Berkshire Swash', sans-serif;
+    text-decoration: solid;
+}
+header>div#header>nav>div>a:hover{
+    border-radius: 3px 3px 0px 0px;
+    border-top: 1.5px solid #060e16;
+    border-left: 1.5px solid #060e16;
+    border-right: 1.5px solid #060e16;
+    background-image: linear-gradient(180deg, #eee6cb, #fcf8eb, #fcf8eb);
+    padding: 1px 4px 5px 4px;
+    color: #060e16;
+    text-decoration: solid;
+    font-weight: 500;
+}
+a.main{
+    background-color: #038791;
+    border: 1px solid #038791;
+    border-radius: 2px;
+    color: #fcf8eb;
+    font-size: 0.9em;
+    padding: 2px 0px 2px 4px;
+    text-decoration: none;
+}
+a.main:hover{
+    border: 1px solid #060e16;
+    box-shadow: 0px 0px 2.5px #060e16;
+}
+a.main::after{
+    content: '🔗';
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+    <title>Mídia em HTML</title>
+    <style>
+        body {
+            background-color: rgb(0, 83, 116);
+        }
+        h1, h2, h3, p{
+            color: rgb(0, 230, 199);
+        }
+        ol, ul, a {
+            color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vídeos com HTML</h1>
+    <p>Página sobre <a href="page01.html" target="_self" rel="next">hospedagem externa</a></p>
+    <h2>Inserindo vídeos hospedagem local</h2>
+    <p>Vídeo hospedado modo simplório</p>
+    <video width="300" src="video/como-mesmo.mp4" poster="image/post.jpeg" controls></video><br>
+
+    <!--Caso a reprodução falhe, tenta rodar os seguintes-->
+    <p>Vídeo hospedado modo prevenção de erro</p>
+    <video width="300" m poster="image/post.jpeg" controls>
+        <source src="video/como-mesmo.mp4" type="video/mp4">
+    </video>
+</body>
+</html>

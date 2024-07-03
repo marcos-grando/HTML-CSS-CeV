@@ -1,0 +1,12 @@
+body{
+    background-color: #060e16;
+}
+h1, h2, h3, p{
+    color: #039faa;
+}
+div {
+    text-align: center;  
+}
+img.prev {
+    margin-right: 450px;
+}

@@ -1,0 +1,52 @@
+Pseudo-classes:
+    São algumas "funções" que podemos adicionar em seletores no documento CSS.
+     Essas "funções", na verdade, atribui um estado especial ao elemento selecionado.
+     Por exemplo:
+        
+        button:hover{
+            color: blue;
+        }
+        
+        ":hover" é uma pseudo-classe que adiciona ao elemento "button" 
+         uma alteração de cor quando o usuário passar o cursor do mouse.
+
+--------------------------
+dl = definition list
+dt = definition term
+dd = description details
+--------------------------
+'rel' dá um significado para o google entender o sistema de navegação proposto
+rel="nofollow" -> indica ao mecanismo de busco que não dou aval para o conteúdo do link
+--------------------------
+Existem REGRAS no CSS que podem ser pré definidas logo no começo
+do documento.css Essas regras possuem @ antes de sua nomeação.
+    Com uma dessas regras, posso pré definir que toda a linguagem aceita
+    no documento obedeça a escrita 'UTF-8', usando o @charset.
+    Exemplo:
+        @charset "UTF-8"
+--------------------------
+weight -> peso
+width -> largura
+height -> altura
+--------------------------
+font-size -> 1em, 16px
+font-family: 'Work Sans', Arial, sans-serif
+font-style: normal, italic, etc
+font-weight -> lighter, norma, bold, bolder
+    tbm posso usar -> 100, 200, 400, 600, 900, etc, havendo mais nuances de peso (pesquiser os valores que a fonte tem)
+
+Forma simplificada de usar todas essas configurações (shorthand)
+ordem: style, weight, size, family
+Exemplo:
+    font: italic bold 2em 'Work Sans', sans-serif;
+--------------------------
+text-align -> left, center, right
+text-indent: 20px --> fazer parágrafo
+--------------------------
+../pasta --> o '../' faz voltar uma pasta
+--------------------------
+
+
+
+
+

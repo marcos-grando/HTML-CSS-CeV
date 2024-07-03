@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Playpen+Sans:wght@100..800&display=swap');
+
+@font-face {
+    font-family: 'Berkshire Swash';
+    src: url('fontes/BerkshireSwash-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background-color: #ece3cf;
+    font-family: 'Berkshire Swash', 'Playpen Sans', sans-serif;
+    margin: 0px;
+}
+
+header{
+    background-color: #faf7ed;
+    margin: 10px 50px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #039faa4d;
+    border-radius: 3px 20px;
+}
+nav{
+    display: inline;
+    padding: 0px 0px;
+    border: 2px solid #039faa4d;
+}
+
+main{
+    background-color: #faf7ed;
+    padding: 1px 55px 1px 15px;
+    margin: 10px 50px;
+    border: 2px solid #039faa4d;
+    border-radius: 20px 3px;
+}
+
+h1, h2{
+    color: #039faa;
+}
+h1{
+    font-size: 3em;
+}
+
+p{
+    font-family: 'Playpen Sans', 'Berkshire Swash', sans-serif;
+}
+aside{
+    font-style: italic;
+}
+aside>a{
+    color: #948a73;
+    font-style: italic;
+    font-weight: bolder;
+}
+a{
+    color: #c2b69d;
+    font-style: italic;
+    text-decoration: none;
+}
+
+a.menu{
+    margin-right: 25px;
+}
+a#inicial{
+    margin-left: 15px;
+}
+a#final{
+    margin-right: 15px;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    display: block;
+    background-color: #039faa;
+    text-align: right;
+}
+footer>p{
+    color: #060e16;
+    font-style: italic;
+    font-weight: 600;
+    margin-right: 55px;
+    padding-right: 10px;
+}

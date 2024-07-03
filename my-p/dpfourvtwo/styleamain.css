@@ -1,0 +1,87 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap'); /* Signika Negative */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap'); /* Nunito Sans */
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Playpen+Sans:wght@100..800&family=Shantell+Sans:ital,wght,BNCE,INFM,SPAC@0,300..800,-100..100,0..100,0..100;1,300..800,-100..100,0..100,0..100&display=swap'); /* Playpen Sans */
+@font-face {
+    font-family: 'Berkshire Swash';
+    src: url('zStyle/fontes/BerkshireSwash-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+main{
+    display: block;
+    background-color: #fcf8eb;
+    background-attachment: fixed;
+    margin: 0px auto 0px auto;
+    padding: 10px 30px;
+    min-width: 320px;
+    max-width: 718px;
+    box-shadow: 0px 0px 7px #060e1663;
+}
+main>section>h3,h2{
+    color: #060e16;
+    background-image: linear-gradient(90deg, #039faa, #039faa25, #039faa00);
+    margin: 24px 0px 5px 0px;
+    padding-top: 2px;
+    padding-left: 10px;
+}
+main>section>p, div#lista p{
+    margin: 7px 10px;
+    text-align: justify;
+    text-indent: 8px;
+    line-height: 1.5em;
+}
+div#img{
+    text-align: center;
+    padding: 0px 2%;
+}
+div>img.img{
+    display: inline;
+    min-width: 180px;
+    width: 30%;
+    height: auto;
+    margin: 9px -19px 0px -19px;
+}
+div#imgprincipal{
+    text-align: center;
+}
+div#imgprincipal>picture>img{
+    display: inline;
+    max-width: 90%;
+    max-height: 420px;
+    width: auto;
+    height: auto;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    box-shadow: 0px 0px 2px #060e16;
+}
+div#video{
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 2px #060e16;
+    max-width: 90%;
+    max-height: 420px;
+    margin: 10px auto 3px auto;
+    padding: 4px;
+    padding-bottom: 56.25%; /* 16:9, padrão dos vídeos */
+}
+div#video>iframe{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+p#descr{
+    text-align: right;
+    margin-right: 50px;
+    margin-left: 50px;
+    font-size: 0.8em;
+}

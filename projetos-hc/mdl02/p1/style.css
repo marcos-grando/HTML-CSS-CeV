@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*height: 100%;*/   
+}
+body{
+    background-image: linear-gradient(150deg, #342126 40%, #8B3A42);
+    background-attachment: fixed;
+}
+h1, h3{
+    color: #c44a6a;
+    background-color: antiquewhite;
+    max-height: 30px;
+}
+h2.seg{
+    background-image: linear-gradient(90deg, #8B3A42 40%, antiquewhite);
+    color: antiquewhite;
+}

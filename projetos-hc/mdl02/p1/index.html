@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Cores e Fonts</title>
+    <!--Duas formas de usar as fonts, link externo( @import) e arquivo interno( @font-face)-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Playpen+Sans:wght@100..800&display=swap');
+
+        @font-face {
+            font-family: 'Berkshire Swash';
+            src: url('fontes/BerkshireSwash-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+
+        }
+        h2 {
+            font-family: 'Berkshire Swash', sans-serif;
+            color: #c44a6a;
+            background-color: antiquewhite;
+            max-height: 30px;
+        }
+        p {
+            font-family: 'Playpen Sans';
+            text-align: justify;
+            color: #FFFFFF;
+        }
+    </style>
+
+</head>
+<body>
+    <h2 class="prim">Exemplo de Cores</h2>
+    <p class="prim">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque earum praesentium in consectetur modi officiis laborum provident aliquam quo, facere explicabo dolorem saepe animi maxime voluptate aliquid quaerat laboriosam voluptatem!</p>
+
+    <h2 class="seg">Exemplo de Cores</h2>
+    <p class="seg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque earum praesentium in consectetur modi officiis laborum provident aliquam quo, facere explicabo dolorem saepe animi maxime voluptate aliquid quaerat laboriosam voluptatem!</p>
+    
+    <h2 class="terc">Exemplo de Cores</h2>
+    <p class="terc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque earum praesentium in consectetur modi officiis laborum provident aliquam quo, facere explicabo dolorem saepe animi maxime voluptate aliquid quaerat laboriosam voluptatem!</p>
+</body>
+</html>
