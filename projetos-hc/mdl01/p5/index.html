@@ -18,26 +18,28 @@
     </style>
 </head>
 <body>
-    <h1>Imagens dinâmicas</h1>
-
-    <picture>
-        <source media="(max-width: 750px)" srcset="images/P.jpg" type="image/jpg">
-        <source media="(max-width: 1050px)" srcset="images/M.jpg" type="image/jpg">
-        <img src="images/G.jpg" alt="Imagem flexível">
-    </picture>
+    <h1>Áudios e Imagens dinâmicas</h1>
 
     <h1>Reproduzindo áudio</h1>
+    <h3>Sem preload</h3>
     <audio src="som/transi-op.mp3" controls></audio><br>
-    <audio src="som/music-piatacheia.mp3" controls></audio><br><br>
+    <audio src="som/music-piatacheia.mp3" controls></audio><br>
 
     <!--Caso a reprodução falhe, tenta rodar os seguintes-->
+    <h3>Com preload</h3>
     <audio preload="metadata" controls>
         <source src="som/transi-op.mp3" type="audio/mpeg">
         <p>Erro ao tentar produzir, <a href="som/transi-op.mp3">baixe aqui</a>!</p>
     </audio><br>
     <audio preload="metadata" controls>
         <source src="som/music-piatacheia.mp3" type="audio/mpeg">
-    </audio>
-
+    </audio><br><br>
+    
+    <h2>Imagem dinâmica ao tamanho da tela</h2>
+    <picture>
+        <source media="(max-width: 750px)" srcset="images/P.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="images/M.jpg" type="image/jpg">
+        <img src="images/G.jpg" alt="Imagem flexível">
+    </picture>
 </body>
 </html>
