@@ -1,18 +1,28 @@
 *{padding: 0px; margin: 0px;}
 body{
-    background-color: #004a57;
+    background-color: #012130;
     background-repeat: no-repeat;
 }
 header{
     h1{
         color: #fcf8eb;
-        font: bold 32pt montserrat;
-        text-align: center;                
+        font: bold 24pt montserrat;
+        text-align: center;
+        padding: 10px 0px;
+    }
+    h2{
+        color: #fcf8eb;
+        font: bold 18pt montserrat;
+        text-align: center;
+        padding: 5px 0px;
     }
     h3{
         color: #fcf8eb;
-        font: bold 16pt montserrat;
+        font: bold 10pt montserrat;
         text-align: center;  
+    }
+    h3.menu{
+        margin: 0px auto 10px 0px;
     }
     a{
         color: #00b698;
@@ -21,16 +31,58 @@ header{
         color: #008f77;
     }
 }
-div#bf{
-    background-image: url('Imagens/pattern003.png');
+div.blocom{
+    background-color: #002d42;
+    margin: auto;
+    text-align: center;
+    width: 800px;
+    height: 30px;
+    margin-top: 20px;
+    padding-top: 6px;
+    h2{
+        color: #fcf8eb;
+        padding-bottom: 5px;
+    }
+    p{
+        color: #fcf8eb;
+        font: 20px montserrat;
+    }
+}
+div.bloco{
+    background-image: url('Imagens/wallpaper003.jpg');
+    height: 200px;
+    width: 800px;
+    border: 1px solid black;
+    margin: 0px auto 0px auto; 
+}
+div#q1{
+    background-position: left top;
+}
+div#q2{
+    background-position: center center;
+} 
+div#q3{
+    background-position: right bottom;
+} 
+section#bf02{
+    background-image: url('Imagens/pattern001.png');
     background-size: 80px;
-    width: 700px;
-    height: 300px;
+    margin: auto;
+    width: 1152px;
+    height: 769px;
+}
+div#inp2{
+    background-color: #002d42;
+    margin: auto;
+    padding: 2px 0px 10px 0px;
+    text-align: center;
+    width: 1152px;
+    height: 35px;
 }
 section#coord{
     background-image: url('Imagens/wallpaper003.jpg');
     background-size: 100%;
-    background-color: #003c53;
+    background-color: #002d42;
     margin: auto;
     width: 1152px;
     height: 769px;
@@ -45,7 +97,7 @@ div#movel{
     height: 769px;
 }
 div#test{
-    background-color: #024450;
+    background-color: #002d42;
     margin: auto;
     padding-top: 10px;
     text-align: center;
@@ -61,10 +113,18 @@ div#test{
     }
 }
 input, button{
-    padding: 4px 8px;
+    padding: 6px 8px 1px 8px;
     border-radius: 4px;
     color: #3D3D3D;
     background: #fff;
     border: none;
     box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1);
+}
+input#inp2{
+    width: 500px;
+    height: 20px;
+}
+input#urlbt2{
+    height: 27px;
+    font-size: small;
 }

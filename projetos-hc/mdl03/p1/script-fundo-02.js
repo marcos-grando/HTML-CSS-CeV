@@ -1,3 +1,9 @@
-function click(){
-    document.querySelector('div#bf').style.backgroundImage = `url('https://t4.ftcdn.net/jpg/02/02/00/91/360_F_202009156_PWS9bLkZS0R0dv01D4OE0w9yF2p9lGq1.jpg')`
+function mudafundo(){
+    let urlimg = document.querySelector('input#inp2')
+
+    if (urlimg.value.length==0){
+        document.querySelector('section#bf02').style.backgroundImage = `url('Imagens/pattern003.png')`
+    } else{
+        document.querySelector('section#bf02').style.backgroundImage = `url('${urlimg.value}')`
+    }
 }
