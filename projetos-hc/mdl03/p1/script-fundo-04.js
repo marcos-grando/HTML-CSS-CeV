@@ -2,6 +2,7 @@ function lefttop(){
     document.querySelector('div#movel').style.backgroundPosition="left top";
 }
 function centertop(){
+    document.querySelector('div#movel').style.backgroundImage = `url('https://t4.ftcdn.net/jpg/02/02/00/91/360_F_202009156_PWS9bLkZS0R0dv01D4OE0w9yF2p9lGq1.jpg')`
     document.querySelector('div#movel').style.backgroundPosition="center top";
 }
 function righttop(){

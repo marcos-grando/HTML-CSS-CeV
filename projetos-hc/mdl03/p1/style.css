@@ -23,6 +23,7 @@ header{
 }
 section#bf02{
     background-image: url('Imagens/pattern003.png');
+    background-size: 80px;
     width: 700px;
     height: 300px;
 }
@@ -59,7 +60,7 @@ div#test{
         font: 20px montserrat;
     }
 }
-input{
+input, button{
     padding: 4px 8px;
     border-radius: 4px;
     color: #3D3D3D;
