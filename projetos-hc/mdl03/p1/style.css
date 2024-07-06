@@ -1,0 +1,69 @@
+*{padding: 0px; margin: 0px;}
+body{
+    background-color: #004a57;
+    background-repeat: no-repeat;
+}
+header{
+    h1{
+        color: #fcf8eb;
+        font: bold 32pt montserrat;
+        text-align: center;                
+    }
+    h3{
+        color: #fcf8eb;
+        font: bold 16pt montserrat;
+        text-align: center;  
+    }
+    a{
+        color: #00b698;
+    }
+    em{
+        color: #008f77;
+    }
+}
+section#bf02{
+    background-image: url('Imagens/pattern003.png');
+    width: 700px;
+    height: 300px;
+}
+section#coord{
+    background-image: url('Imagens/wallpaper003.jpg');
+    background-size: 100%;
+    background-color: #003c53;
+    margin: auto;
+    width: 1152px;
+    height: 769px;
+    
+}
+div#movel{
+    background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 1152px;
+    height: 769px;
+}
+div#test{
+    background-color: #024450;
+    margin: auto;
+    padding-top: 10px;
+    text-align: center;
+    width: 1152px;
+    height: 35px;
+    h2{
+        color: #fcf8eb;
+        padding-bottom: 5px;
+    }
+    p{
+        color: #fcf8eb;
+        font: 20px montserrat;
+    }
+}
+input{
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: #3D3D3D;
+    background: #fff;
+    border: none;
+    box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1);
+}
