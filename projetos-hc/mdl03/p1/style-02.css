@@ -1,0 +1,64 @@
+*{padding: 0px; margin: 0px;}
+body{
+    background-color: #012130;
+    background-repeat: no-repeat;
+}
+header{
+    h1{
+        color: #fcf8eb;
+        font: bold 24pt montserrat;
+        text-align: center;
+        padding: 10px 0px;
+    }
+    h2{
+        color: #fcf8eb;
+        font: bold 18pt montserrat;
+        text-align: center;
+        padding: 5px 0px;
+    }
+    h3{
+        color: #fcf8eb;
+        font: bold 10pt montserrat;
+        text-align: center;  
+    }
+    h3.menu{
+        margin: 0px auto 10px 0px;
+    }
+    a{
+        color: #00b698;
+    }
+    em{
+        color: #008f77;
+    }
+}
+section#bf02{
+    background-image: url('Imagens/pattern001.png');
+    background-size: 80px;
+    margin: auto;
+    width: 1133px;
+    height: 755px;
+}
+div#inp2{
+    background-color: #002d42;
+    margin: auto;
+    padding: 2px 0px 10px 0px;
+    text-align: center;
+    width: 1133px;
+    height: 35px;
+}
+input, button{
+    padding: 6px 8px 1px 8px;
+    border-radius: 4px;
+    color: #3D3D3D;
+    background: #fff;
+    border: none;
+    box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1);
+}
+input#inp2{
+    width: 500px;
+    height: 20px;
+}
+input#urlbt2{
+    height: 27px;
+    font-size: small;
+}

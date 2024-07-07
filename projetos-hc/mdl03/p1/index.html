@@ -3,83 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imagem de Fundo URL</title>
-    <style> /* Que horrível kkkk Mas deu pra testar bgimg:ulr*/
-        body{
-            background-image: url('imagens/pattern001.png');
-        }
-        section{
-            background-image: url('Imagens/wallpaper002.jpg');
-            box-shadow: 0px 0px 5px 2px rgb(0, 117, 153);
-            border-radius: 5px;
-            padding-top: 20px;
-            width: 1000px;
-            height: 640px;
-            margin: 50px auto;
-        }
-        div#titulo{
-            background-image: url('Imagens/wallpaper005.jpg');
-            background-color: rgb(0, 65, 109);
-            text-align: center;
-            color: rgb(0, 82, 85);;
-            width: 400px;
-            height: 80px;
-            padding: 0px;
-            margin: 0px auto 0px auto;
-        }
-        div#corpo{
-            background-image: url('Imagens/wallpaper001.jpg');
-            background-color: rgb(0, 65, 109);
-            width: 950px;
-            text-align: center;
-            margin: 50px auto 0px auto;
-        }
-        div.quadrado{
-            display: inline-block;
-            background-color: aliceblue;
-            border:  1px solid black;
-            border-radius: 10px;
-            width: 300px;
-            height: 300px;
-        }
-        div#q1{
-            background-color: aqua;
-        } 
-        div#q2{
-            background-image: linear-gradient(180deg, orange, yellow);
-        } 
-        div#q3{
-            background-image: url('imagens/pattern003.png');
-        }
-        div.test{
-            background-image: url('Imagens/atest.png');
-            width: auto;
-            height: 40px;
-        }
-        a{
-            color: rgb(12, 144, 177);;
-        }
-        h1{
-            margin: 10px auto -15px auto;
-            padding-top: 10px;
-        }
-    </style>
+    <title>Document</title>
+    <link rel="stylesheet" href="style-01.css">
 </head>
 <body>
-    <section> 
-        <div id="titulo">
-            <h1>Imagens de fundo por URL interno</h1>
-            <h3>Ver mais: <a href="fundo-02.html">Página 02</a>, <a href="fundo-03.html">Página 03</a>, <a href="fundo-04.html">Página 04</a> </h3>
-        </div>
-        <div id="corpo">            
-            <div class="test"></div>
-            <br><br>
-            <div class="quadrado" id="q1"></div>
+    <header>
+        <h1>Início - Usando background-image com URL interno</h2>
+        <h3 class="menu">
+            <em>Início</em> | 
+            <a href="fundo-02.html">Página 02</a> | 
+            <a href="fundo-03.html">Página 03</a> | 
+            <a href="fundo-04.html">Página 04</a> | 
+        </h3>
+        <div id="corpom">
+            <h2>
+                Selecione o background-image para a div abaixo:
+            </h2>
+            <!--<div class="quadrado" id="q1"></div>
             <div class="quadrado" id="q2"></div>
             <div class="quadrado" id="q3"></div>
-            <br><br>
-            <div class="test"></div>
+            <div class="quadrado" id="q4"></div>
+            <div class="quadrado" id="q5"></div>
+            <div class="quadrado" id="q6"></div>
+            <div class="quadrado" id="q7"></div>-->
+            <input type="button" value="" class="coresm" id="q1" onclick="cor01()"></input>
+            <input type="button" value="" class="coresm" id="q2" onclick="cor02()"></input>
+            <input type="button" value="" class="coresm" id="q3" onclick="cor03()"></input>
+            <input type="button" value="" class="coresm" id="q4" onclick="cor04()"></input>
+            <input type="button" value="" class="coresm" id="q5" onclick="cor05()"></input>
+            <input type="button" value="" class="coresm" id="q6" onclick="cor06()"></input>
+            <input type="button" value="" class="coresm" id="q7" onclick="cor07()"></input>
+        </div>
+    </header>
+    <section id="">
+        <div id="bf01">
+
         </div>
     </section>
+    <footer>
+        <h3 class="menu">
+            <a href="vers-descartada/index.html">Versão anterior</a> (descartada)
+        </h3>
+    </footer>
+    <script src="script-01.js"></script>
 </body>
 </html>

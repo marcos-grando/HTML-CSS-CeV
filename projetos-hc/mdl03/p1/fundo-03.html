@@ -3,52 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Position</title>
+    <link rel="stylesheet" href="style-03.css">
 </head>
 <body>
     <header>
-        <div>
-            <h1>Terceira Página - Usando background-position</h1>
-            <h3>
-                <a href="index.html">Início</a> | 
-                <a href="fundo-02.html">Página 02</a> | 
-                <em>Página 03</em> | 
-                <a href="fundo-04.html">Página 04</a> | 
-            </h3>
+        <h1>Terceira Página - Usando background-position</h1>
+        <h3 class="menu">
+            <a href="index.html">Início</a> | 
+            <a href="fundo-02.html">Página 02</a> | 
+            <em>Página 03</em> | 
+            <a href="fundo-04.html">Página 04</a> | 
+        </h3>
+        <div id="test">
+            <p>background-position:
+                <input class="btf04" type="button" value="lefttop" onclick="lefttop()">
+                <input class="btf04" type="button" value="centertop" onclick="centertop()">
+                <input class="btf04" type="button" value="righttop" onclick="righttop()">
+                <input class="btf04" type="button" value="leftcenter" onclick="leftcenter()">
+                <input class="btf04" type="button" value="centercenter" onclick="centercenter()">
+                <input class="btf04" type="button" value="rightcenter" onclick="rightcenter()">
+                <input class="btf04" type="button" value="leftbottom" onclick="leftbottom()">
+                <input class="btf04" type="button" value="centerbottom" onclick="centerbottom()">
+                <input class="btf04" type="button" value="rightbottom" onclick="rightbottom()"> ;
+            </p>
         </div>
+
     </header>
-    <section>
-        <div id="bloco">
-            <div class="blocom">
-                <p>background-position:
-                    <input class="btf04" type="button" value="lefttop" onclick="lefttop()">
-                    <input class="btf04" type="button" value="centertop" onclick="centertop()">
-                    <input class="btf04" type="button" value="righttop" onclick="righttop()"> ;
-                </p>
-                </div>
-            </div>
-            <div class="bloco" id="q1"></div>
-
-            <div class="blocom">
-                <p>background-position:
-                    <input class="btf04" type="button" value="leftcenter" onclick="leftcenter()">
-                    <input class="btf04" type="button" value="centercenter" onclick="centercenter()">
-                    <input class="btf04" type="button" value="rightcenter" onclick="rightcenter()"> ;
-                </p>
-            </div>
-            <div class="bloco" id="q2"></div>
-
-            <div class="blocom">
-                    <p>background-position:
-                        <input class="btf04" type="button" value="leftbottom" onclick="leftbottom()">
-                        <input class="btf04" type="button" value="centerbottom" onclick="centerbottom()">
-                        <input class="btf04" type="button" value="rightbottom" onclick="rightbottom()"> ;
-                    </p>
-            </div>
-            <div class="bloco" id="q3"></div>
+    <section id="coord">
+        <div id="movel">
+            
         </div>
     </section>
-    <script src="script-fundo-03.js"></script>
+    <script src="script-03.js"></script>
 </body>
 </html>
