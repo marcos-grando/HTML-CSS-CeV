@@ -8,3 +8,5 @@ F2 + tag selecionada ----> permite mudar o nome da tag
 
 
 MY KEYB --> ctrl + alt + numpad_0
+
+ctrl + K + C --> insere comentário (css e html)

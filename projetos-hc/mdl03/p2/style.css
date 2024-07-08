@@ -1,0 +1,29 @@
+*{margin: 0px; padding: 0px;}
+body{
+    background-color: #003335;
+    background-image: url('wallpaper002.jpg');
+    background: #003335 url('wallpaper002.jpg') no-repeat center center/cover fixed;
+}
+main{
+    background: snow;
+    max-width: 500px;
+    border-radius: 5px 5px 0px 0px;
+    margin: 30px auto 0px auto;
+    padding: 1px 10px;
+
+    h1{
+        color: #337d80;
+        text-align: center;
+        font: bold 1.9em montserrat;
+        margin-top: 10px;
+    }
+    h3{
+        color: #337d80;
+        text-align: center;
+        font: bold 1.1em montserrat;
+        margin: 10px 0px;
+    }
+    p{
+        margin: 5px 0px;
+    }
+}

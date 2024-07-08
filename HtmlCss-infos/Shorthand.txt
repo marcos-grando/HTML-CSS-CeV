@@ -1,0 +1,31 @@
+
+Shorthand 'font'
+
+    font: style,  weight, size, family;
+    Exmp: italic  bold   20px  'Work Sans', sans-serif;
+
+    font-size   ->   1em, 16px, 12pt, etc
+    font-family ->  'Work Sans', Arial, sans-serif
+    font-style  ->   normal, italic, etc
+    font-weight ->   lighter, normal, bold, bolder
+        Ou, 100, 200, 400, 900, etc, havendo mais nuances de peso (pesquisar os valores que a fonte possui)
+
+---------------------------------
+
+Shorthand 'background'
+
+    A shorthand completa é assim: (segundo comentário ytb)
+        background: color > image > repeat > attachment > position/size > origin > clip;
+
+    Forma de uso da Shorthand:
+        background: color >            image             >  repeat   >    position/size  > attachment;
+        background: black > url('imagens/imagem001.jpg') > no-repeat > left center/cover > fixed;
+
+    background-color:       black, white, snow, etc
+    background-image:       url('imagem/interna'), url('https://linkexterno.com.br')
+    background-repeat:      no-repeat, repeat-x, repeat-y, etc
+    background-position:    left center, center center, etc
+    background-size:        cover, 100%, etc
+    background-attachment:  fixed
+
+

@@ -29,17 +29,6 @@ weight -> peso
 width -> largura
 height -> altura
 --------------------------
-font-size -> 1em, 16px
-font-family: 'Work Sans', Arial, sans-serif
-font-style: normal, italic, etc
-font-weight -> lighter, norma, bold, bolder
-    tbm posso usar -> 100, 200, 400, 600, 900, etc, havendo mais nuances de peso (pesquiser os valores que a fonte tem)
-
-Forma simplificada de usar todas essas configurações (shorthand)
-ordem: style, weight, size, family
-Exemplo:
-    font: italic bold 2em 'Work Sans', sans-serif;
---------------------------
 text-align -> left, center, right
 text-indent: 20px --> fazer parágrafo
 --------------------------
