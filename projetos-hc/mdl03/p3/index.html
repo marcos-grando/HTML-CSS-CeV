@@ -4,68 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>'transform' - Centralização Vertical</title>
-    <style>
-        *{padding: 0px; margin: 0px;} 
-        body{
-            background-color: #181d00;
-            text-align: center;
-        }
-        header{
-            background-color: #003542;
-            color: #e2f5fd;
-            margin: 10px auto;
-            padding-top: 5px;
-            height: 140px;
-            width: 800px;
-            h2{
-                font: 500 1.2em montserrat;
-                margin: 10px 0px;
-            }
-            h3{
-                font: 300 1.2em montserrat;
-                margin: 0px 0px;
-            }
-            h3#result{
-                margin: 4px 0px 0px 182px;
-                font-size: 1.1em;
-            }
-            p{
-                margin-top: 12px;
-                font: 400 1em montserrat;
-            }
-        }
-        div#conteiner{
-            background-color: #01628f;
-            background-image: url('target001.png');
-            height: 600px;
-            width: 800px;
-            margin: auto;
-
-            position: relative;
-            background-size: 100% 100%;
-
-        }
-        div#conteudo{
-            background-color: #003542;
-            background-image: url('target001.png');
-            height: 300px;
-            width: 400px;
-            margin: auto;
-
-            background-size: 100% 100%;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-        }
-        input{
-            width: 115px;
-            height: 18px;
-            padding-left: 2px;
-            border-radius: 3px;
-            font: italic 12px monteserrat;
-        }
-    </style> 
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -78,13 +17,17 @@
             )
         </h3>
         <h3 id="result">(-)⬅️ (+)➡️: -50% | (-)⬆️ (+)⬇️: -50%</h3>
-        <p>Pré configurado com -50% -50% para centralizar</p>
     </header>
-    <div id="conteiner">
+    <div id="container">
         <div id="conteudo">
 
         </div>
     </div>
+    <footer>
+        <p>Pré configurado com -50% -50% para centralizar</p>
+        <h3>Importante ressaltar: Foi usado no <em id="conta">"container"</em> um 'position: relative'</h3>
+        <h3>E no <em id="conte">"conteudo" o 'position: absolute', permitindo mexer nas configs 'left' e 'top'. </em> </h3>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
