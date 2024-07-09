@@ -1,0 +1,117 @@
+@charset "UTF-8";
+:root{
+    --cor0: #e0e2e6;
+    --cor1: #1d1d1b;
+    --cor2: #9b2c3b;
+    --cor3: #153270;
+    --cor4: #d7c490;
+    /*#2f4a84*/
+}
+*{margin: 0px; padding: 0px;}
+
+body{
+    background-color: var(--cor0);
+    p{
+        font: normal 400 2.1em montserrat;
+        color: var(--cor0);
+    }
+}
+
+header{
+    background-color: var(--cor2);
+    color: var(--cor0);
+    text-align: center;
+    padding: 20px 0px;
+    h1{
+        font: normal 600 7em montserrat;
+    }
+    h3{
+        font: normal 400 2.2em montserrat;
+    }
+    a{
+        font-style: italic;
+        color: var(--cor0);
+    }
+}
+
+
+div#image1{
+    background: url('imagens/background001.jpg') no-repeat center center/cover fixed;
+}
+div#image2{
+    background: url('imagens/background002.jpg') no-repeat center center/cover fixed;
+}
+.image{
+    /*background-color: var(--cor2);*/
+    width: 100%;
+    height: auto;
+}
+.imagetext{
+    /*background-color: var(--cor1);*/
+    width: 900px;
+    height: 500px;
+    margin: 0px auto;
+}
+#bgtext1,#bgtext2{
+    background-color: #1d1d1b78;
+    padding: 10px 30px;
+    width: 450px;
+    height: auto;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-0%, -50%);
+}
+
+.noimage{
+    background-color: var(--cor3);
+    border-top: solid var(--cor4);
+    border-bottom: solid var(--cor4);
+    width: 100%;
+    height: auto;
+}
+.noimagetext{
+    /*background-color: #d7c490;*/
+    margin: 0px auto;
+    width: 900px;
+    height: 360px;
+}
+.text{
+    /*background-color: var(--cor1);*/
+    border-right: solid 0.4rem var(--cor4);
+    width: 505px;
+    height: auto;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -50%);
+}
+
+
+footer{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: var(--cor1);
+
+    div#rodape{
+        background-color: var(--cor2);
+        box-shadow: #0000003d 0px 3px 8px;
+        width: 100%;
+        height: 25px;
+        display: flex;
+        align-items: center;
+    }
+    div#rodapetxt{
+        width: 900px;
+        height: 25px;
+        margin: auto;
+        text-align: right;
+    }
+    h3{
+        font: italic 500 1.1em montserrat;
+        color: var(--cor0);
+        margin: 2px 4px 0px 0px;
+    }
+}
