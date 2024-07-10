@@ -1,0 +1,121 @@
+
+/* 
+    Versão .css descartada, decidi fazer do zero um novo documento pois tava
+    ficando confuso e eu não conseguia centralizar as divs de texto dentro das 
+    divs que ficam centralizadas.
+*/
+
+@charset "UTF-8";
+:root{
+    --cor0: #e0e2e6;
+    --cor1: #1d1d1b;
+    --cor2: #9b2c3b;
+    --cor3: #2f4a84;
+    --cor4: #d7c490;
+}
+*{margin: 0px; padding: 0px;}
+
+header{
+    background-color: var(--cor1);
+    color: var(--cor0);
+    text-align: center;
+    padding: 20px 0px;
+    h1{
+        font: normal 600 4em montserrat;
+    }
+    h3{
+        font: normal 400 2.2em montserrat;
+    }
+    a{
+        font-style: italic;
+        color: var(--cor2);
+    }
+}
+
+div.noimage{
+    background-color: var(--cor3);
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 20px 0px;
+    border-top: solid var(--cor4);
+    border-bottom: solid var(--cor4);
+    p{
+        font: normal 400 2em montserrat;
+        text-align: right;
+        color: var(--cor0);
+        width: 900px;
+        margin: 5px auto;
+    }
+}
+
+div#image1{
+    background: url('imagens/background001.jpg') no-repeat center center/cover fixed;
+
+}
+div#image2{
+    background: url('imagens/background002.jpg') no-repeat center center/cover fixed;
+
+}
+div.image{
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 50px 0px;
+    
+    div.imagetext{
+        color: var(--cor0);
+        width: 900px;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+
+        div#bgtext1{
+            background-color: #1d1d1b77;
+            width: 400px;
+            padding: 10px 10px;
+        }
+        div#bgtext2{
+            background-color: #1d1d1b93;
+            width: 445px;
+            padding: 10px 10px;
+        }       
+        p{
+            font: normal 400 2em montserrat;
+            width: 500px;
+            margin: 5px 0px;
+            padding: 4px 10px;
+        }
+    }
+}
+
+
+footer{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: var(--cor1);
+
+    div#rodape{
+        background-color: var(--cor2);
+        box-shadow: #0000003d 0px 3px 8px;
+        width: 100%;
+        height: 25px;
+        display: flex;
+        align-items: center;
+    }
+    div#rodapetxt{
+        width: 900px;
+        height: 25px;
+        margin: auto;
+        text-align: right;
+    }
+    h3{
+        font: italic 500 1.1em montserrat;
+        color: #d7c490;
+        margin: 2px 4px 0px 0px;
+    }
+}
