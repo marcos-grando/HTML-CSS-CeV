@@ -4,11 +4,11 @@ Shorthand 'font'
     font: style,  weight, size, family;
     Exmp: italic  bold   20px  'Work Sans', sans-serif;
 
-    font-size   ->   1em, 16px, 12pt, etc
-    font-family ->  'Work Sans', Arial, sans-serif
     font-style  ->   normal, italic, etc
     font-weight ->   lighter, normal, bold, bolder
         Ou, 100, 200, 400, 900, etc, havendo mais nuances de peso (pesquisar os valores que a fonte possui)
+    font-size   ->   1em, 16px, 12pt, etc
+    font-family ->  'Work Sans', Arial, sans-serif
 
 ---------------------------------
 
