@@ -33,7 +33,7 @@ Assunto 7 - Começando trabalhar com estilos
 <h2>Projetos</h2>
 <a href="https://marcos-grando.github.io/HTML-CSS-CeV/projetos-hc/mdl01/p8/" target="_blank">
 Projeto 1 - 4 Aberturas de animes (Primeiro tentativa de projeto)
-</a><br>
+</a><br><br>
 
 
 
@@ -62,7 +62,7 @@ Projeto 3 - Geekworld
 </a><br>
 <a href="https://marcos-grando.github.io/HTML-CSS-CeV/projetos-hc/mdl02/p6v2/" target="_blank">
 Projeto 3.1 - Geekworld, versão com mais responsividade e tags
-</a><br>
+</a><br><br>
 
 
 
@@ -102,7 +102,7 @@ Desafio 1 -  Mesclagem de Células
 </a><br>
 <a href="https://marcos-grando.github.io/HTML-CSS-CeV/projetos-hc/mdl03/p8/" target="_blank">
 Desafio 2 -  Tabelas com dados reais + scoups
-</a><br>
+</a><br><br>
 
 
 
