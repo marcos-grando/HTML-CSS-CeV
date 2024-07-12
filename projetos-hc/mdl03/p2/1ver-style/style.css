@@ -1,8 +1,8 @@
 *{margin: 0px; padding: 0px;}
 body{
     background-color: #003335;
-    background-image: url('wallpaper002.jpg');
-    background: #003335 url('wallpaper002.jpg') no-repeat center center/cover fixed;
+    background-image: url('../wallpaper002.jpg');
+    background: #003335 url('../wallpaper002.jpg') no-repeat center center/cover fixed;
 }
 main{
     background: snow;

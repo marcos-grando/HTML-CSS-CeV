@@ -1,0 +1,73 @@
+*{padding: 0px; margin: 0px;}
+body{
+    background-color: #0a3f70;
+    background-repeat: no-repeat;
+}
+header{
+    h1{
+        color: aliceblue;
+        font: bold 24pt montserrat;
+        text-align: center;
+        padding: 10px 0px;
+    }
+    h2{
+        color: aliceblue;
+        font: bold 18pt montserrat;
+        text-align: center;
+        padding: 5px 0px;
+    }
+    h3{
+        color: aliceblue;
+        font: bold 10pt montserrat;
+        text-align: center;  
+    }
+    h3.menu{
+        margin: 0px auto 10px 0px;
+    }
+    a{
+        color: #b98910;
+    }
+    em{
+        color: #946d0b;
+    }
+}
+section#coord{
+    background-image: url('../Imagens/wallpaper003.jpg');
+    background-size: 100%;
+    background-color: #002d42;
+    margin: auto;
+    width: 1133px;
+    height: 755px;
+}
+div#movel{
+    background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 1133px;
+    height: 755px;
+}
+div#test{
+    background-color: #7c1313;
+    margin: auto;
+    padding-top: 10px;
+    text-align: center;
+    width: 1133px;
+    height: 35px;
+    h2{
+        color: aliceblue;
+        padding-bottom: 5px;
+    }
+    p{
+        color: aliceblue;
+        font: 20px montserrat;
+    }
+}
+input, button{
+    padding: 6px 8px 1px 8px;
+    border-radius: 4px;
+    color: #3D3D3D;
+    background: #fff;
+    border: none;
+    box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1);
+}

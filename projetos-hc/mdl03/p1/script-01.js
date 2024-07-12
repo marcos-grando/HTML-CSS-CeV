@@ -1,4 +1,4 @@
-const cor1 = "linear-gradient(180deg, aqua, aqua)"
+const cor1 = "linear-gradient(180deg, #7c1313, #7c1313)"
 const cor2 = "linear-gradient(180deg, orange, yellow)"
 const cor3 = "url('imagens/pattern001.png')"
 const cor4 = "url('Imagens/pattern002.png')"

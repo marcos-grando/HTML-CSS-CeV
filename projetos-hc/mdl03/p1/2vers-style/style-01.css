@@ -1,0 +1,139 @@
+*{padding: 0px; margin: 0px;}
+
+html{background-color: #0a3f70;}
+body{
+    background-color:  #0a3f70;
+    background-repeat: no-repeat;
+}
+header{
+    h1{
+        color: aliceblue;
+        font: bold 24pt montserrat;
+        text-align: center;
+        padding: 10px 0px;
+    }
+    h2{
+        color: aliceblue;
+        font: bold 18pt montserrat;
+        text-align: center;
+        padding: 5px 0px;
+    }
+    h3{
+        color: aliceblue;
+        font: bold 10pt montserrat;
+        text-align: center;  
+    }
+    h3.menu{
+        margin: 0px auto 10px 0px;
+    }
+    a{
+        color: #b98910;
+    }
+    em{
+        color: #946d0b;
+    }
+}
+footer{
+    h3{
+        color: aliceblue;
+        font: bold 10pt montserrat;
+        text-align: left;  
+        margin: 7px 0px 0px 30px;
+    }
+    a{
+        color: #b98910;
+    }
+}
+
+section#bf01{
+    background-color: #0a5aa5;
+    margin: auto;
+    width: 1133px;
+    height: 650px;
+    display: flex;
+}
+div#bf01{
+    background-color: #7c1313;
+    margin: auto;
+    width: 1111px;
+    height: 630px;
+    border: solid 2px #7c13137c;
+    box-shadow: 0px 0px 2px 2px rgba(139, 0, 0, 0.199);
+}
+div#corpom{
+    background-color: #0a5aa5;
+    border-radius: 5px 5px 0px 0px;
+    width: 1133px;
+    height: 150px;
+    text-align: center;
+    margin: 0px auto 0px auto;
+}
+input.coresm{
+    display: inline-block;
+    background-color: aliceblue;
+    border:  1px solid black;
+    border-radius: 10px;
+    font: bold 12pt montserrat;
+    width: 100px;
+    height: 100px;
+}
+div.quadrado{
+    display: inline-block;
+    background-color: aliceblue;
+    border:  1px solid black;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+}
+input#q1{
+    background-color: #7c1313;
+} 
+input#q2{
+    background-image: linear-gradient(180deg, orange, yellow);
+} 
+input#q3{
+    background-image: url('../imagens/pattern001.png');
+    background-size: 100%;
+}
+input#q4{
+    background-image: url('../Imagens/pattern002.png');
+    background-size: 100%;
+}
+input#q5{
+    background-image: url('../Imagens/pattern003.png');
+    background-size: 100%;
+}
+input#q6{
+    background-image: url('../Imagens/pattern004.png');
+    background-size: 100%;
+}
+input#q7{
+    background-image: url('../Imagens/wallpaper006.jpg');
+    background-size: 200%;
+}
+div.blocom{
+    background-color: #002d42;
+    margin: auto;
+    text-align: center;
+    width: 800px;
+    height: 30px;
+    margin-top: 20px;
+    padding-top: 6px;
+    h2{
+        color: #fcf8eb;
+        padding-bottom: 5px;
+    }
+    p{
+        color: #fcf8eb;
+        font: 20px montserrat;
+    }
+}
+input, button{
+    padding: 6px 8px 1px 8px;
+    border-radius: 4px;
+    color: #3D3D3D;
+    background: #fff;
+    border: none;
+    border: solid 2px #7c13137c;
+    box-shadow: 0px 0px 2px 2px rgba(139, 0, 0, 0.199);
+}
