@@ -1,5 +1,5 @@
 # HTML5-CSS3 CeV
-4º Curso (htmo5/css3) - através do Curso em Vídeo #obrigadoGuanabara
+4º Curso (html5/css3) - através do Curso em Vídeo #obrigadoGuanabara
 
 <h2>Módulo 3 - Curso em Vídeo</h2>
 <a href="https://marcos-grando.github.io/HTML-CSS-CeV/projetos-hc/mdl03/p1/" target="_blank">
