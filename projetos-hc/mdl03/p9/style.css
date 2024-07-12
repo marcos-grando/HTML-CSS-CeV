@@ -1,0 +1,107 @@
+@charset "UTF-8";
+*{padding: 0px; margin: 0px;}
+
+html{height: 100%;}
+body{
+    background-color: #420101;
+    height: 100%;
+    display: flexbox;
+}
+
+section{
+    margin: auto;
+    min-width: 500px;
+    max-width: 900px;
+    width: 60%;
+}
+
+header{
+    border-bottom: solid 2px #b98910;
+    background-color: #0a3f70;
+    color: aliceblue;
+    height: 45px;
+    display: flex;
+
+    section{
+        border-bottom: solid 2px #b98910;
+        background-color: #0a5aa5;
+        box-shadow: 0px 0px 5px 2px #00258b57;
+        margin: auto;
+        height: 45px;
+        display: flex;
+        h1{
+            font: normal 600 clamp(1.4rem, 2.2vw, 1.9rem) montserrat;
+            margin: auto;
+        }
+    }
+}
+
+
+
+main{
+    background-color: #420101;
+    height: 90%;    
+    section{
+        background-color: #7c1313;
+        box-shadow: 0px 0px 5px 3px #300101ce;
+        height: 100%;
+        display: flexbox;
+    }
+    p{
+        font: normal 400 1.2em montserrat;
+        color: aliceblue;
+        margin: auto;
+        padding: 35px 50px;
+    }
+    table{
+        margin: auto;
+    }
+}
+
+div#conteiner{
+    padding: 10px;
+    overflow-x: auto;
+}
+table{
+    box-shadow: 0px 0px 5px 2px #3d000086;
+    background-color: #dcebfc;
+    border-collapse: collapse;
+    color: rgb(61, 43, 43);
+    caption{
+        background-color: #dcebfc;
+        font: normal 500 1.2em Arial;
+        font-variant: small-caps;
+        padding: 5px;
+    }
+    th,td{
+        border: solid 2px #382e00;
+        padding: 7px;
+    }
+    tr:nth-child(2n-1){
+        background-color: #26558b;
+        color: aliceblue;
+    }
+}
+
+
+
+footer{
+    border-top: solid 2px #b98910;
+    background-color: #0a3f70;
+    color: aliceblue;
+    height: 30px;
+    position: sticky;
+
+    section{
+        border-top: solid 2px #b98910;
+        background-color: #0a5aa5;
+        box-shadow: 0px 0px 5px 2px #00258b49;
+        margin: -2px auto;
+        height: 30px;
+        display: flex;
+        h3{
+            font: italic 500 1em montserrat;
+            margin: auto 10px auto auto;
+        }
+    }
+}
