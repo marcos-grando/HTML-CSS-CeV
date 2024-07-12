@@ -1,9 +1,9 @@
 <h1 align="center">HTML5-CSS3 CeV</h1>
 <h3 align="center">4º Curso (html5/css3) - através do Curso em Vídeo #obrigadoGuanabara</h3>
 
-```bash
-Abaixo estão todos os conteúdos criados enquanto acompanho o curso de HTML5 e CSS3 no Curso em Vídeo, com Gustavo Guanabara.
-```
+
+<em>Abaixo estão todos os conteúdos criados enquanto acompanho o curso de HTML5 e CSS3 no Curso em Vídeo, com Gustavo Guanabara.
+
 
 <h2>Módulo 1 - Curso em Vídeo</h2>
 
