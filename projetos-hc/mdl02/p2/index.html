@@ -5,27 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <title>Seletores Personalizados</title>
+    <title>Cores e Fonts</title>
+    <!--Duas formas de usar as fonts, link externo( @import) e arquivo interno( @font-face)-->
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Playpen+Sans:wght@100..800&display=swap');
 
+        @font-face {
+            font-family: 'Berkshire Swash';
+            src: url('fontes/BerkshireSwash-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+
+        }
+        h2 {
+            font-family: 'Berkshire Swash', sans-serif;
+            color: #c44a6a;
+            background-color: antiquewhite;
+            max-height: 30px;
+        }
+        p {
+            font-family: 'Playpen Sans';
+            text-align: justify;
+            color: #FFFFFF;
+        }
     </style>
+
 </head>
 <body>
-    <main>
-        <h1>Praticando HTML</h1>
-        <h2>HTML Básico</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, error aliquam? Vitae rerum consequatur ipsum? Alias incidunt error quae iste placeat? Nisi ut officia accusamus architecto enim voluptates excepturi provident!</p>
-        <h2>HTML Intermediário</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi molestiae a dolores. Neque asperiores accusamus deserunt consequuntur sapiente consequatur unde odit laudantium rerum, sed voluptates incidunt mollitia, quo voluptatibus. Quasi.</p>
-        <h2>HTML Avançado</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod doloremque assumenda nisi aspernatur ratione quasi cumque aliquid ut explicabo quam ipsa, inventore nostrum ab, autem dolor laborum. Dolorem, voluptatem sit.</p>
-        <h1>Praticando CSS</h1>
-        <h2>CSS Básico</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit repellendus quis quidem et quibusdam provident natus maiores illo blanditiis rem molestias neque omnis beatae nesciunt veniam, impedit voluptatem, commodi fugiat?</p>
-        <h2>CSS Intermediário</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dignissimos voluptatem laudantium quis tenetur sint nulla, dicta incidunt enim ut cupiditate ab commodi sapiente molestiae veniam consequatur hic dolorem nemo.</p>
-        <h2>CSS Avançado</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis explicabo autem rem ducimus quos natus ipsam illum distinctio architecto soluta, possimus hic aliquid animi provident in minima eveniet excepturi necessitatibus?</p>
-    </main>
+    <h2 class="prim">Exemplo de Cores</h2>
+    <p class="prim">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque earum praesentium in consectetur modi officiis laborum provident aliquam quo, facere explicabo dolorem saepe animi maxime voluptate aliquid quaerat laboriosam voluptatem!</p>
+
+    <h2 class="seg">Exemplo de Cores</h2>
+    <p class="seg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque earum praesentium in consectetur modi officiis laborum provident aliquam quo, facere explicabo dolorem saepe animi maxime voluptate aliquid quaerat laboriosam voluptatem!</p>
+    
+    <h2 class="terc">Exemplo de Cores</h2>
+    <p class="terc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque earum praesentium in consectetur modi officiis laborum provident aliquam quo, facere explicabo dolorem saepe animi maxime voluptate aliquid quaerat laboriosam voluptatem!</p>
 </body>
 </html>

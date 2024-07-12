@@ -13,6 +13,7 @@ body{
     background-color: #060e16;
     font-family: 'Berkshire Swash', 'Playpen Sans', sans-serif;
 }
+
 div#principal{
     display: inline-block;
     background-color: #039faa;
@@ -32,7 +33,7 @@ div#principal:hover > div#infos{
     border: 1.5px solid #c2b69d;
     text-align: center;
     height: 110px;
-    width: 120px;
+    width: 109px;
 }
 
 div.menus{
@@ -42,4 +43,21 @@ div.menus{
     text-align: center;
     height: 20px;
     width: 100px;
+}
+div.menus > div.infos02{
+    display: none;
+}
+div.menus:hover > div.infos02{
+    display: inline-block;
+    font-family: 'Playpen Sans', 'Berkshire Swash', sans-serif;
+    font-size: 0.9em;
+    background-color: #039faa;
+    border: 1.5px solid #c2b69d;
+    text-align: center;
+    height: 89px;
+    width: 90px;
+}
+h2{
+    color: aliceblue;
+    font-weight: 400;
 }
