@@ -1,26 +1,34 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iframe</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Conhecendo iframes</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div>
-            <h1>Testando uso de iframe</h1>
-        </div>
+        <h1>Conhecendo uso de iframe</h1>
+        <p>Iframe seria um "quadro embutido" que incorpora o conteúdo de uma outra página na estrutura HTML que o iframe foi inserido.</p>
     </header>
     <main>
-        <section>
-            <p>
-                Acessando 
-            </p>
+        <section class="hero">
+            <h1>Meu github</h1>
+            <h3>Github com os conteúdos de HTML/CSS no CeV</h3>
+            <iframe id="github" src="https://marcos-grando.github.io/HTML-CSS-CeV/" frameborder="0"></iframe>
+            <p>Aqui coloquei frameborder="0" (sem borda).</p>
+            <p>E linkei meu reportório de HTML-CSS-CeV nesse iframe.</p>
+        </section>
+        <section class="content">
+            <h1>Projeto Cordel</h1>
+            <h3>Projeto feito no terceiro módulo de HTML/CSS</h3>
+            <iframe id="cordel" src="https://marcos-grando.github.io/HTML-CSS-CeV/projetos-hc/mdl03/p4v2/" frameborder="1"></iframe>
+            <p>Aqui coloquei frameborder="1" (com borda).</p>
+            <p>E linkei com meu projeto cordel feito no terceiro módulo.</p>
         </section>
     </main>
     <footer>
-
+        <h3>Desenvolvido por Marcos Grando</h3>
     </footer>
 </body>
 </html>
