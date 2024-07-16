@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe segurança</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Iframe e segurança</h1>
+            <p>Em caso de utilizar link/website externos como conteúdo de iframe, abre-se uma janela para possíveis scripts maliciosos.</p>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div>
+                <h1>Iframe sem segurança</h1>
+                <p>Por exemplo, no conteúdo alocado no iframe abaixo temos um formulário que ao ser preenchido pelo usuário do site poderia, caso o código estivesse completo, captar dados pessoais.</p>
+                <p>Perceba que se clicado em "Cadastrar" a função scriptada faz a captura de dados.<br>Ainda que o código abaixo, sendo apenas um exemplo, esteja incompleto.</p>
+
+                <iframe src="pages/form001.html" frameborder="1"></iframe>
+
+                <p>No exemplo acima, dentro do conteúdo desejado para colocar no iframe, temos um formulário presente. Se preenchido pelo usuário do site, esses dados pessoais serão captados por terceiros.</p>
+                <p>Ou seja, mesmo o formulário não tendo a ver com o site em si, mas sim com o conteúdo presente no iframe, ele pode captar dados ou disparar algum script malicioso.</p>
+            </div>
+        </section>
+        <section class="content">
+            <div>
+                <h1>Aumentando a segurança de um iframe</h1>
+                <p>Abaixo usarei o mesmo exemplo de 'iframe' de antes, porém, dessa vez, ao clicar em "Cadastrar" nada acontecerá. Ou seja, nenhum script malicioso ou captação de dados serão efetuado pelo conteúdo alocado dentro do 'iframe'.</p>
+
+                <iframe src="pages/form001.html" frameborder="1" sandbox="sandbox" referrerpolicy="no-referrer"></iframe>
+ 
+                <p>Para isso, foi usado algumas configurações do próprio 'iframe':</p>
+                <ul>
+                    <li>noreferrerpolicy = 'no-referrer' boloqueia qualquer captação de dados</li>
+                    <li>sandbox='sandbox' proibe qualquer script, 'allow-scripts' permite alguns scripts.</li>
+                </ul>
+                <p>Ou seja, 'iframe src="link" sandbox="sandbox" referrerpolicy="no-referrer" '.</p>
+                <p>Caso a página alocada para o iframe seja de extrema confiança, e principalmente se for conteúdo próprio, utiliza-se a seguinte configuração:</p>
+                <ul>
+                    <li>sandbox='allow-same-origin', que permite os conteúdos da mesma origem.</li>
+                </ul>
+                <p>Junto dessa configuração existe algumas específicações que podem ser usadas como 'allow-form', 'allow-scripts', 'allow-popups', etc.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h3>Desenvolvido por Marcos Grando</h3>
+    </footer>
+</body>
+</html>

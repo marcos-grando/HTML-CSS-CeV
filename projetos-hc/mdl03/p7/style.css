@@ -40,7 +40,7 @@ header{
 }
 
 main{
-    section{
+    section#principal{
         background-color: #6e0d0d;
         box-shadow: 0px 0px 5px 3px #300101ce;
         height: 100%;

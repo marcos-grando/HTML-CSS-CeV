@@ -17,7 +17,7 @@
     /*Destaques raros*/
     --cor10: #00FF7F;
 }
-*{padding: 0; margin: 0;box-sizing: border-box;}
+*{padding: 0; margin: 0;}
 
 html, body{
     font-family: 'Elaine Sans', 'Work Sans', sans-serif;
@@ -32,66 +32,62 @@ header {
     border-bottom: solid 4px var(--cor7);
     background-color: var(--cor1);
     color: var(--cor3);
+    padding: 1em 0;
     div{
-        max-width: 630px;
-        padding: 1em 0;
+        max-width: 700px;
         margin: auto;
         text-align: center;
         h1{
-            font-size: 3em;
-            margin-top: -20px;
+            font-variant: small-caps;
+            font-size: 2.4em;
         }
         p{
-            font-size: 1.05em;
+            font-size: 1.1em;
+            margin: 10px 0px;
         }
     }
 }
+
 
 main{
-    flex: 1;
-    a{
-        text-decoration: none;
-        color: var(--cor7);
-        font-weight: 400; 
+    section h2{
+        margin: -20px 0px 1px 0px;
+        font-variant: small-caps;
     }
-    a:hover{
-        text-decoration: underline; 
-    }
-    section.hero{
+    section.video{
         background-color: var(--cor6);
         color: var(--cor3);
-        padding: 0px 0px;
+        padding: 2em;
+        text-align: center;
         div{
-            text-align: center;
             max-width: 700px;
-            height: auto;
-            margin: auto;
-            padding: 10px 0px 30px 0px; 
-            h1{
-                font-size: 2em;
-            }
         }
     }
-    section.content {
-        padding: 0px;
+    section.slide{
+        padding: 2em;
+        text-align: center;
         div{
             max-width: 700px;
-            height: auto;
-            margin: auto; 
-            p{
-                padding: 10px 0px; 
-                font-size: 1.1em; 
-                font-weight: 600;
-            }
+        }
+    }
+    section.googlemaps{
+        background-color: var(--cor6);
+        color: var(--cor3);
+        padding: 2em;
+        text-align: center;
+        div{
+            max-width: 700px;
+        }
+    }
+    section.wazemaps{
+        padding: 2em;
+        text-align: center;
+        div{
+            max-width: 700px;
         }
     }
 }
 
-main iframe#tabela{
-    width: 100%;
-    max-width: 700px;
-    height: 350px; 
-}
 
 footer {
     border-top: solid 4px var(--cor7);
@@ -102,3 +98,4 @@ footer {
     padding: 1em 0;
     margin-top: auto;
 }
+

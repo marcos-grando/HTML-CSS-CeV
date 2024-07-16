@@ -8,16 +8,25 @@
 </head>
 <body>
     <header>
-        <h1>Título Principal</h1>
+        <div>
+            <h1>Iframe com tabelas</h1>
+            <p>Podemos também alocar uma tabela grande dentro do iframe, substituindo o uso de "overflow-x:auto" como feito no final do módulo 03.</p>
+        </div>
     </header>
     <main>
         <section class="hero">
-            <h2>Título Secundário</h2>
-            <p>Aqui jaz um texto</p>
+            <div>
+                <h1>Tabela Qualquer</h1>
+                <h3>Tabela abaixo foi copiada do <a href="https://marcos-grando.github.io/HTML-CSS-CeV/projetos-hc/mdl03/p9/" target="_blank">"Assunto 6, Módulo 03"</a> para exemplicar.</h3>
+                <iframe id="tabela" src="pag01.html" frameborder="0"></iframe>
+            </div>
         </section>
         <section class="content">
-            <h2>Título Secundário</h2>
-            <p>Aqui jaz outro texto</p>
+            <div>
+                <p>Ainda assim, por questões de semântica, o uso da tabela como antes feito (utilizando overflow-x) é mais efetivo por questão de indexação.</p>
+                <p>A tabela foi feita em um arquivo HTML, e esse arquivo foi inserido em 'src=""'. Dessa forma, o conteúdo mostrado no iframe advém de uma página criada internamente.</p>
+                <p>Ou seja, posso alocar um conteúdo de um outro website, assim como posso utilizar um conteúdo interno criado especificamente, ou não, para aparecer no iframe.</p>
+            </div>
         </section>
     </main>
     <footer>

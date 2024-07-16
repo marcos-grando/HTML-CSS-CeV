@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe com opções</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Opções de iframe</h1>
+            <h3>Define um 'name= " " ' para o iframe, e esse nome deve ser colocado no 'target= " " ' de um hyperlink.</a></h3>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div>
+                <h1>Exemplo</h1>
+                <h3>Abaixo algumas opções:</h3>
+                <p>
+                    <a href="pages/page001.html" target="tela">Primeira opção</a>
+                    <a href="pages/page002.html" target="tela">Segunda opção</a>
+                    <a href="pages/page003.html" target="tela">Terceira opção</a>
+                </p>
+                <iframe id="tela" name="tela" src="pages/page000.html" frameborder="0"></iframe>
+            </div>
+        </section>
+        <section class="content">
+            <div>
+                <p>Nesse caso nomeei 'iframe name="tela"', em seguida, dentro de um 'p' coloquei 'a href="pagdesejada" target="tela"'</p>
+                <p>Ou seja, primeiro foi definido "tela" como um "name" para o 'iframe'. Em seguida, colocado esse "name" ("tela") no "target" do hyperlink.</p>
+                <p>Dessa forma, cada link clicado vai mudar o o conteúdo alocado no iframe. </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h3>Desenvolvido por Marcos Grando</h3>
+    </footer>
+    
+    <script>
+
+    </script>
+</body>
+</html>

@@ -12,6 +12,30 @@ MY KEYB --> ctrl + alt + numpad_0
 ctrl + K + C --> insere comentário (css e html)
 
 CENTRVERTICAL
-PARENT -> CHILD
-PARENT->DISPLAY: FLEX
-CHILD->MARGIN: AUTO
+    PARENT -> CHILD
+    PARENT->DISPLAY: FLEX
+    CHILD->MARGIN: AUTO
+
+elemento fixado
+    elemt{...
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+Footer mantido em baixo
+    html, body{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main{
+        flex: 1;
+    }
+
+    footer{
+        margin-top: auto;
+    }
