@@ -2,7 +2,7 @@
 <h2>4º Curso (html5/css3) - através do Curso em Vídeo</h2>
 <h3>Abaixo estão todos os conteúdos criados enquanto acompanho o curso de HTML5 e CSS3 no Curso em Vídeo, com o professor Gustavo Guanabara.</h3>
 
-<p>Esse foi o 4º curso que eu fiz através do Curso em vídeo, com o professor Gustavo Guanavara. Já tive um contato prévio com HTML/CSS através do curso de JavaScript.<br>Iniciei o curso dia 03/junho/2024<br>Terminei o curso dia xx/xx/2024<br>(Histórico youtube)</p>
+<p>Esse foi o 4º curso que eu fiz através do Curso em vídeo, com o professor Gustavo Guanavara. Já tive um contato prévio com HTML/CSS através do curso de JavaScript.</p>
 <br>
 
 <h1>Módulo 1 - Curso em Vídeo</h1>
