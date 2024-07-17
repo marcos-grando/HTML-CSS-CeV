@@ -1,9 +1,9 @@
 <h1 align="center">HTML5-CSS3 CeV</h1>
 <h2>4º Curso (html5/css3) - através do Curso em Vídeo</h2>
-
 <h3>Abaixo estão todos os conteúdos criados enquanto acompanho o curso de HTML5 e CSS3 no Curso em Vídeo, com o professor Gustavo Guanabara.</h3>
 
-
+<p>Esse foi o 4º curso que eu fiz através do Curso em vídeo, com o professor Gustavo Guanavara. Já tive um contato prévio com HTML/CSS através do curso de JavaScript.<br>Iniciei o curso dia 03/junho/2024<br>Terminei o curso dia xx/xx/2024<br>(Histórico youtube)</p>
+<br>
 
 <h1>Módulo 1 - Curso em Vídeo</h1>
 
@@ -105,4 +105,9 @@ Desafio 2 -  Tabelas com dados reais + scoups
 </a><br><br>
 
 
-
+<h2>Cursos CeV que eu fiz:</h2>
+<h3><a href="https://github.com/marcos-grando/JavaScript-CeV">1º - JavaScript</a></h3>
+<h3><a href="https://github.com/marcos-grando/Python-CeV">2º - Python</a></h3>
+<h3>3º - MySQL (Sem repositório)</h3>
+<h3><a href="https://github.com/marcos-grando/HTML-CSS-CeV">4º - HTML5/CSS3</a></h3>
+(Organizado sob ordem cronológica)
