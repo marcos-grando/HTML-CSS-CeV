@@ -106,8 +106,22 @@ Desafio 2 -  Tabelas com dados reais + scoups
 
 
 <h2>Cursos CeV que eu fiz:</h2>
+
 <h3><a href="https://github.com/marcos-grando/JavaScript-CeV">1º - JavaScript</a></h3>
+<p>JavaScript iniciado 27/fevereiro/2024<br>
+Javascript finalizado 25/março/2024</p>
+
 <h3><a href="https://github.com/marcos-grando/Python-CeV">2º - Python</a></h3>
+<p>Python iniciado em 28/março/2024<br>
+Python finalizado em 20/maio/2024</p>
+
 <h3>3º - MySQL (Sem repositório)</h3>
+<p>MySQL iniciado em 14/junho/2024<br>
+MySQL finalizado em 02/julho/2024</p>
+
 <h3><a href="https://github.com/marcos-grando/HTML-CSS-CeV">4º - HTML5/CSS3</a></h3>
-(Organizado sob ordem cronológica)
+<p>html5/css3 iniciado em 03/junho/2024<br>
+html5/css3 finalizado em xx/xx/2024<br>
+(Fiz 1ºmdl > MySQL > 2º,3º,4ºmdls)</p>
+
+<p>(Organizado sob ordem cronológica)<br>(Histórico youtube)</p>
