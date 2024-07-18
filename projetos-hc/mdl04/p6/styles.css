@@ -11,6 +11,7 @@
     --cor6: #001D3D;
     /*links*/
     --cor7: #00BFFF;
+    --cor71: #00bfff80;
     /*botões*/
     --cor8: #FF7F11;
     --cor9: #FFD700;
@@ -55,9 +56,9 @@ main{
     justify-content: center;
 
     section#options{
-        max-width: 800px;
+        max-width: 600px;
         width: 100%;
-        margin: 20px 0px 10px 0px;
+        margin: 0px 0px 0px 0px;
         display: flex;
         justify-content: space-around; /* Distribui o espaço igualmente */
         text-align: center;
@@ -73,29 +74,54 @@ main{
         }
         a {
             text-decoration: none;
-            color: var(--cor7);
+            color: var(--cor3);
         }
         a:hover p{
-            text-decoration: underline;
+            transform: translate(-1px, 1px);
+            text-shadow: -2px 2px var(--cor4);
+            transition: transform 0.3s;
         }
         img{
-            width: 80px;
+            width: 60px;
             border-radius: 50%;
             box-shadow: 2px 2px 5px var(--cor4);
+            box-sizing: border-box;
+        }
+        img:hover{
+            transform: translate(-1px, 1px);
+            box-shadow: 4px 4px 7px var(--cor6);
+            transition: transform 0.3s;
         }
     }
 
     section#iframe{
         background-color: #000814;
-        max-width: 1000px;
+        max-width: 715px;
         width: 100%;
-        height: 750px;
+        height: 600px;
+        
 
         iframe{
-            max-width: 1000px;
+            max-width: 715px;
             width: 100%;
             max-height: 700px;
             height: 100%;
+            border: none;
+        }
+
+        /* Estilização da barra de rolagem */
+        iframe::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        iframe::-webkit-scrollbar-track {
+            background: #003566; /* Cor de fundo da barra de rolagem */
+        }
+
+        iframe::-webkit-scrollbar-thumb {
+            background-color: #00BFFF; /* Cor da parte móvel da barra de rolagem */
+            border-radius: 10px;
+            border: 3px solid #000814; /* Bordas arredondadas e cor de borda */
         }
     }
 }
