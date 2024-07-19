@@ -1,0 +1,119 @@
+/* Paleta de Cores */
+:root {
+    /*backgrounds*/
+    --cor1: #000814;
+    --cor2: #D9D9D9;
+    /*títulos/header*/
+    --cor3: #ffffff;
+    --cor4: #003566;
+    /*textos no geral*/
+    --cor5: #B0B0B0;
+    --cor6: #001D3D;
+    /*links*/
+    --cor7: #00BFFF;
+    /*botões*/
+    --cor8: #FF7F11;
+    --cor9: #FFD700;
+    /*Destaques raros*/
+    --cor10: #00FF7F;
+}
+*{padding: 0; margin: 0;}
+
+html, body{
+    font-family: 'Elaine Sans', 'Work Sans', sans-serif;
+    background-color: var(--cor2);
+    color: var(--cor6);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    border-bottom: solid 4px var(--cor7);
+    background-color: var(--cor1);
+    color: var(--cor3);
+    padding: 1em 0;
+    text-align: center;
+    div{
+        max-width: 700px;
+        margin: auto;
+    }
+}
+
+
+main{
+    section.um{
+        background-color: var(--cor6);
+        color: var(--cor3);
+        padding: 2em;
+        text-align: left;
+        div{
+            max-width: 500px;
+            margin: auto;
+            p{
+                margin: 10px 0px;
+            }
+        }
+        #button{
+            font-weight: 600;
+            padding: 1px 5px;
+        }
+    }
+    section.dois{
+        padding: 2em;
+        text-align: left;
+        div{
+            max-width: 500px;
+            margin: auto;
+            p{
+                margin: 10px 0px;
+            }
+        }
+        #button{
+            font-weight: 600;
+            padding: 1px 5px;
+        }
+    }
+    section.tres{
+        background-color: var(--cor6);
+        color: var(--cor3);
+        padding: 2em;
+        text-align: left;
+        div{
+            background-color: #000814;
+            margin: 7px 10px;
+            text-align: justify;
+            text-indent: 8px;
+            line-height: 1.5em;
+            max-width: 500px;
+            margin: auto;
+            ul{
+                list-style-position: outside;
+                font-size: 14px;
+                margin: -7px auto 12px auto;
+                padding: 7px 5px 7px 25px;
+                columns: 2;
+                a{
+                    color: var(--cor3);
+                    text-decoration: none;
+                }
+            }
+            p{
+                margin: 10px 0px;
+            }
+        }
+
+    }
+}
+
+
+footer {
+    border-top: solid 4px var(--cor7);
+    background-color: var(--cor1);
+    color: var(--cor2);
+    font-weight: 300;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: auto;
+}
+
