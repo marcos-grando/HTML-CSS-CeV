@@ -1,0 +1,98 @@
+:root {
+    /* Cores principais */
+    --cor1: #039faa; /* turquesa */
+    --cor2: #002f3f; /* azul escuro */
+
+    /* Cores complementares */
+    --cor3: #e6e6e6; /* cinza claro */
+    --cor4: #f7f7f7; /* quase branco */
+    --cor5: #ffffff; /* branco */
+    --cor6: #dbe2e9; /* azul claro */
+    --cor7: #4a4a4a; /* coral */
+
+    --cor8: #021b24; /* azul marinho escuro */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #001f3f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+section.container {
+    background-color: var(--cor8);
+    box-shadow: 0 0 10px var(--cor8);
+    border-radius: 2px;
+    display: flex;
+    width: 100vw;
+    max-width: 1000px;
+    height: 800px;
+    padding: 10px;
+
+    .janela1 {
+        background-color: var(--cor8);
+        box-sizing: border-box;
+        overflow: hidden;
+        width: 200px;
+        height: 100%;
+        padding: 0px;
+        color: var(--cor4);
+        font-size: 0.7em;
+
+        .modulos {
+            display: inline-block;
+            border: 2px solid var(--cor1);
+            margin: 4px 0;
+            padding: 5px;
+            cursor: pointer;
+
+            h1 {
+                margin-top: 0px;
+            }
+
+            .infos {
+                display: none; /* Oculta por padrão */
+                background-color: var(--cor2);
+                color: var(--cor5);
+                padding: 10px;
+                border: 1px solid var(--cor1);
+                margin-top: 5px;
+                box-shadow: 0 0 5px var(--cor7);
+                overflow: auto; /* Adiciona rolagem quando necessário */
+                max-height: 500px;
+
+                a {
+                    color: var(--cor7);
+                    text-decoration: none;
+                    display: block;
+                    margin: 5px 0;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    .janela2 {
+        width: 800px;
+        height: 100%;
+        background-color: var(--cor2);
+        padding: 5px;
+        box-sizing: border-box;
+
+        iframe {
+            border: 5px solid var(--cor7);
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    }
+}
+

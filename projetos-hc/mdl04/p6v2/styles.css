@@ -1,0 +1,139 @@
+/* Paleta de Cores */
+:root {
+    /*backgrounds*/
+    --cor1: #000814;
+    --cor2: #D9D9D9;
+    /*títulos/header*/
+    --cor3: #ffffff;
+    --cor4: #003566;
+    /*textos no geral*/
+    --cor5: #B0B0B0;
+    --cor6: #001D3D;
+    /*links*/
+    --cor7: #00BFFF;
+    --cor71: #00bfff80;
+    /*botões*/
+    --cor8: #FF7F11;
+    --cor9: #FFD700;
+    /*Destaques raros*/
+    --cor10: #00FF7F;
+}
+*{padding: 0; margin: 0;}
+
+html, body{
+    font-family: 'Elaine Sans', 'Work Sans', sans-serif;
+    background: url('imagens/wallpaper-background.jpg') no-repeat bottom center/cover fixed;
+    color: var(--cor6);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    border-bottom: solid 4px var(--cor7);
+    background-color: #00081470;
+    color: var(--cor3);
+    padding: 1em 0;
+    text-align: center;
+    div{
+        max-width: 700px;
+        margin: auto;
+        h1{
+            margin-top: -12px;
+        }
+        h3{
+            font-weight: 400;
+            line-height: 22px;
+        }
+    }
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+
+    section#options{
+        max-width: 600px;
+        width: 100%;
+        margin: 0px 0px 0px 0px;
+        display: flex;
+        justify-content: space-around; /* Distribui o espaço igualmente */
+        text-align: center;
+        color: var(--cor7);
+        font-weight: 500;
+        font-size: 15px;
+        
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 1; /* Faz com que os divs internos cresçam igualmente */
+        }
+        a {
+            text-decoration: none;
+            color: var(--cor3);
+        }
+        a:hover p{
+            transform: translate(-1px, 1px);
+            text-shadow: -2px 2px var(--cor4);
+            transition: transform 0.3s;
+        }
+        img{
+            width: 60px;
+            border-radius: 50%;
+            box-shadow: 2px 2px 5px var(--cor4);
+            box-sizing: border-box;
+        }
+        img:hover{
+            transform: translate(-1px, 1px);
+            box-shadow: 4px 4px 7px var(--cor6);
+            transition: transform 0.3s;
+        }
+    }
+
+    section#iframe{
+        background-color: #000814;
+        max-width: 715px;
+        width: 100%;
+        height: 600px;
+        
+
+        iframe{
+            max-width: 715px;
+            width: 100%;
+            max-height: 700px;
+            height: 100%;
+            border: none;
+        }
+
+        /* Estilização da barra de rolagem */
+        iframe::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        iframe::-webkit-scrollbar-track {
+            background: #003566; /* Cor de fundo da barra de rolagem */
+        }
+
+        iframe::-webkit-scrollbar-thumb {
+            background-color: #00BFFF; /* Cor da parte móvel da barra de rolagem */
+            border-radius: 10px;
+            border: 3px solid #000814; /* Bordas arredondadas e cor de borda */
+        }
+    }
+}
+
+
+
+footer {
+    border-top: solid 4px var(--cor7);
+    background-color: #000814d2;
+    color: var(--cor2);
+    font-weight: 300;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: auto;
+}

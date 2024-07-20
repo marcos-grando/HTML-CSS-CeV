@@ -9,7 +9,7 @@
 <body>
     <header>
         <div>
-            <h1>Primeiro formulário</h1>
+            <h1>Sobre formulário, label e métodos</h1>
         </div>
     </header>
     <main>
@@ -18,10 +18,10 @@
                 <h2>Formulário Simples</h2>
                 <form autocomplete="off">
                     <p>
-                        Nome: <input type="text" name="nome" id="inome">
+                        Nome: <input type="text" name="nome" id="inome1" class="text">
                     </p>
                     <p>
-                        Sobrenome: <input type="text" name="sobrenome" id="isobrenome">
+                        Sobrenome: <input type="text" name="sobrenome" id="isobrenome1" class="text">
                     </p>
                     <p>
                         <input type="submit" value="Enviar" id="button">
@@ -35,36 +35,42 @@
                 <h2>Formulário com label</h2>
                 <form action="inexistente.php" autocomplete="off">
                     <p>
-                        <label for="inome">Nome</label>
-                        <input type="text" name="nome" id="inome">
+                        <label for="inome2">Nome</label>
+                        <input type="text" name="nome" id="inome2" class="text">
                     </p>
                     <p>
-                        <label for="isobrenome">sobrenome</label>
-                        <input type="text" name="sobrenome" id="isobrenome">
+                        <label for="isobrenome2">sobrenome</label>
+                        <input type="text" name="sobrenome" id="isobrenome2" class="text">
                     </p>
                     <p>
-                        <input type="button" value="Enviar">
+                        <input type="button" value="Enviar" id="button">
                     </p>
                 </form>
                 <p>No texto de solitação de informação coloca-se um 'label', relacionando assim esse 'label' ao 'input' em sequência.</p>
+                <p>Além disso, o texto em si passa a ser clicável e ativando o input (muito útil para uso mobile).</p>
             </div>
         </section>
         <section class="tres">
             <div id="ul">
-                <p id="lista">Veja outros conteúdos:</p>
+                <h3 id="lista">Métodos 'GET' e 'POST' para formulários</h3>
+                <p>O método 'GET' é o método padrão, mas com ele os dados do formulário são inseridos na URL. Já o método 'POST' esconde os dados da URL, ainda que os dados sejam facilmente encontrados ao inspecionar no network o cadastro feito.</p>
+                <p>Para usá-los basta colocar o parâmetro 'method=" " ' em 'form', e preencher com o método desejado.</p>
+                <h3 id="ul">Quando usar 'GET' ou 'POST'?</h3>
                 <ul>
-                    <abbr title="Mais sobre a história do Mascote Android"><a href=""><li class="lista1" id="first1">História do Mascote Android</li></a></abbr>
-                    <abbr title="Mais sobre a Primeira Versão do Android"><a href="#"><li class="lista1">Primeira versão</li></a></abbr>
-                    <abbr title="Mais sobre a Segunda Versão do Android"><a href="#"><li class="lista1">Segunda versão</li></a></abbr>
-                    <abbr title="Mais sobre a Terceira Versão do Android"><a href="#"><li class="lista1">Terceira versão</li></a></abbr>
-                    <abbr title="Mais sobre a Quarta Versão do Android"><a href="#"><li class="lista1" id="last1">Quarta versão</li></a></abbr>
-                
-                    <abbr title="Mais sobre a Quinta Versão do Android"><a href="#"><li class="lista2" id="first2">Quinta versão</li></a></abbr>
-                    <abbr title="Mais sobre a Sexta Versão do Android"><a href="#"><li class="lista2">Sexta versão</li></a></abbr>
-                    <abbr title="Mais sobre a Sétima Versão do Android"><a href="#"><li class="lista2">Sétima versão</li></a></abbr>
-                    <abbr title="Mais sobre a Oitava Versão do Android"><a href="#"><li class="lista2">Oitava versão</li></a></abbr>
-                    <abbr title="Mais sobre a Última Versão do Android"><a href=""><li class="lista2" id="last2">Versão definitiva</li></a></abbr>
-                </ul>
+                    <li class="lista1" id="first">Método Get</li>
+                    <li class="lista1">Dados não sensíveis</li>
+                    <li class="lista1">Nomes, peso, altura</li>
+                    <li class="lista1">Dados de "procurar"</li>
+                    <li class="lista1">Marca de carro/roupa, etc</li>
+                    <li class="lista1" id="last1">Ou seja, tudo que não sejam dados sensíveis e que, o formulário como um todo, NÃO EXCEDA 3 mil bytes (3 mil caracteres).</li>
+                    
+                    <li class="lista2" id="first">Método Post</li>
+                    <li class="lista2">Dados sensíveis</li>
+                    <li class="lista2">Cartão, senha</li>
+                    <li class="lista2">Endereço, CEP</li>
+                    <li class="lista2">Envio de arquivos</li>
+                    <li class="lista2" id="last2">Ou seja, dados que necessitam um mínimo de sigilo ou que,o fomulário como um todo, EXCEDA 3 mil bytes (3 mil caracteres).</li>
+                </ul>                
             </div>
         </section>
     </main>
