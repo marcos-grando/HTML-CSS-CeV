@@ -12,9 +12,11 @@ MY KEYB --> ctrl + alt + numpad_0
 ctrl + K + C --> insere comentário (css e html)
 
 CENTRVERTICAL
-    PARENT -> CHILD
-    PARENT->DISPLAY: FLEX
-    CHILD->MARGIN: AUTO
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    Section>div, a div ficará centralizada com essas regras na section
 
 elemento fixado
     elemt{...

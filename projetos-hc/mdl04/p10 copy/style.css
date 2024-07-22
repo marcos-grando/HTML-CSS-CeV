@@ -1,0 +1,219 @@
+:root {
+    /* Cores principais */
+    --cor1: #0B0B1D;
+    --cor2: #090825;
+
+    /* Cores complementares */
+    --cor3: #e6e6e6;
+    --cor4: #f7f7f7;
+    --cor5: #ffffff;
+    --cor6: #BF71F0;
+    --cor61: #bf71f039;
+    --cor62: #443752;
+    --cor7: #E5FF0A;
+    --cor71: #e6ff0a89;
+    --cor72: #e6ff0ad2;
+
+    --cor8: #021b24;
+    --cor9: #1A0034;
+}
+
+body, html {
+    margin: 0; padding: 0;
+    font-family: 'Elaine Sans', 'Work Sans', sans-serif;
+    background-color: var(--cor1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+main{
+    max-width: 1000px;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.caixaurl { /* Adicionado */
+    background-color: var(--cor2);
+    border: 1px solid var(--cor7);
+    border-radius: 1px;
+    padding: 10px 20px;
+    position: absolute;
+    right: 0%; bottom: -0.7%;
+
+    a { /* Adicionado */
+        color: var(--cor7);
+        text-decoration: none;
+    }
+    a:hover { /* Adicionado */
+        text-decoration: underline;
+    }
+}
+
+section.container {
+    background-image: linear-gradient(360deg, var(--cor9) 30%, var(--cor2) 60%);
+    /*background-color: var(--cor2);*/
+    box-shadow: 0 0 10px var(--cor8);
+    border: 1px solid var(--cor7);
+    border-radius: 1px;
+    position: relative;
+    display: flex;
+    width: 100vw;
+    max-width: 1000px;
+    height: 700px;
+    padding: 10px;
+    text-align: center;
+
+    .janela1 {
+        background-color: transparent;
+        box-sizing: border-box;
+        overflow: hidden;
+        width: 250px;
+        height: 100%;
+        margin-right: 10px;
+        color: var(--cor4);
+        font-size: 0.7em;
+
+        .buttons-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            #button1{
+                padding: 10px 5px;
+            }
+            #button2{
+                border-left: 1px solid var(--cor9);
+                border-right: 1px solid var(--cor9);
+                padding: 10px 10px;
+
+            }
+            #button3{
+                padding: 10px 10px;
+            }
+            .button {
+                background-color: var(--cor7);
+                border: none;
+                border-radius: 0px;
+                margin: 0 0px;
+                flex: 1;
+                cursor: pointer;
+                color: var(--cor2);
+                font-weight: 500;
+                font-size: 1em;
+
+                &:hover{
+                    background-color: var(--cor72);
+                }
+                &.active {
+                    background-color: var(--cor71);
+                    color: var(--cor2);
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .modulos, .modulo {
+            background-color: var(--cor9);
+            border: 1px solid var(--cor5);
+            border-radius: 1px;
+            display: inline-block;
+            text-align: center;
+            width: 99%;
+            margin: 4px 0px 2px 0;
+            padding: 0;
+            cursor: pointer;
+
+            &:hover{
+                background-color: var(--cor61);
+            }
+
+            h1 {
+                padding: 10px 20px; margin: 0;
+                color: var(--cor3);
+                font-weight: 700;
+                font-variant: small-caps;
+            }
+            .info{
+                height: 602px;
+            }
+            .infos{
+                max-height: 495px; /* Incluindo mais módulos, reduzir esse tamanho */
+            }
+            .infos, .info {
+                background-color: var(--cor2);
+                border-top: 1px solid var(--cor5);
+                border-radius: 1px;
+                box-shadow: 0 0 5px var(--cor1);
+                max-width: 100%;
+                padding: 0 8px;
+                margin-top: 5px;
+                display: none; /* Oculta por padrão */
+                overflow: auto; /* Adiciona rolagem quando necessário */
+                color: var(--cor5);
+                text-align: left;
+                scrollbar-color: #e6ff0ab0 var(--cor1);
+                scrollbar-width: thin;
+
+                h2{
+                    color: var(--cor7);
+                }
+                a {
+                    color: var(--cor4);
+                    text-decoration: none;
+                    display: block;
+                    margin: 5px 0;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+                &::-webkit-scrollbar {
+                    width: 12px;
+                }
+                &::-webkit-scrollbar-track {
+                    background: var(--cor1);
+                }
+                &::-webkit-scrollbar-thumb {
+                    background-color: var(--cor7);
+                    border-radius: 10px;
+                    border: 3px solid var(--cor1);
+                }
+                &::-webkit-scrollbar-thumb:hover {
+                    background-color: darken(var(--cor7), 20%);
+                }
+            }
+        }
+
+        .opcao1-modulos.active,
+        .opcao2-modulos.active {
+            display: block;
+        }
+
+        .opcao1-modulos,
+        .opcao2-modulos {
+            display: none;
+        }
+    }
+
+    .janela2 {
+        border-left: 2px solid var(--cor71);
+        box-sizing: border-box;
+        overflow: hidden;
+        width: 100%;
+        padding-left: 10px;
+        color: var(--cor4);
+        position: relative; /* Adicionado */
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    }
+}
+

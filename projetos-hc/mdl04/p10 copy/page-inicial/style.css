@@ -1,0 +1,74 @@
+:root {
+    /* Cores principais */
+    --cor1: #0B0B1D;
+    --cor2: #090825;
+
+    /* Cores complementares */
+    --cor3: #e6e6e6;
+    --cor4: #f7f7f7;
+    --cor5: #ffffff;
+    --cor6: #BF71F0;
+    --cor61: #bf71f039;
+    --cor7: #E5FF0A;
+    --cor71: #e6ff0a89;
+
+    --cor8: #021b24;
+    --cor9: #1A0034;
+}
+
+body {
+    margin: 0; padding: 0;
+    font-family: 'Elaine Sans', 'Work Sans', sans-serif;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+section {
+    color: var(--cor3);
+    height: 100%;
+    padding: 0em 0; margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    div{
+        border-left: 2px solid var(--cor61);
+        border-right: 2px solid var(--cor61);
+        width: 700px;
+        height: auto;
+        margin: 20px auto;
+    }
+    h1{
+        color: var(--cor7);
+        font-size: 2.6rem;
+        margin: 0;
+        font-variant: small-caps;
+        
+    }
+    h2{
+        text-align: center;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 1.5rem;
+        padding: 0 15px;
+        margin: 0px 0 10px 0;
+    }
+    h3{
+        text-align: justify;
+        font-size: 1.1rem;
+        font-weight: 400;
+        line-height: 25px;
+        margin: 0 0px 15px 0;
+        padding: 0 50px;
+    }
+}

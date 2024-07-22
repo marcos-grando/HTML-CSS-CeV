@@ -1,20 +1,24 @@
 @charset "UTF-8";
 
-*{padding: 0px; margin: 0px;}
-
-body{
-    background-color: #420101;
-    display: flexbox;
+* {
+    padding: 0;
+    margin: 0;
 }
 
-section{
+body {
+    background-color: #420101;
+    display: flex; /* Corrigido para 'flex' */
+    flex-direction: column; /* Adicionado para garantir que o conteúdo seja exibido em coluna */
+}
+
+section {
     margin: auto;
     width: 60%;
     min-width: 500px;
     max-width: 700px;
 }
 
-header{
+header {
     border-bottom: solid 2px rgb(138, 101, 8);
     background-color: #0a5aa5;
     font: normal 600 clamp(1.2rem, 2.2vw, 1.5rem) montserrat;
@@ -24,46 +28,53 @@ header{
     height: 10vw;
     position: sticky;
 
-    section{
+    section {
         border-bottom: solid 2px darkgoldenrod;
         background-color: #186fc0;
         box-shadow: 0px 0px 5px 2px #00258b57;
         max-height: 100px;
         height: 10vw;
-        margin: auto;
-        position: sticky;
+        margin: 0 auto; /* Corrigido para manter o alinhamento */
+        position: relative;
         display: flex;
-        h1{
+        align-items: center; /* Alinha o conteúdo verticalmente no centro */
+
+        h1 {
             margin: auto;
         }
-    }    
+    }
 }
 
-main{
-    section#principal{
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    section#main { /* Corrigido para corresponder ao HTML */
         background-color: #6e0d0d;
         box-shadow: 0px 0px 5px 3px #300101ce;
-        height: 100%;
         padding-bottom: 50px;
-        h3{
+        
+        h3 {
             font: normal 500 2em montserrat; 
             color: aliceblue;
             padding: 25px;
             text-align: center;
             position: relative;
         }
-        table{
+        
+        table {
             margin: auto;
         }
     }
 }
 
-table{
+table {
     width: 400px;
     height: 300px;
     border-collapse: collapse;
-    tr{
-        td{
+    
+    tr {
+        td {
             background-color: aliceblue;
             border: solid 2px #300000b6;
             text-align: center;
@@ -71,26 +82,27 @@ table{
     }
 }
 
-footer{
+footer {
     border-top: solid 2px rgb(138, 101, 8);
     background-color: #0a5aa5;
-    font: normal 600 1em montserrat;
-    color: aliceblue;
+    box-shadow: 0px 0px 5px 2px #00258b49;
     width: 100%;
     height: 30px;
-    position: sticky;
 
-    section{
+    section {
         border-top: solid 2px darkgoldenrod;
         background-color: #186fc0;
-        box-shadow: 0px 0px 5px 2px #00258b49;
-        max-height: 100px;
-        height: 30px;
-        margin: -2px auto;
-        position: sticky;
+        height: 100%;
+        margin-top: -2px;
         display: flex;
-        h3{
-            margin: auto 10px auto auto;
+        align-items: center;
+        text-align: right;
+        justify-content: flex-end;   
+
+        h3 {
+            font: italic 500 1.2em montserrat;
+            color: aliceblue;
+            margin: 0 10px;
         }
-    } 
+    }
 }
