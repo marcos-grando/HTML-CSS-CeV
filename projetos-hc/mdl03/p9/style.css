@@ -1,11 +1,11 @@
 @charset "UTF-8";
 *{padding: 0px; margin: 0px;}
 
-html{height: 100vh;}
+html{height: 100%;}
 body{
     background-color: #420101;
-    height: 100%;
-    display: flexbox;
+    display: flex;
+    flex-direction: column;
 }
 
 section{
@@ -56,6 +56,7 @@ main{
     justify-content: center;
     align-items: center; 
     max-height: 100%;
+    flex: 1;
     
     section{
         background-color: #7c1313;
@@ -105,7 +106,7 @@ table{
 
 
 
-footer{
+/*footer{
     border-top: solid 2px rgb(138, 101, 8);
     background-color: #0a3f70;
     color: aliceblue;
@@ -125,6 +126,30 @@ footer{
         position: relative;
 
         h3{
+            font: italic 500 1em montserrat;
+            margin: auto 10px auto auto;
+        }
+    }
+}*/
+
+footer {
+    border-top: solid 2px rgb(138, 101, 8);
+    background-color: #0a3f70;
+    color: aliceblue;
+    width: 100%;
+    height: 30px;
+    section {
+        border-top: solid 2px darkgoldenrod;
+        background-color: #0a5aa5;
+        margin: -2px auto;
+        max-width: 600px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        text-align: right;
+        justify-content: flex-end;
+        position: relative;
+        h3 {
             font: italic 500 1em montserrat;
             margin: auto 10px auto auto;
         }
