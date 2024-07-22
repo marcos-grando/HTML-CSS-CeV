@@ -40,6 +40,7 @@ header{
         max-width: 600px;
         height: 45px;
         display: flex;
+        
         h1{
             font: normal 600 clamp(1.4rem, 2.2vw, 1.9rem) montserrat;
             margin: auto;
@@ -54,7 +55,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center; 
-    height: 800px;
+    max-height: 100%;
     
     section{
         background-color: #7c1313;
@@ -120,7 +121,8 @@ footer{
         display: flex;
         align-items: center;
         text-align: right;
-        justify-content: flex-end;  
+        justify-content: flex-end;
+        position: relative;
 
         h3{
             font: italic 500 1em montserrat;
