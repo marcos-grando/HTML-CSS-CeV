@@ -31,9 +31,11 @@ html, body{
 header {
     border-bottom: solid 4px var(--cor7);
     background-color: var(--cor1);
+    padding: 1em 0;
+
     color: var(--cor3);
     font-variant: small-caps;
-    padding: 1em 0;
+    font-size: 0.82em;
     text-align: center;
     div{
         max-width: 700px;

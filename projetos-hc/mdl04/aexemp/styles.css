@@ -1,0 +1,99 @@
+/* Paleta de Cores */
+:root {
+    /* Backgrounds */
+    --cor0: #ffffff;
+    --cor1: #0B0B1D;
+    --cor2: #f7f7f7;
+
+    /* Background secundários */
+    --cor3: #090825; /* azul escuro */
+    --cor4: #e6e6e6; /* Txt desses bgs */
+    --cor5: #1A0034; /* roxo escuro */
+
+    --cor6: #BF71F0;
+    --cor61: #bf71f039;
+    --cor62: #443752;
+    --cor7: #E5FF0A;
+    --cor71: #e6ff0a89;
+    --cor72: #e6ff0ad2;
+}
+
+*{padding: 0; margin: 0; box-sizing: border-box;}
+html, body{
+    font-family: 'Elaine Sans', 'Work Sans', sans-serif;
+    background-color: var(--cor0);
+    color: var(--cor1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    border-bottom: solid 2px var(--cor7);
+    background-color: var(--cor1);
+    width: 100%; height: 80px;
+
+    div{
+        max-width: 700px; height: 100%;
+        margin: auto;
+        font-variant: small-caps;
+        color: var(--cor0);
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    section{
+        padding: 2em;
+        text-align: center;
+        div{
+            max-width: 700px;
+            margin: auto;
+        }
+    }
+    .primeiro{
+        background-color: var(--cor3);
+        color: var(--cor4);
+    }
+    .segundo{
+        background-color: var(--cor2);
+        color: var(--cor3);
+    }
+    .terceiro{
+        background-color: var(--cor5);
+        color: var(--cor4);
+    }
+    .quarto{
+        background-color: var(--cor0);
+        color: var(--cor5);
+    }
+}
+
+
+footer {
+    border-top: solid 2px var(--cor7);
+    background-color: var(--cor1);
+    box-shadow: 0 0 5px var(--cor62);
+    width: 100%; height: 40px;
+
+    div{
+        max-width: 700px; height: 100%;
+        margin: auto;
+        font-weight: 200;
+        color: var(--cor0);
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h3{
+            font-weight: 400;
+        }
+    }
+}
+

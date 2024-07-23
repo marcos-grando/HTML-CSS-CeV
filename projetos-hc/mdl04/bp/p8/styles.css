@@ -1,0 +1,190 @@
+/* Paleta de Cores */
+:root {
+    /* Backgrounds */
+    --cor0: #ffffff;
+    --cor1: #0B0B1D;
+    --cor2: #f7f7f7;
+
+    /* Background secundários */
+    --cor3: #090825; /* azul escuro */
+    --cor4: #e6e6e6; /* Txt desses bgs */
+    --cor5: #1A0034; /* roxo escuro */
+
+    --cor6: #BF71F0;
+    --cor61: #bf71f039;
+    --cor62: #963ecd;
+    --cor7: #E5FF0A;
+    --cor71: #e6ff0a89;
+    --cor72: #e6ff0ab3;
+}
+
+*{padding: 0; margin: 0; box-sizing: border-box;}
+html, body{
+    font-family: 'Elaine Sans', 'Work Sans', sans-serif;
+    background-color: var(--cor0);
+    color: var(--cor1);
+    width: 100%;
+    height: 100%;
+    padding: 0; margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-image: linear-gradient(90deg, var(--cor5) 5%, var(--cor1) 20%, var(--cor1) 80%, var(--cor5) 95%);
+    border-bottom: solid 2px var(--cor7);
+    width: 100%;
+
+    div{
+        max-width: 650px; height: 60px;
+        margin: auto;
+        font-variant: small-caps;
+        font-size: 1em;
+        color: var(--cor0);
+        text-align: center;
+        line-height: 35px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    section{
+        padding: 1em 0 2em 0;
+        text-align: center;
+        div{
+            color: var(--cor4);
+            max-width: 650px;
+            margin: auto;
+            h2{
+                font-size: 1.7em;
+            }
+            p{
+                margin: 5px 5px 10px 5px;
+            }
+        }
+    }
+    input[type="submit"],input[type="reset"]{
+        background-color: var(--cor4);
+        border: 1px solid var(--cor1);
+        border-radius: 4px;
+        margin: 5px 5px 0 0;
+        padding: 2px 4px;
+        color: var(--cor5);
+    }
+    input[type="text"]{
+        border: 2px solid var(--cor1);
+        border-radius: 2px;
+    }
+    .primeiro{
+        background-color: var(--cor3); /* 3-4 -- 2-3 */
+        width: 100%; 
+
+        .click{
+            text-align: left;
+            font-size: 1em;
+            font-weight: 400;
+            padding-bottom: 5px;
+            a{
+                text-decoration: none;
+                color: var(--cor72);
+                font-weight: 600;
+            }
+            a:hover{
+                text-decoration: underline;
+                color: var(--cor7);
+            }
+        }
+        div{
+            color: var(--cor4);
+            text-align: left;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .segundo{
+        background-color: var(--cor2);
+        width: 100%; 
+        
+        div{
+            color: var(--cor3);
+            text-align: left;
+            align-items: center;
+            justify-content: center;
+            ul{
+                list-style-position: inside;
+            }
+        }
+    }
+
+    .terceiro{
+        background-color: var(--cor3);
+        width: 100%;
+        display: flex;
+
+        div{
+            color: var(--cor4);
+            text-align: left;
+            align-items: center;
+            justify-content: center;
+            p{
+                margin-bottom: 10px;
+            }
+        }
+        .txtcd{
+            background-color: var(--cor5);
+            border: 1px solid var(--cor61);
+            width: 100%;
+            max-width: 650px;
+            padding: 10px;
+            margin: 0 auto 20px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            textarea{
+                align-self: center;
+                border: none;
+                resize: none;
+                width: auto;
+                box-sizing: border-box;
+                width: 100%;
+                max-width: 600px;
+            }
+            p{
+                margin-left: 15px;
+                align-self: flex-start;
+            }
+        }
+    }
+}
+
+
+footer {
+    background-image: linear-gradient(90deg, var(--cor5) 5%, var(--cor1) 20%, var(--cor1) 80%, var(--cor5) 95%);
+    border-top: solid 2px var(--cor7);
+    box-shadow: 0 0 5px var(--cor62);
+    width: 100%;
+    color: var(--cor0);
+
+    div{
+        max-width: 650px; height: 40px;
+        margin: auto;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h3{
+            font-weight: 400;
+        }
+    }
+}
+

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms controles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Controles de formulário</h1>
+        </div>
+    </header>
+    <main>
+        <section class="primeiro">
+            <div>
+                <h3 class="click"><a href="index.html">Voltar</a></h3>
+                <h2>Conhecendo mais sobre </h2>
+                <p>Importante ressaltar que alguns atributos e controles podem não funcionar dependendo do navegador. Portanto, deve-se sempre verificar os principais navegadores antes de definir o uso de cada ferramenta.</p>
+                <p>Nem todos os atributos funcionando em todos os controles. Por exemplo, os atributos max/min definem o número máximo e número mínimo aceito pelo input, ou seja, são atributos para controles numéricos. Já minlenght/maxlenght são número totais de caracteres aceitos, funcionam num geral.<br></p>
+            </div>
+        </section>
+        <section class="segundo">
+            <div>
+                <h2>Mais alguns controles:</h2>
+                <ul>
+                    <li>type="number": cria um campo de entrada numérica onde o usuário pode inserir números;</li>
+                    <li>type="month": cria um campo para selecionar um mês e um ano.;</li>
+                    <li>type="date": cria um campo para selecionar uma data completa (dia, mês e ano);</li>
+                    <li>type="time": cria um campo para selecionar uma hora e minutos.</li>
+                </ul>
+                <h2>Mais alguns atributos:</h2>
+                <ul>
+                    <li>value="": Pré estabelece um valor inicial para o input;</li>
+                    <li>min="": define o menor número aceito pelo input;</li>
+                    <li>max="": define o maior número aceito pelo input;</li>
+                    <li>step="": define o incremento entre os valores no input (1.0, 1.1, 1.2.. ou 1.0, 1.5, 2.0..).</li>
+                </ul><br>
+            </div>
+        </section>
+        <section class="terceiro">
+                <div>
+                    <h2>Usando esses controles/atributos</h2>
+                    <p>Os códigos abaixos são penas para exemplificação. Normalmente usa-se os 'inputs' em conjunto com 'label' e toda estrutura deve ser feita dentro de 'form'.</p>
+                    <p>São alguns passos para fazer um formulário simples de cadastro com login e senha. Abaixo foram usados 'input' text e password, além de submit e reset.</p>
+                    
+                    <p>Assim como anteriormente, esses códigos abaixo são apenas para exemplificar o que foi aprendido. São alguns passos para criar um formulário de aluno com nome, notas, data de prova, etc. Foram  Abaixo foram usados 'input' number, month, date e time.</p>
+
+                    <div class="txtcd">
+                        <textarea readonly rows="4" class="codeTextarea">
+                            <input type="number" name="media" id="media" min="0" max="10" placeholder="0 à 10" step="0.1" value="5" required>
+                        </textarea>
+                        <p>'input type="number"'</p>
+                        <p>
+                            <label for="media">Média:</label>
+                            <input type="number" name="media" id="media" min="0" max="10" placeholder="0 à 10" step="0.1" value="5" required>
+                        </p>
+                    </div>
+
+                    <div class="txtcd">
+                        <textarea readonly rows="4" class="codeTextarea">
+                            <input type="month" name="mes" id="mes" value="2024-07">
+                        </textarea>
+                        <p>'input type="month"'</p>
+                        <p>
+                            <label for="mes">Mês letivo:</label>
+                            <input type="month" name="mes" id="mes" value="2024-07">
+                        </p>
+                    </div>
+
+                    <div class="txtcd">
+                        <textarea readonly rows="4" class="codeTextarea">
+                            <input type="date" name="dia" id="dia" value="2020-07-23">
+                        </textarea>
+                        <p>'input type="date"'</p>
+                        <p>
+                            <label for="dia">Dia da prova:</label>
+                            <input type="date" name="dia" id="dia" value="2020-07-23">
+                        </p>
+                    </div>
+
+                    <div class="txtcd">
+                        <textarea readonly rows="4" class="codeTextarea">
+                            <input type="time" name="hora" id="hora">
+                        </textarea>
+                        <p>'input type="time"'</p>
+                        <p>
+                            <label for="hora">Horário:</label>
+                            <input type="time" name="hora" id="hora">
+                        </p>
+                    </div>
+                    <p>OBS: O valor de 'value=""', dentro de 'month' e 'date', foi atribuído manualmente. Mas pode ser usado javascript para que esse processo seja feito sempre, atualizando com a data/mês atual.</p><br>
+
+                    <div>
+                        <h3>Formulário simples de aluno:</h3>
+                        <form action="inexistente.php" method="post" autocomplete="off">
+                            <p>
+                                <label for="ialuno">Aluno</label>
+                                <input type="text" name="aluno" id="ialuno" maxlength="30" placeholder="Nome do aluno" required>
+                            </p>
+                            <p>
+                                <label for="inota">Nota:</label>
+                                <input type="number" name="nota" id="inota" min="0" max="10" placeholder="0 à 10" step="0.1" value="5" required>
+                            </p>
+                            <p>
+                                <label for="imes">Mês letivo:</label>
+                                <input type="month" name="mes" id="imes" value="2024-07">
+                            </p>
+                            <p>
+                                <label for="idia">Dia da prova:</label>
+                                <input type="date" name="dia" id="idia" value="2020-07-23">
+                            </p>
+                            <p>
+                                <label for="ihora">Horário:</label>
+                                <input type="time" name="hora" id="ihora">
+                            </p>
+                            <p>
+                                <input type="submit" value="Enviar">
+                                <input type="reset" value="Limpar">
+                            </p>
+                        </form>
+                    </div>
+                    <div class="txtcd">
+                        <textarea readonly rows="17" class="codeTextarea">
+                            <form action="inexistente.php" method="post" autocomplete="off">
+                                .  <label for="ialuno">Aluno</label>
+                                .  <input type="text" name="aluno" id="ialuno" maxlength="30" placeholder="Nome do aluno" required>
+                                .  <label for="imedia">Média:</label>
+                                .  <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 à 10" step="0.1" value="5" required>
+                                .  <label for="imes">Mês letivo:</label>
+                                .  <input type="month" name="mes" id="imes" value="2024-07">
+                                .  <label for="idia">Dia da prova:</label>
+                                .  <input type="date" name="dia" id="idia" value="2020-07-23">
+                                .  <label for="ihora">Horário:</label>
+                                .  <input type="time" name="hora" id="ihora">
+                                .  <input type="submit" value="Enviar">
+                                .  <input type="reset" value="Limpar">
+                        </form>
+                        </textarea>
+                        <p>Cada conjunto de 'label'+'input' estão dentro de um 'p'. Mas decidi não mostrar no 'textarea' para não ficar extenso/poluído.</p>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <h3>Desenvolvido por Marcos Grando</h3>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        var textareas = document.querySelectorAll(".codeTextarea");
+        textareas.forEach(function(textarea) {
+            var text = textarea.value;
+            textarea.value = text.replace(/^\s+/gm, '');
+        });
+    });
+    </script>
+</body>
+</html>

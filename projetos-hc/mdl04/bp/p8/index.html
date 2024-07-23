@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms controles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Controles de formulário</h1>
+        </div>
+    </header>
+    <main>
+        <section class="primeiro">
+            <div>
+                <h3 class="click">Controles de formulário: <a href="page002.html">ver mais</a></h3>
+                <h2>Construindo um formulário</h2>
+                <p>Ao decorrer da página farei alguns passos que compõem um formulário de cadastro 'login e senha', juntamente com o uso de alguns importantes atributos para um funcionamento certo desses controles.</p>
+                <p>Os 'input' são controles com suas respectivas funcionalidades.<br>Os 'atributos' são as configurações desses controles.</p>
+            </div>
+        </section>
+        <section class="segundo">
+            <div>
+                <h2>Alguns controles:</h2>
+                <ul>
+                    <li>type="text": cria um campo de texto para inserção de dados;</li>
+                    <li>type="password": cria um campo de 'texto oculto' para inserção de senhas;</li>
+                    <li>type="submit": cria um botão para envio de dados do formulário;</li>
+                    <li>type="reset": cria um botão para redefinir os dados do formulário.</li>
+                </ul>
+                <h2>Alguns atributos:</h2>
+                <ul>
+                    <li>required: torna o campo de preenchimento obrigatório;</li>
+                    <li>placeholder="": texto temporário que serve como dica do valor esperado;</li>
+                    <li>minlength="": define o número mínimo de caracteres necessário;</li>
+                    <li>maxlength="": define o número máximo de caracteres permitido;</li>
+                    <li>size="": largura do campo de preenchimento (em nº de caracteres).</li>
+                </ul>
+            </div>
+        </section>
+        <section class="terceiro">
+                <div>
+                    <h2>Usando esses controles/atributos</h2>
+                    <p>Os códigos abaixos são penas para exemplificação. Normalmente usa-se os 'inputs' em conjunto com 'label' e toda estrutura deve ser feita dentro de 'form'.</p>
+                    <p>São alguns passos para fazer um formulário simples de cadastro com login e senha. Abaixo foram usados 'input' text e password, além de submit e reset.</p>
+
+                    <div class="txtcd">
+                        <textarea readonly rows="4" class="codeTextarea">
+                            <input type="text" name="login" id="ilogin" placeholder="Seu login..." minlength="4" maxlength="30" size="20" required>
+                        </textarea>
+                        <p>'input type="text"'</p>
+                        <p>
+                            <label for="ilogin">Login:</label>
+                            <input autocomplete="off" type="text" name="login" id="ilogin" placeholder="Seu login..." minlength="4" maxlength="30" size="20" required>
+                        </p>
+                    </div>
+
+                    <div class="txtcd">
+                        <textarea readonly rows="4" class="codeTextarea">
+                            <input type="password" name="senha" id="isenha" placeholder="Minímo 8 caracteres..." minlength="8" maxlength="20" size="16" required>
+                        </textarea>
+                        <p>'input type="password"'</p>
+                        <p>
+                            <label for="isenha">Senha:</label>
+                            <input autocomplete="off" type="password" name="senha" id="isenha" placeholder="Minímo 8 caracteres..." minlength="8" maxlength="20" size="20" required>
+                        </p>
+                    </div>
+
+                    <div class="txtcd">
+                        <textarea readonly rows="4" class="codeTextarea">
+                            <input type="submit" value="Cadastrar"> <input type="reset" value="Limpar">
+                        </textarea>
+                        <p>'input type="submit"' e 'type="reset"'</p>
+                        <p>
+                            <input type="submit" value="Cadastrar"><input type="reset" value="Limpar">
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3>Formulário simples de cadastro:</h3>
+                        <form action="inexistente.php" method="post" autocomplete="off">
+                            <p><label for="iilogin">Login:</label>
+                                <input autocomplete="off" type="text" name="login" id="iilogin" placeholder="Seu login..." minlength="4" maxlength="30" size="20" required></p>
+                            <p><label for="iisenha">Senha:</label>
+                                <input autocomplete="off" type="password" name="senha" id="iisenha" placeholder="Minímo 8 caracteres..." minlength="8" maxlength="20" size="20" required></p>
+                            <p><input type="submit" value="Cadastrar"><input type="reset" value="Limpar"></p>
+                        </form>
+                    </div>
+                    <div class="txtcd">
+                        <textarea readonly rows="12" class="codeTextarea">
+                            <form action="inexistente.php" method="post" autocomplete="off">
+                                .  <label for="iilogin">Login:</label>
+                                .  <input autocomplete="off" type="text" name="login" id="iilogin" placeholder="Seu login..." minlength="4" maxlength="30" size="20" required>
+                                .  <label for="iisenha">Senha:</label>
+                                .  <input autocomplete="off" type="password" name="senha" id="iisenha" placeholder="Minímo 8 caracteres..." minlength="8" maxlength="20" size="20" required>
+                                .  <input type="submit" value="Cadastrar"><input type="reset" value="Limpar">
+                            </form>
+                        </textarea>
+                        <p>Cada conjunto de 'label'+'input' estão dentro de um 'p'. Mas decidi não mostrar no 'textarea' para não ficar extenso/poluído.</p>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <h3>Desenvolvido por Marcos Grando</h3>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        var textareas = document.querySelectorAll(".codeTextarea");
+        textareas.forEach(function(textarea) {
+            var text = textarea.value;
+            textarea.value = text.replace(/^\s+/gm, '');
+        });
+    });
+    </script>
+</body>
+</html>

@@ -12,8 +12,23 @@
         h1, h2, h3, p {
             color: rgb(0, 230, 199);
         }
-        ol, ul {
+        ol, ul, dl {
             color: antiquewhite;
+            max-width: 600px;
+            list-style-position: inside;
+            p{
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+        }
+        dl.padd{
+            padding-left: 40px;
+        }
+        dl.padcss{
+            padding-left: 40px;
+            line-height: 20px;
+            dd{
+                padding-bottom: 15px;}
         }
         a{
             color: aliceblue;
@@ -21,25 +36,44 @@
     </style>
 </head>
 <body>
-    <h1>Tabalhando com Listas</h1>
-    
+    <h1>Tabalhando com Listas</h1>   
     <p>Ver sobre <a href="b_mistas_deDefinição.html"><ins>listas mistas e de definição</ins></a>!</p>
 
-    <h2>Listas Ordenadas</h2>
+    <dl>
+        <p>Existem três tipos de listas:</p>
+        <dt>Lista 'ordenada':</dt>
+            <dd>Lista de itens feito sob uma ordem numerada ou alfabética. Cada item recebe um número ou letra que destaca sua ordem.</dd>
+        <dt>Lista 'não ordenada'':</dt>
+            <dd>Itens da lista não possuem nenhuma ordem definida. Cada item recebe um símbolo que o espefifica.</dd>
+        <dt>Lista 'de definição':</dt>
+            <dd>Cada item listado pode receber uma definição (ou descrição) de seu significado.</dd>
+    </dl>
+
+    <h3>Sobre listas ordenadas e não ordendas:</h3>
     <ol type="1", start="0">    <!--1, A, a, I, i-->
+        <p>Lista ordenada <strong>'ol'>'li'</strong></p>
         <li>Manteiga</li>
         <li>Tomate</li>
         <li>Carne</li>
         <li>arroz</li>
     </ol>
 
-    <h2>Listas NÃO Ordenadas</h2>
     <ul type="square">          <!--disc, circle, square-->
+        <p>Lista não ordenada <strong>'ul'>'li'</strong></p>
         <li>Manteiga</li>
         <li>Tomate</li>
         <li>Carne</li>
         <li>arroz</li>
-    </ul>
+    </ul><br>
+
+
+    <dl class="padcss">
+        <p>Regras úteis CSS</p>
+        <dt>list-style-position:</dt>
+            <dd>define a formatação dos símbolos (outside = padrão/fora da formatação, inside = dentro da formatação);</dd>
+        <dt>'list-style-type':</dt>
+            <dd>define o simbolo usado para cada item listado. (square = quadrado, disc = bolinha, circle = círculo oco, etc)</dd>
+    </dl>
 
 </body>
 </html>
