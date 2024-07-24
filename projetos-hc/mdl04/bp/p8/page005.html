@@ -17,12 +17,12 @@
             <div>
                 <h3 class="click">Veja mais: <a href="index.html">Início</a> | <a href="page002.html">data/numb/step</a> | <a href="page003.html">fieldset/pattern</a> | <a href="page004.html">checkbox/radio/value</a> | <em class="last">color/range/file</em></h3>
 
-                <h2>Controles de opções e seus 'values'</h2>
-                <p>Os 'inputs' checkbox e radio são usados para criar opções de seleção em formulários, permitindo que o usuário possa interagir escolhendo uma ou mais oções. Esses controles oferecem diferentes formas de coleta de dados do usuário.</p>
-                <p>Checkbox: Seleção múltipla.<br>
-                Radio: Seleção Única.</p>
-                <p>O atributo 'value' desses 'inputs' define o valor enviado ao servidor quando o formulário for finalizado ('submetido'). É crucial para identificação e processamento das escolhas do usuário.</p>
-                <p>Por exemplo, se o usuário marcar 'futebol' mas o atributo value estiver definido como 'vôlei', o servidor receberá 'vôlei'. Portanto, é essencial revisar e garantir que o value esteja corretamente configurado para refletir as opções selecionadas.</p>
+                <h2>Controles visuais</h2>
+                <p>Inputs 'type="color"', 'type="range"' e 'type="file"' são controles de formulário que oferecem interfaces e interativas para seleção e ajuste visuais.</p>
+                <p>Color: Seletor visual de cores.<br>
+                Range: Controle deslizante entre intervalos de valores.<br>
+                File: Permite selecionar e faezr upload de arquivos.</p>
+                <p>Importante conferir a compatibilidade dos navegadores aos controles usados. Observar como esses inputs se comportam, pelo menos, nos principais navegadores do mercado.</p>
             </div>
         </section>
 
@@ -30,17 +30,20 @@
             <div>
                 <h2>Controles:</h2>
                 <ul>
-                    <h3><strong>¬ checkbox:</strong></h3>
-                    <li>type="checkbox": cria uma caixa de seleção que permite marcar múltiplas opções simultaneamente;</li>
-                    <li>'value': define o valor enviado ao selecionar a caixa;</li>
-                    <li>'name': agrupa caixas de seleção para processamento no servidor;</li>
-                    <li>'checked': determina a caixa pré selecionada inicialmente.</li><br>
+                    <h3><strong>¬ Color:</strong></h3>
+                    <li>type="color": cria um controle que permite ao usuário selecionar uma cor;</li>
+                    <li>'value': define uma cor pré definida;</li><br>
 
-                    <h3><strong>¬ radio:</strong></h3>
-                    <li>type="radio": cria opções de seleção onde apenas uma opção pode ser marcada por grupo;</li>
-                    <li>'value': define o valor enviado ao selecionar o botão;</li>
-                    <li>'name': agrupa as opções de seleção para permitir seleção única;</li>
-                    <li>'checked': determina uma opção pré selecionada inicialmente.</li>
+                    <h3><strong>¬ Range:</strong></h3>
+                    <li>type="range": ria um controle deslizante que permite ao usuário selecionar um valor dentro de um intervalo especificado;</li>
+                    <li>'min': define o valor mínimo do intervalo;</li>
+                    <li>'max': define o valor máximo do intervalo;</li>
+                    <li>'step': define o incremento dos valores no intervalo.</li><br>
+
+                    <h3><strong>¬ File:</strong></h3>
+                    <li>type="file": cria um controle que permite ao usuário selecionar um ou mais arquivos de seu dispositivo para upload;</li>
+                    <li>'accept': define os tipos de arquivo que o controle pode aceitar (por exemplo, accept="image/*" para apenas imagens);</li>
+                    <li>'multiple': permite selecionar múltiplos arquivos.</li>
                 </ul><br>
             </div>
         </section>
@@ -48,7 +51,7 @@
         <section class="terceiro">
                 <div>
                     <h2>Usando esses controles/atributos</h2>
-                    <p>Assim como anteriormente, os códigos abaixo são apenas para exemplificar o que foi estudado aqui. São alguns passos para criar um formulário com opções de seleção. Abaixo foram usados os 'inputs' checkbox e radio.</p>
+                    <p>Assim como anteriormente, os códigos abaixo são apenas para exemplificar o que foi estudado aqui. São alguns passos para criar um formulário de perfil com interações visuais e definições de dados.</p>
 
                     <div class="txtcd">
                         <textarea readonly rows="2" class="codeTextarea">
@@ -84,7 +87,7 @@
                     </div>
 
                     <div class="define">
-                        <h3>Formulário com 'opções de seleção'</h3>
+                        <h3>Formulário de perfil</h3>
                         <form action="" method="post" autocomplete="off">
                             <fieldset>
                                 <legend>Seus dados</legend>
@@ -105,7 +108,6 @@
                                     <input type="radio" name="esporte" id="iten" value="tênis"><label for="iten"> Tênis</label>
                                 </p>
                             </fieldset>
-                            <input type="submit" value="Confirmar">
                         </form><br>
                         <form action="inexistente.php" method="post" autocomplete="off">
                             <fieldset>
@@ -161,7 +163,6 @@
                             .. .. <input type="radio" name="esporte" id="iten" value="tênis">
                             .. .. <label for="iten"> Tênis</label>
                             .. </fieldset>
-                            .. <input type="submit" value="Confirmar">
                             </form><br>
                             .
                             <form action="inexistente.php" method="post" autocomplete="off">
