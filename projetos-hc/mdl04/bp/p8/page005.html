@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkbox e radio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Controles de formulário</h1>
+        </div>
+    </header>
+    <main>
+        <section class="primeiro">
+            <div>
+                <h3 class="click">Veja mais: <a href="index.html">Início</a> | <a href="page002.html">data/numb/step</a> | <a href="page003.html">fieldset/pattern</a> | <a href="page004.html">checkbox/radio/value</a> | <em class="last">color/range/file</em></h3>
+
+                <h2>Controles de opções e seus 'values'</h2>
+                <p>Os 'inputs' checkbox e radio são usados para criar opções de seleção em formulários, permitindo que o usuário possa interagir escolhendo uma ou mais oções. Esses controles oferecem diferentes formas de coleta de dados do usuário.</p>
+                <p>Checkbox: Seleção múltipla.<br>
+                Radio: Seleção Única.</p>
+                <p>O atributo 'value' desses 'inputs' define o valor enviado ao servidor quando o formulário for finalizado ('submetido'). É crucial para identificação e processamento das escolhas do usuário.</p>
+                <p>Por exemplo, se o usuário marcar 'futebol' mas o atributo value estiver definido como 'vôlei', o servidor receberá 'vôlei'. Portanto, é essencial revisar e garantir que o value esteja corretamente configurado para refletir as opções selecionadas.</p>
+            </div>
+        </section>
+
+        <section class="segundo">
+            <div>
+                <h2>Controles:</h2>
+                <ul>
+                    <h3><strong>¬ checkbox:</strong></h3>
+                    <li>type="checkbox": cria uma caixa de seleção que permite marcar múltiplas opções simultaneamente;</li>
+                    <li>'value': define o valor enviado ao selecionar a caixa;</li>
+                    <li>'name': agrupa caixas de seleção para processamento no servidor;</li>
+                    <li>'checked': determina a caixa pré selecionada inicialmente.</li><br>
+
+                    <h3><strong>¬ radio:</strong></h3>
+                    <li>type="radio": cria opções de seleção onde apenas uma opção pode ser marcada por grupo;</li>
+                    <li>'value': define o valor enviado ao selecionar o botão;</li>
+                    <li>'name': agrupa as opções de seleção para permitir seleção única;</li>
+                    <li>'checked': determina uma opção pré selecionada inicialmente.</li>
+                </ul><br>
+            </div>
+        </section>
+
+        <section class="terceiro">
+                <div>
+                    <h2>Usando esses controles/atributos</h2>
+                    <p>Assim como anteriormente, os códigos abaixo são apenas para exemplificar o que foi estudado aqui. São alguns passos para criar um formulário com opções de seleção. Abaixo foram usados os 'inputs' checkbox e radio.</p>
+                    
+                    <div class="txtcd">
+                        <textarea readonly rows="5" class="codeTextarea">
+                            <input type="checkbox" name="fut" id="fut" checked>
+                            <input type="checkbox" name="bas" id="bas">
+                            <input type="checkbox" name="vol" id="vol">
+                            <input type="checkbox" name="ten" id="ten">
+                        </textarea>
+                        <p>'input type="checkbox"'</p>
+                        <p>
+                            <input type="checkbox" name="fut" id="fut" checked><label for="fut">Futebol</label><br>
+                            <input type="checkbox" name="bas" id="bas"><label for="bas">Basquete</label><br>
+                            <input type="checkbox" name="vol" id="vol"><label for="vol">Volêi</label><br>
+                            <input type="checkbox" name="ten" id="ten"><label for="ten">Tênis</label>
+                        </p>
+                    </div>
+
+                    <div class="txtcd">
+                        <textarea readonly rows="4" class="codeTextarea">
+                            <input type="radio" name="sexo" id="masc" value="masculino">
+                            <input type="radio" name="sexo" id="fem" value="feminino">
+                        </textarea>
+                        <p>'input type="radio"'</p>
+                        <p>
+                            <input type="radio" name="testsexo" id="masc" value="masculino" checked><label for="masc">Masculino</label><br>
+                            <input type="radio" name="testsexo" id="fem" value="feminino"><label for="fem">Feminino</label>
+                        </p>
+                    </div>
+
+                    <div class="define">
+                        <h3>Formulário com 'opções de seleção'</h3>
+                        <form action="" method="post" autocomplete="off">
+                            <fieldset>
+                                <legend>Seus dados</legend>
+                                <p>
+                                    <label for="inome">Nome:</label>
+                                    <input type="text" name="nome" id="inome" maxlength="30" placeholder="Seu nome..." required>
+                                </p>
+                                <p>
+                                    <input type="radio" name="sexo" id="imasc" value="masculino" checked>
+                                    <label for="imasc">Masculino</label><br>
+                                    <input type="radio" name="sexo" id="ifem" value="feminino">
+                                    <label for="ifem">Feminino</label>
+                                </p>
+                                <p>Esporte favorito:<br>
+                                    <input type="radio" name="esporte" id="ifut" value="futebol" checked><label for="ifut"> Futebol</label><br>
+                                    <input type="radio" name="esporte" id="ibas" value="basquete"><label for="ibas"> Basquete</label><br>
+                                    <input type="radio" name="esporte" id="ivol" value="vôlei"><label for="ivol"> Volêi</label><br>
+                                    <input type="radio" name="esporte" id="iten" value="tênis"><label for="iten"> Tênis</label>
+                                </p>
+                            </fieldset>
+                            <input type="submit" value="Confirmar">
+                        </form><br>
+                        <form action="inexistente.php" method="post" autocomplete="off">
+                            <fieldset>
+                                <legend>Seu perfil</legend>
+                                <p>
+                                    <label for="icor">Cor do perfil: </label>
+                                    <input type="color" name="cor" id="icor" value="#E5FF0A">
+                                </p>
+                                <p>
+                                    <label for="ihumor">Seu humor: </label>
+                                    <input type="range" name="humor" id="ihumor" min="1" max="3" value="2">
+                                </p>
+                                <p>
+                                    <label for="ifoto">Foto do perfil:</label>
+                                    <input type="file" name="foto" id="ifoto">
+                                </p>
+                            </fieldset>
+                        </form>
+                    </div><br>
+                    <div class="perfil">
+                        <div class="idperfil">
+                            <div class="imgperfil">
+
+                            </div>
+                            <div class="humorperfil">
+                                <p class="nome">Fulano Ciclano Beltrano</p>
+                                <p class="humor">Humor: &#128528</p>
+                                <p class="sexo">Sexo: masculino</p>
+                                <p class="esporte">Ama futebol</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="txtcd">
+                        <textarea readonly rows="17" class="codeTextarea">
+                            <form action="inexistente.php" method="post" autocomplete="off">
+                                .. <fieldset>
+                                    .. .. <legend> Esporte favorito: </legend>
+                                    .. .. <input type="checkbox" name="fut" id="fut" checked>
+                                    .. .. <label for="fut">Futebol</label><br>
+                                    .. .. <input type="checkbox" name="bas" id="bas">
+                                    .. .. <label for="bas">Basquete</label><br>
+                                    .. .. <input type="checkbox" name="vol" id="vol">
+                                    .. .. <label for="vol">Volêi</label><br>
+                                    .. .. <input type="checkbox" name="ten" id="ten">
+                                    .. .. <label for="ten">Tênis</label>
+                                .. </fieldset>
+                                .. <fieldset>
+                                    .. .. <legend> Sexo: </legend>
+                                    .. .. <input type="radio" name="sexo" id="masc" value="masculino" checked>
+                                    .. .. <label for="masc">Masculino</label><br>
+                                    .. .. <input type="radio" name="sexo" id="fem" value="feminino">
+                                    .. .. <label for="fem">Feminino</label>
+                                .. </fieldset>
+                                .. <input type="submit" value="Enviar">
+                                .. <input type="reset" value="Limpar">
+                            </form>
+                        </textarea>
+                        <p>Cada conjunto de 'label'+'input' estão dentro de um 'p'. Mas decidi não mostrar no 'textarea' para não ficar mais extenso/poluído.</p>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <h3>Desenvolvido por Marcos Grando</h3>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
