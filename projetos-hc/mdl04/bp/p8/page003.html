@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pattern e fieldset</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Controles de formulário</h1>
+        </div>
+    </header>
+    <main>
+        <section class="primeiro">
+            <div>
+                <h3 class="click"><a href="index.html">Início</a>, <a href="page002.html">form aluno/nota</a></h3>
+                <h2>Conhecendo mais sobre formulários</h2>
+                <p>Conheceremos alguns 'inputs' importante para dados pessoas de contato, como email e telefone. Junto com atributo 'pattern' e o elemento 'fieldset'.</p>
+                <p>O atributo 'pattern' é usado para especificar uma 'expressão regular' (RegEx) que o valor do campo deve corresponder para ser considerado válido. Ajudando na validação de formatos específicos de entrada (email, telefone, código postal, etc).</p>
+                <p>O elemento 'fieldset' é usado para agrupar e organizar controles de formulário e seus rótulos. Ele é especialmente útil para criar seções lógicas dentro de um formulário, melhorando a acessibilidade e a usabilidade. Além de permitir aplicação de estilos CSS de forma mais eficaz ao grupo de campos.</p>
+            </div>
+        </section>
+
+        <section class="segundo">
+            <div>
+                <h2>Fieldset:</h2>
+                <ul>
+                    <li>'Fieldset' organiza os controles de formulário em seções lógicas, melhorando a estrutura e a clareza visual;</li>
+                    <li>'legends' fornece um rótulo descritivo para o grupo de controles dentro agrupamento, facilitando a compreensão do propósito da seção.</li>
+                </ul><br>
+
+                <h2>Controles:</h2>
+                <ul>
+                    <li>type="email": cria um campo para inserir um endereço de e-mail, com validação de formato de e-mail;</li>
+                    <li>type="tel": cria um campo para inserir um número de telefone, sem validação de formato específico.</li>
+                </ul><br>
+
+                <p></p>
+                <h2>Atributo 'pattern' + exemplos:</h2>
+                <ul>
+                    <li>
+                        pattern="^$": atributo 'pattern' garante que os dados inseridos atendam aos requisitos do formato solicitado. Os '^' e '$' são delimitadores que definem como devem ser o início e o fim da string, respectivamente.<br>
+                    </li><br>
+                    <h3><strong>Exemplos:</strong>
+                    </h3>
+                    <li>
+                        <em>pattern="^[A-Za-z]{3,}$"</em>: define uma expressão regular que exige pelo menos três letras de a-z e A-Z;
+                    </li>
+                    <li>
+                        <em>pattern="^\(\d{2}\) \d{4,5}-\d{4}$"</em>: define uma expressão regular que exige um número de celular no formato brasileiro com 9 ou 8 números;
+                    </li>
+                    <li>
+                        <em>pattern="^\d{4} \d{4} \d{4} \d{4}$"</em>: define uma expressão regular que exige um número de cartão de crédito no formato de quatro grupos de quatro dígitos separados por espaços;
+                    </li>
+                    <li>
+                        <em>pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"</em>: define uma expressão regular que exige um endereço de e-mail com um formato geral válido.<br>
+                        ... <em>"[a-zA-Z0-9._%+-]+"</em>: corresponde à parte local do e-mail<br>
+                        ... <em>"@[a-zA-Z0-9.-]+"</em>: corresponde ao domínio<br>
+                        ... <em>"\.[a-zA-Z]{2,}"</em>: garante que a extensão do domínio tenha pelo menos duas letras.
+                    </li>
+                </ul><br>
+                <p>Exemplos acima tirados com ajuda de IA.</p><br>
+            </div>
+        </section>
+
+        <section class="terceiro">
+                <div>
+                    <h2>Usando esses controles/atributos</h2>
+                    <p>Assim como anteriormente, os códigos abaixo são apenas para exemplificar o que foi estudado aqui. São alguns passos para criar um formulário com dados para contato pessoal, com nome, telefone e email. Abaixo foram usados 'input' tel e email, com o atributo 'pattern'.</p>
+                    
+                    <div class="txtcd">
+                        <textarea readonly rows="4" class="codeTextarea">
+                            <input type="tel" name="tel" id="tel" pattern="^\(\d{2}\) \d{4,5}-\d{4}$" placeholder="(xx) xxxxx-xxxx" required>
+                        </textarea>
+                        <p>'input type="tel"'</p>
+                        <p>
+                            <label for="tel">Telefone:</label>
+                            <input type="tel" name="tel" id="tel" pattern="^\(\d{2}\) \d{4,5}-\d{4}$" placeholder="(xx) xxxxx-xxxx" required>
+                        </p>
+                    </div>
+
+                    <div class="txtcd">
+                        <textarea readonly rows="4" class="codeTextarea">
+                            <input type="email" name="email" id="iemail" placeholder="seuemail@gmail.com..." required>
+                        </textarea>
+                        <p>'input type="month"'</p>
+                        <p>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="iemail" placeholder="seuemail@gmail.com..." required>
+                        </p>
+                    </div>
+
+                    <div>
+                        <form action="inexistente.php" method="post" autocomplete="off">
+                            <h3>Formulário 'contato pessoal'</h3>
+                            <fieldset>
+                                <legend>( usando 'fieldset' )</legend>
+                                <p>
+                                    <label for="icontato">Contato:</label>
+                                    <input type="text" name="contato" id="icontato" minlength="1" maxlength="30" placeholder="Nome do contato.." required>
+                                </p>
+                                <p>
+                                    <label for="itel">Telefone:</label>
+                                    <input type="tel" name="tel" id="itel" pattern="^\(\d{2}\) \d{4,5}-\d{4}$" placeholder="(xx) xxxxx-xxxx" required>
+                                </p>
+                                <p>
+                                    <label for="iemail">Email:</label>
+                                    <input type="email" name="email" id="iemail" placeholder="seuemail@gmail.com..." required>
+                                </p>
+                                <p>
+                                    <input type="submit" value="Enviar">
+                                    <input type="reset" value="Limpar">
+                                </p>
+                            </fieldset>
+                        </form>
+                    </div><br>
+                    <div class="txtcd">
+                        <textarea readonly rows="17" class="codeTextarea">
+                            <form action="inexistente.php" method="post" autocomplete="off">
+                            .. <fieldset>
+                            .. .. <legend>( usando 'fieldset' )</legend>
+                            .. .. <label for="icontato">Contato:</label>
+                            .. .. <input type="text" name="contato" id="icontato" minlength="1" maxlength="30" placeholder="Nome do contato.." required>
+                            .. .. <label for="itel">Telefone:</label>
+                            .. .. <input type="tel" name="tel" id="itel" pattern="^\(\d{2}\) \d{4,5}-\d{4}$" placeholder="(xx) xxxxx-xxxx" required>
+                            .. .. <label for="iemail">Email:</label>
+                            .. .. <input type="email" name="email" id="iemail" placeholder="seuemail@gmail.com..." required>
+                            .. .. <input type="submit" value="Enviar">
+                            .. .. <input type="reset" value="Limpar">
+                            .. </fieldset>
+                            </form>
+                        </textarea>
+                        <p>Cada conjunto de 'label'+'input' estão dentro de um 'p'. Mas decidi não mostrar no 'textarea' para não ficar mais extenso/poluído.</p>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <h3>Desenvolvido por Marcos Grando</h3>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        var textareas = document.querySelectorAll(".codeTextarea");
+        textareas.forEach(function(textarea) {
+            var text = textarea.value;
+            textarea.value = text.replace(/^\s+/gm, '');
+        });
+    });
+    </script>
+</body>
+</html>

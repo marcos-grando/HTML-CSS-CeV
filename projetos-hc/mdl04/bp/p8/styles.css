@@ -120,6 +120,14 @@ main{
             justify-content: center;
             ul{
                 list-style-position: inside;
+                li{
+                    margin-top: 10px;
+                }
+                em{
+                    color: var(--cor5);
+                    font-weight: 500;
+                    font-style: normal;
+                }
             }
         }
     }
@@ -129,6 +137,11 @@ main{
         width: 100%;
         display: flex;
 
+        legend{
+            color: var(--cor7);
+            margin-left: 15px;
+            padding: 0 10px;
+        }
         div{
             color: var(--cor4);
             text-align: left;
