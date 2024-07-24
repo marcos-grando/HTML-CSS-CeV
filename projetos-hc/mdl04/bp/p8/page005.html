@@ -49,32 +49,37 @@
                 <div>
                     <h2>Usando esses controles/atributos</h2>
                     <p>Assim como anteriormente, os códigos abaixo são apenas para exemplificar o que foi estudado aqui. São alguns passos para criar um formulário com opções de seleção. Abaixo foram usados os 'inputs' checkbox e radio.</p>
-                    
+
                     <div class="txtcd">
-                        <textarea readonly rows="5" class="codeTextarea">
-                            <input type="checkbox" name="fut" id="fut" checked>
-                            <input type="checkbox" name="bas" id="bas">
-                            <input type="checkbox" name="vol" id="vol">
-                            <input type="checkbox" name="ten" id="ten">
+                        <textarea readonly rows="2" class="codeTextarea">
+                            <input type="color" name="cor" id="icor" value="#E5FF0A">
                         </textarea>
-                        <p>'input type="checkbox"'</p>
+                        <p>'input type="color"'</p>
                         <p>
-                            <input type="checkbox" name="fut" id="fut" checked><label for="fut">Futebol</label><br>
-                            <input type="checkbox" name="bas" id="bas"><label for="bas">Basquete</label><br>
-                            <input type="checkbox" name="vol" id="vol"><label for="vol">Volêi</label><br>
-                            <input type="checkbox" name="ten" id="ten"><label for="ten">Tênis</label>
+                            <label for="icor">Cor: </label>
+                            <input type="color" name="cor" id="icor" value="#E5FF0A">
                         </p>
                     </div>
 
                     <div class="txtcd">
                         <textarea readonly rows="4" class="codeTextarea">
-                            <input type="radio" name="sexo" id="masc" value="masculino">
-                            <input type="radio" name="sexo" id="fem" value="feminino">
+                            <input type="range" name="humor" id="humor" min="1" max="3" value="2">
                         </textarea>
-                        <p>'input type="radio"'</p>
+                        <p>'input type="range"'</p>
                         <p>
-                            <input type="radio" name="testsexo" id="masc" value="masculino" checked><label for="masc">Masculino</label><br>
-                            <input type="radio" name="testsexo" id="fem" value="feminino"><label for="fem">Feminino</label>
+                            <label for="humor">Range:</label>
+                            <input type="range" name="humor" id="humor" min="1" max="3" value="2">
+                        </p>
+                    </div>
+
+                    <div class="txtcd">
+                        <textarea readonly rows="4" class="codeTextarea">
+                            <input type="file" name="foto" id="foto">
+                        </textarea>
+                        <p>'input type="file"'</p>
+                        <p>
+                            <label for="foto">Arquivo:</label>
+                            <input type="file" name="foto" id="foto">
                         </p>
                     </div>
 
