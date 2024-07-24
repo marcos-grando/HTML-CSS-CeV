@@ -1,3 +1,11 @@
+document.addEventListener("DOMContentLoaded", function() {
+    var textareas = document.querySelectorAll(".codeTextarea");
+    textareas.forEach(function(textarea) {
+        var text = textarea.value;
+        textarea.value = text.replace(/^\s+/gm, '');
+    });
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     const inome = document.getElementById('inome');
     const sexoRadios = document.querySelectorAll('input[name="sexo"]');
@@ -60,14 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
     esporteRadios.forEach(radio => {
         radio.addEventListener('change', () => {
             esporteDisplay.textContent = `Ama ${radio.value}`;
-        });
-    });
-
-    document.addEventListener("DOMContentLoaded", function() {
-        var textareas = document.querySelectorAll(".codeTextarea");
-        textareas.forEach(function(textarea) {
-            var text = textarea.value;
-            textarea.value = text.replace(/^\s+/gm, '');
         });
     });
 });
