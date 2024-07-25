@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkbox e radio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .txtcd {
+            margin-bottom: 20px;
+        }
+        .codeTextarea {
+            width: 100%;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 10px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Controles de formulário</h1>
+        </div>
+    </header>
+    <main>
+        <section class="primeiro">
+            <div>
+                <h3 class="click">Veja mais: <a href="index.html">Início</a> | <a href="page002.html">data/number/step</a> | <a href="page003.html">fieldset/pattern</a> | <a href="page004.html">checkbox/radio/value</a> | <a href="page005.html">color/range/file</a> | <a href="page006.html">select/datalist/textarea</a> | <em class="last">outputs</em></h3>
+            </div>
+        </section>
+        <section class="segundo">
+            <div>
+                <h2>Outputs - apresentação de dados</h2>
+                <p>Os elementos 'output' são usados para mostrar resultados ou valores calculados para os usuários. Eles exibem dados dinamicamente com base nas interações com outros controles de entrada, como campos de texto, seletores e sliders.</p>
+                <p>O atributo 'oninput' é um evento que executa uma função JavaScript sempre que o valor de um campo de entrada muda. Quando usado em conjunto com 'output', ele permite que a saída seja atualizada em tempo real, proporcionando feedback imediato ao usuário sobre suas ações.</p>
+            </div>
+        </section>
+        <section class="terceiro">
+            <div>
+                <h2>Usando outputs</h2>
+                <p>Abaixo exemplos usando alguns inputs que foram visto até agora e acrescentado outputs para exibir os dados definidos/selecionados.</p><br>
+        
+                <div class="txtcd">
+                    <p>'input type="checkbox"' + 'output'</p>
+                    <textarea readonly rows="4" class="codeTextarea">
+                        <input type="checkbox" id="subscribe" onclick="document.getElementById('output-subscribe').value = this.checked ? 'Inscrito' : 'Não inscrito';">
+                        <output id="output-subscribe" name="output-subscribe"></output>
+                    </textarea>
+                    <p>
+                        <label for="subscribe">Inscrever-se:</label>
+                        <input type="checkbox" id="subscribe" onclick="document.getElementById('output-subscribe').value = this.checked ? 'Inscrito' : 'Não inscrito';">
+                        <output id="output-subscribe" name="output-subscribe"></output>
+                    </p>
+                </div>
+        
+                <div class="txtcd">
+                    <p>'input type="radio"' + 'output'</p>
+                    <textarea readonly rows="5" class="codeTextarea">
+                        <input type="radio" id="male" name="gender" value="Masculino" onclick="document.getElementById('output-gender').value = this.value;">
+                        <label for="male">Masculino</label>
+                        <input type="radio" id="female" name="gender" value="Feminino" onclick="document.getElementById('output-gender').value = this.value;">
+                        <label for="female">Feminino</label>
+                        <output id="output-gender" name="output-gender"></output>
+                    </textarea>
+                    <p>
+                        <label>Sexo:</label>
+                        <input type="radio" id="male" name="gender" value="Masculino" onclick="document.getElementById('output-gender').value = this.value;">
+                        <label for="male">Masculino</label>
+                        <input type="radio" id="female" name="gender" value="Feminino" onclick="document.getElementById('output-gender').value = this.value;">
+                        <label for="female">Feminino</label>
+                        <output id="output-gender" name="output-gender"></output>
+                    </p>
+                </div>
+        
+                <div class="txtcd">
+                    <p>'input type="range"' + 'output'</p>
+                    <textarea readonly rows="4" class="codeTextarea">
+                        <input type="range" id="volume" min="0" max="100" oninput="document.getElementById('output-volume').value = this.value;">
+                        <output id="output-volume" name="output-volume"></output>
+                    </textarea>
+                    <p>
+                        <label for="volume">Volume:</label>
+                        <input type="range" id="volume" min="0" max="100" oninput="document.getElementById('output-volume').value = this.value;">
+                        <output id="output-volume" name="output-volume"></output>
+                    </p>
+                </div>
+        
+                <div class="txtcd">
+                    <p>'input type="color"' + 'output'</p>
+                    <textarea readonly rows="4" class="codeTextarea">
+                        <input type="color" id="favcolor" oninput="document.getElementById('output-color').value = this.value;">
+                        <output id="output-color" name="output-color"></output>
+                    </textarea>
+                    <p>
+                        <label for="favcolor">Cor favorita:</label>
+                        <input type="color" id="favcolor" oninput="document.getElementById('output-color').value = this.value;">
+                        <output id="output-color" name="output-color"></output>
+                    </p>
+                </div>
+        
+                <div class="txtcd">
+                    <p>'input type="text"' + 'output'</p>
+                    <textarea readonly rows="4" class="codeTextarea">
+                        <input type="text" id="name" oninput="document.getElementById('output-name').value = this.value;">
+                        <output id="output-name" name="output-name"></output>
+                    </textarea>
+                    <p>
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" oninput="document.getElementById('output-name').value = this.value;">
+                        <output id="output-name" name="output-name"></output>
+                    </p>
+                </div>
+        
+                <div class="txtcd">
+                    <p>'textarea' + 'output'</p>
+                    <textarea readonly rows="4" class="codeTextarea">
+                        <textarea id="message" oninput="document.getElementById('output-message').value = this.value;"></textarea>
+                        <output id="output-message" name="output-message"></output>
+                    </textarea>
+                    <p>
+                        <label for="message">Mensagem:</label>
+                        <textarea id="message" oninput="document.getElementById('output-message').value = this.value;"></textarea>
+                        <output id="output-message" name="output-message"></output>
+                    </p>
+                </div>
+
+                <div class="txtcd">
+                    <p>'input type="number"' + 'input type="number"' + 'input type="number"' + 'output'</p>
+                    <textarea readonly rows="6" class="codeTextarea">
+                    <label for="quantity">Quantidade:</label>
+                    <input type="number" id="quantity" value="1" oninput="calculateTotal()">
+                    <label for="price">Preço Unitário:</label>
+                    <input type="number" id="price" value="10" oninput="calculateTotal()">
+                    <label for="discount">Desconto (%):</label>
+                    <input type="number" id="discount" value="0" oninput="calculateTotal()">
+                    <p>
+                    .. Total: R$<output id="totalOutput">10.00</output>
+                    </p>
+                    </textarea>
+                    <p>
+                        <label for="quantity">Quantidade:</label>
+                        <input type="number" id="quantity" value="1" oninput="calculateTotal()"><br>
+                        <label for="price">Preço Unitário:</label>
+                        <input type="number" id="price" value="10" oninput="calculateTotal()"><br>
+                        <label for="discount">Desconto (%):</label>
+                        <input type="number" id="discount" value="0" oninput="calculateTotal()"><br>
+                        <p>
+                            Total: R$<output id="totalOutput">10.00</output>
+                        </p>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <h3>Desenvolvido por Marcos Grando</h3>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var textareas = document.querySelectorAll(".codeTextarea");
+            textareas.forEach(function(textarea) {
+                var text = textarea.value;
+                textarea.value = text.replace(/^\s+/gm, '');
+            });
+        });
+        function calculateTotal() {
+            var quantity = parseFloat(document.getElementById('quantity').value) || 0;
+            var price = parseFloat(document.getElementById('price').value) || 0;
+            var discount = parseFloat(document.getElementById('discount').value) || 0;
+
+            var total = quantity * price * (1 - discount / 100);
+            document.getElementById('totalOutput').textContent = total.toFixed(2);
+        }
+    </script>
+</body>
+</html>
