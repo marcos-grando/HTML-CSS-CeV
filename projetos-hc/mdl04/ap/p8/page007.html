@@ -4,19 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>checkbox e radio</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        .txtcd {
-            margin-bottom: 20px;
-        }
-        .codeTextarea {
-            width: 100%;
-            background-color: #f0f0f0;
-            border: 1px solid #ccc;
-            padding: 10px;
-            font-family: monospace;
-        }
-    </style>
+    <link rel="stylesheet" href="others/styles.css">
+
 </head>
 <body>
     <header>
@@ -40,7 +29,7 @@
         <section class="terceiro">
             <div>
                 <h2>Usando outputs</h2>
-                <p>Abaixo exemplos usando alguns inputs que foram visto até agora e acrescentado outputs para exibir os dados definidos/selecionados.</p><br>
+                <p>Abaixo exemplos usando alguns inputs que foram visto até agora e acrescentado outputs para exibir os dados definidos/selecionados. Perceba que a resposta para a interação do usuário ocorre assim que a ação é feita, isso se deve à utilização do elemento 'output' junto do atributo 'oninput' executando funções JavaScript.</p><br>
         
                 <div class="txtcd">
                     <p>'input type="checkbox"' + 'output'</p>
@@ -130,23 +119,23 @@
                     <p>'input type="number"' + 'input type="number"' + 'input type="number"' + 'output'</p>
                     <textarea readonly rows="6" class="codeTextarea">
                     <label for="quantity">Quantidade:</label>
-                    <input type="number" id="quantity" value="1" oninput="calculateTotal()">
+                    <input type="number" id="quantity" value="1" min="0" oninput="calculateTotal()">
                     <label for="price">Preço Unitário:</label>
-                    <input type="number" id="price" value="10" oninput="calculateTotal()">
+                    <input type="number" id="price" value="10" min="0" oninput="calculateTotal()">
                     <label for="discount">Desconto (%):</label>
-                    <input type="number" id="discount" value="0" oninput="calculateTotal()">
+                    <input type="number" id="discount" value="0" min="0" oninput="calculateTotal()">
                     <p>
                     .. Total: R$<output id="totalOutput">10.00</output>
                     </p>
                     </textarea>
                     <p>
                         <label for="quantity">Quantidade:</label>
-                        <input type="number" id="quantity" value="1" oninput="calculateTotal()"><br>
+                        <input type="number" id="quantity" value="1" min="0" oninput="calculateTotal()"><br>
                         <label for="price">Preço Unitário:</label>
-                        <input type="number" id="price" value="10" oninput="calculateTotal()"><br>
+                        <input type="number" id="price" value="10" min="0" oninput="calculateTotal()"><br>
                         <label for="discount">Desconto (%):</label>
-                        <input type="number" id="discount" value="0" oninput="calculateTotal()"><br>
-                        <p>
+                        <input type="number" id="discount" value="0" min="0" oninput="calculateTotal()"><br>
+                        <p class="money">
                             Total: R$<output id="totalOutput">10.00</output>
                         </p>
                     </p>
@@ -159,22 +148,6 @@
             <h3>Desenvolvido por Marcos Grando</h3>
         </div>
     </footer>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var textareas = document.querySelectorAll(".codeTextarea");
-            textareas.forEach(function(textarea) {
-                var text = textarea.value;
-                textarea.value = text.replace(/^\s+/gm, '');
-            });
-        });
-        function calculateTotal() {
-            var quantity = parseFloat(document.getElementById('quantity').value) || 0;
-            var price = parseFloat(document.getElementById('price').value) || 0;
-            var discount = parseFloat(document.getElementById('discount').value) || 0;
-
-            var total = quantity * price * (1 - discount / 100);
-            document.getElementById('totalOutput').textContent = total.toFixed(2);
-        }
-    </script>
+    <script src="others/script007.js"></script>
 </body>
 </html>

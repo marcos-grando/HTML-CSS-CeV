@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkbox e radio</title>
+    <link rel="stylesheet" href="others/styles.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Controles de formulário</h1>
+        </div>
+    </header>
+    <main>
+        <section class="primeiro">
+            <div>
+                <h3 class="click">Veja mais: <a href="index.html">Início</a> | <a href="page002.html">data/number/step</a> | <a href="page003.html">fieldset/pattern</a> | <a href="page004.html">checkbox/radio/value</a> | <a href="page005.html">color/range/file</a> | <em> select/datalist/textarea</em> | <a href="page007.html" class="last">outputs</a></h3>
+
+                <h2>Controles sem tag 'input'</h2>
+                <p>Até o momento, foram utilizados apenas controles com a tag 'input'. Será utilizado agora alguns controles que não usam essa tag: select, datalist e textarea.</p>
+                <p>Os três são elementos de formulário que oferecem meios de entrada e seleção de dados com ofuncionalidades bem distintas.</p>
+            </div>
+        </section>
+
+        <section class="segundo">
+            <div>
+                <h2>Controles:</h2>
+                <ul>
+                    <h3><strong>¬ Select:</strong></h3>
+                    <li>type="select": cria um controle de lista suspensa que permite ao usuário selecionar uma ou mais opções de um conjunto predefinido;</li>
+                    <li>'option': define as opções disponíveis no menu suspenso;</li>
+                    <li>'optgroup': agrupa e classifica os 'options' (usar label);</li>                    
+                    <li>'multiple': permite selecionar múltiplas opções ao mesmo tempo.</li><br>
+                    
+                    <h3><strong>¬ Datalist:</strong></h3>
+                    <li>type="datalist": fornece uma lista de sugestões para um campo de entrada de texto, aparecendo quando o usuário começa a digitar;</li>
+                    <li>'option': define as sugestões disponíveis ;</li>
+                    <li>'optgroup': agrupa e classifica os 'options' (usar label);</li>
+                    <li>'list': associa o campo de entrada de texto à lista de sugestões definida com a tag 'datalist'.</li><br>
+                    
+                    <h3><strong>¬ Textarea:</strong></h3>
+                    <li>type="textarea": cria um campo de texto multilinha que permite a entrada de grandes volumes de texto;</li>
+                    <li>'rows': define o número de linhas visíveis no campo de texto;</li>
+                    <li>'cols': define o número de colunas visíveis no campo de texto;</li>
+                    <li>'placeholder': fornece um texto de exemplo ou dica sobre o que deve ser inserido no campo.</li>
+                    
+                </ul><br>
+            </div>
+        </section>
+
+        <section class="terceiro">
+                <div>
+                    <h2>Usando esses controles/atributos</h2>
+                    <p>Assim como anteriormente, os códigos abaixo são apenas para exemplificar o que foi estudado aqui. Abaixo estão alguns testes e práticas no uso desses controles e seus atributos, construindo alguns passos e no final juntando tudo.</p>
+
+                    <div class="txtcd">
+                        <p>'input type="select"' + 'option'</p>
+                        <textarea readonly rows="6" class="codeTextarea">
+                            <select name="estado" id="estado">
+                            .. <option value="RJ">Rio de Janeiro</option>
+                            .. <option value="SP">São Paulo</option>
+                            .. <option value="MG">Minas Gerais</option>
+                            </select>
+                        </textarea>
+                        <p>
+                            <label for="estado">Estado:</label>
+                            <select name="estado" id="estado">
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="MG">Minas Gerais</option>
+                            </select>
+                        </p><br>
+
+
+                        <p>'input type="select"' + 'option' + 'optgroup'</p>
+                        <textarea readonly rows="6" class="codeTextarea">
+                            <select name="estado" id="estado">
+                            .. <optgroup label="Sudeste">
+                            .. .. <option value="RJ">Rio de Janeiro</option>
+                            .. .. <option value="SP">São Paulo</option>
+                            .. .. <option value="MG">Minas Gerais</option>
+                            .. </optgroup>
+                            </select>
+                        </textarea>
+                        <p>
+                            <label for="estado">Estado:</label>
+                            <select name="estado" id="estado">
+                                <optgroup label="Sudeste">
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="MG">Minas Gerais</option>
+                                </optgroup>
+                            </select>
+                        </p><br>
+
+
+                        <p>'input type="select"' + 'multiple</p>
+                        <textarea readonly rows="4" class="codeTextarea">
+                            <select name="estado" id="estado" multiple>
+                                .. <option value="RJ">Rio de Janeiro</option>
+                                .. <option value="SP">São Paulo</option>
+                                .. <option value="MG">Minas Gerais</option>
+                            </select>
+                        </textarea>
+                        <p>
+                            <label for="estado">Estado:</label>
+                            <select name="estado" id="estado" multiple>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="MG">Minas Gerais</option>
+                            </select>
+                        </p>
+                    </div>
+
+                    <div class="txtcd">
+                        <p>'input type="datalist"' + 'option' + 'optgroup'</p>
+                        <textarea readonly rows="6" class="codeTextarea">
+                            <input type="text" name="profissao" id="profissao" list="profissaoo">
+                            <datalist id="profissaoo">
+                            .. <optgroup>
+                            .. .. <option>Administrador</option>
+                            .. .. <option>Contabilista</option>
+                            .. .. <option>Desenvolvedor</option>
+                            .. .. <option>Professor</option>
+                            .. </optgroup>
+                            </datalist>
+                        </textarea>
+                        <p>
+                            <label for="profissao">Profissão:</label>
+                            <input type="text" name="profissao" id="profissao" list="profissaoo" placeholder="Clique aqui...">
+                            <datalist id="profissaoo">
+                                <optgroup>
+                                    <option>Administrador</option>
+                                    <option>Contabilista</option>
+                                    <option>Desenvolvedor</option>
+                                    <option>Professor</option>
+                                </optgroup>
+                            </datalist><br>
+                            OBS¹: Necessário usar um input de texto.<br>
+                            OBS²: 'text list=" " ' igual 'datalist id=" " '.
+                        </p>
+                    </div>
+
+                    <div class="txtcd">
+                        <p>'input type="textarea"'</p>
+                        <textarea readonly rows="3" class="codeTextarea">
+                            <label for="mensagem">Mensagem:</label>
+                        </textarea>
+                        <p>
+                            <label for="mensagem">Mensagem:</label>
+                            <textarea cols="15" rows="5" class="codeTextarea" placeholder="Deixe sua mensagem..."></textarea>
+                            <input type="submit" value="Comentar">
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3>Formulário 'comentário'</h3>
+                        <form action="inexistente.php" method="post" autocomplete="off">
+                            <fieldset>
+                                <legend>Comente aqui</legend>
+                                <p>
+                                    <label for="inome">Nome:</label>
+                                    <input type="text" name="nome" id="inome" maxlength="30" placeholder="Seu nome..." required>
+                                </p>
+                                <p>
+                                    <label for="ireg">Sua região: </label>
+                                    <select name="reg" id="ireg">
+                                        <optgroup label="Região">
+                                            <option value="norte">Norte</option>
+                                            <option value="nord">Nordeste</option>
+                                            <option value="cen">Centro Oeste</option>
+                                            <option value="sud">Sudeste</option>
+                                            <option value="sul">Sul</option>
+                                        </optgroup>
+                                    </select>
+                                </p>
+                                <p>
+                                    <label for="coment">Comentar sobre: </label>
+                                    <input type="text" name="coment" id="coment" list="icomt">
+                                    <datalist id="icomt">
+                                        <optgroup>
+                                            <option>Sobre esportes</option>
+                                            <option>Sobre games</option>
+                                            <option>Sobre animes</option>
+                                            <option>Outro assunto</option>
+                                        </optgroup>
+                                    </datalist>
+                                </p>
+                                <p>
+                                    <label for="mensagem">Deixe seu comentário: </label><br>
+                                    <textarea cols="55" rows="10" name="mensagem" id="mensagem" placeholder="Digite aqui..."></textarea>
+                                </p>
+                                <p>
+                                    <input type="submit" value="Comentar"><input type="reset" value="Limpar">
+                                </p>
+                            </fieldset>
+                        </form>
+                    </div><br>
+
+                    <div class="txtcd">
+                        <textarea readonly rows="17" class="codeTextarea">
+                            <form action="others/inexistente.php" method="post" autocomplete="off">
+                            .. <fieldset>
+                            .. .. <legend>Comente aqui</legend>
+                            .. .. <label for="inome">Nome:</label>
+                            .. .. <input type="text" name="nome" id="inome" maxlength="30" placeholder="Seu nome..." required>
+                            .. .. <label for="ireg">Sua região: </label>
+                            .. .. <select name="reg" id="ireg">
+                            .. .. .. <optgroup label="Região">
+                            .. .. .. .. <option value="norte">Norte</option>
+                            .. .. .. .. <option value="nord">Nordeste</option>
+                            .. .. .. .. <option value="cen">Centro Oeste</option>
+                            .. .. .. .. <option value="sud">Sudeste</option>
+                            .. .. .. .. <option value="sul">Sul</option>
+                            .. .. .. </optgroup>
+                            .. .. </select>
+                            .. .. <label for="coment">Comentar sobre: </label>
+                            .. .. <input type="text" name="coment" id="coment" list="icomt">
+                            .. .. <datalist id="icomt">
+                            .. .. .. <optgroup>
+                            .. .. .. .. <option>Sobre esportes</option>
+                            .. .. .. .. <option>Sobre games</option>
+                            .. .. .. .. <option>Sobre animes</option>
+                            .. .. .. .. <option>Outro assunto</option>
+                            .. .. .. </optgroup>
+                            .. .. </datalist>
+                            .. .. <label for="mensagem">Deixe seu comentário: </label><br>
+                            .. .. <input type="submit" value="Comentar"><input type="reset" value="Limpar">
+                            .. </fieldset>
+                            </form>
+                        </textarea>
+                        <p>Cada conjunto de 'label'+'input' estão dentro de um 'p'. Mas decidi não mostrar no 'textarea' para não ficar mais extenso/poluído.</p>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <h3>Desenvolvido por Marcos Grando</h3>
+        </div>
+    </footer>
+    <script src="others/script.js"></script>
+</body>
+</html>

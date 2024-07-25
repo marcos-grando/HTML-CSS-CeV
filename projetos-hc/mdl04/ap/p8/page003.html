@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pattern e fieldset</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="others/styles.css">
 </head>
 <body>
     <header>
@@ -93,7 +93,7 @@
                     </div>
 
                     <div>
-                        <form action="inexistente.php" method="post" autocomplete="off">
+                        <form action="others/inexistente.php" method="post" autocomplete="off">
                             <h3>Formulário 'contato pessoal'</h3>
                             <fieldset>
                                 <legend>( usando 'fieldset' )</legend>
@@ -118,7 +118,7 @@
                     </div><br>
                     <div class="txtcd">
                         <textarea readonly rows="17" class="codeTextarea">
-                            <form action="inexistente.php" method="post" autocomplete="off">
+                            <form action="others/inexistente.php" method="post" autocomplete="off">
                             .. <fieldset>
                             .. .. <legend>( usando 'fieldset' )</legend>
                             .. .. <label for="icontato">Contato:</label>
@@ -142,15 +142,6 @@
             <h3>Desenvolvido por Marcos Grando</h3>
         </div>
     </footer>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-        var textareas = document.querySelectorAll(".codeTextarea");
-        textareas.forEach(function(textarea) {
-            var text = textarea.value;
-            textarea.value = text.replace(/^\s+/gm, '');
-        });
-    });
-    </script>
+<script src="others/script.js"></script>
 </body>
 </html>

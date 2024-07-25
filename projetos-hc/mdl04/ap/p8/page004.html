@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>checkbox e radio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="others/styles.css">
 </head>
 <body>
     <header>
@@ -80,21 +80,27 @@
 
                     <div>
                         <h3>Formulário com 'opções de seleção'</h3>
-                        <form action="inexistente.php" method="post" autocomplete="off">
+                        <form action="others/inexistente.php" method="post" autocomplete="off">
                             <fieldset>
                                 <legend> Esporte favorito: </legend>
                                 <p>
-                                    <input type="checkbox" name="fut" id="fut" checked><label for="fut">Futebol</label><br>
-                                    <input type="checkbox" name="bas" id="bas"><label for="bas">Basquete</label><br>
-                                    <input type="checkbox" name="vol" id="vol"><label for="vol">Volêi</label><br>
-                                    <input type="checkbox" name="ten" id="ten"><label for="ten">Tênis</label>
+                                    <input type="checkbox" name="fut" id="ifut" checked>
+                                    <label for="ifut">Futebol</label><br>
+                                    <input type="checkbox" name="bas" id="ibas">
+                                    <label for="ibas">Basquete</label><br>
+                                    <input type="checkbox" name="vol" id="ivol">
+                                    <label for="ivol">Volêi</label><br>
+                                    <input type="checkbox" name="ten" id="iten">
+                                    <label for="iten">Tênis</label>
                                 </p>
                             </fieldset>
                             <fieldset>
                                 <legend> Sexo: </legend>
                                 <p>
-                                    <input type="radio" name="sexo" id="masc" value="masculino" checked><label for="masc">Masculino</label><br>
-                                    <input type="radio" name="sexo" id="fem" value="feminino"><label for="fem">Feminino</label>
+                                    <input type="radio" name="sexo" id="imasc" value="masculino" checked>
+                                    <label for="imasc">Masculino</label><br>
+                                    <input type="radio" name="sexo" id="ifem" value="feminino">
+                                    <label for="ifem">Feminino</label>
                                 </p>
                             </fieldset>
                             <p>
@@ -106,7 +112,7 @@
                     </div><br>
                     <div class="txtcd">
                         <textarea readonly rows="17" class="codeTextarea">
-                            <form action="inexistente.php" method="post" autocomplete="off">
+                            <form action="others/inexistente.php" method="post" autocomplete="off">
                                 .. <fieldset>
                                     .. .. <legend> Esporte favorito: </legend>
                                     .. .. <input type="checkbox" name="fut" id="fut" checked>
@@ -140,15 +146,6 @@
             <h3>Desenvolvido por Marcos Grando</h3>
         </div>
     </footer>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-        var textareas = document.querySelectorAll(".codeTextarea");
-        textareas.forEach(function(textarea) {
-            var text = textarea.value;
-            textarea.value = text.replace(/^\s+/gm, '');
-        });
-    });
-    </script>
+    <script src="others/script.js"></script>
 </body>
 </html>

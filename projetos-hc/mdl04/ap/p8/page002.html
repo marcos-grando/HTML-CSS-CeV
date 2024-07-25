@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms controles</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="others/styles.css">
 </head>
 <body>
     <header>
@@ -92,7 +92,7 @@
 
                     <div>
                         <h3>Formulário simples de aluno:</h3>
-                        <form action="inexistente.php" method="post" autocomplete="off">
+                        <form action="others/inexistente.php" method="post" autocomplete="off">
                             <p>
                                 <label for="ialuno">Aluno</label>
                                 <input type="text" name="aluno" id="ialuno" maxlength="30" placeholder="Nome do aluno" required>
@@ -121,7 +121,7 @@
                     </div>
                     <div class="txtcd">
                         <textarea readonly rows="17" class="codeTextarea">
-                            <form action="inexistente.php" method="post" autocomplete="off">
+                            <form action="others/inexistente.php" method="post" autocomplete="off">
                                 .  <label for="ialuno">Aluno</label>
                                 .  <input type="text" name="aluno" id="ialuno" maxlength="30" placeholder="Nome do aluno" required>
                                 .  <label for="imedia">Média:</label>
@@ -146,15 +146,6 @@
             <h3>Desenvolvido por Marcos Grando</h3>
         </div>
     </footer>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-        var textareas = document.querySelectorAll(".codeTextarea");
-        textareas.forEach(function(textarea) {
-            var text = textarea.value;
-            textarea.value = text.replace(/^\s+/gm, '');
-        });
-    });
-    </script>
+    <script src="others/script.js"></script>
 </body>
 </html>
