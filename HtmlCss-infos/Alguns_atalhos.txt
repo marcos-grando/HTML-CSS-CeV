@@ -18,6 +18,14 @@ CENTRVERTICAL
 
     Section>div, a div ficará centralizada com essas regras na section
 
+MENU SIMPLES
+    menu>ul>li
+    menu{
+        li{
+            display: inline-block;
+        }
+    }
+
 elemento fixado
     elemt{...
     position: sticky;
@@ -33,11 +41,9 @@ Footer mantido em baixo
         display: flex;
         flex-direction: column;
     }
-
     main{
         flex: 1;
     }
-
     footer{
         margin-top: auto;
     }

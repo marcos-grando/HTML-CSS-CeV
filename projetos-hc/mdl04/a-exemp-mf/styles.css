@@ -1,0 +1,152 @@
+/* Paleta de Cores */
+:root {
+    /* Backgrounds */
+    --cor0: #ffffff;
+    --cor1: #0B0B1D;
+    --cor2: #f7f7f7;
+
+    /* Background secundários */
+    --cor3: #090825;
+    /* azul escuro */
+    --cor4: #e6e6e6;
+    /* Txt desses bgs */
+    --cor5: #1A0034;
+    /* roxo escuro */
+
+    --cor6: #BF71F0;
+    --cor61: #bf71f039;
+    --cor62: #443752;
+    --cor7: #E5FF0A;
+    --cor71: #e6ff0a89;
+    --cor72: #e6ff0ad2;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Elaine Sans', 'Work Sans', sans-serif;
+}
+html,body {
+    height: 100%;
+    flex-direction: column;
+}
+body {
+    background-color: var(--cor0);
+    color: var(--cor1);
+}
+
+
+header {
+    background-image: linear-gradient(90deg, var(--cor5) 5%, var(--cor1) 20%, var(--cor1) 80%, var(--cor5) 95%);
+    border-bottom: solid 2px var(--cor7);
+    width: 100%;
+
+    text-align: center;
+    color: var(--cor0);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        padding: 10px 0;
+        font-size: 2.5em;
+        font-variant: small-caps;
+    }
+
+    h3 {
+        background-color: var(--cor5);
+        /*segue a div, div segue o width maior*/
+        border: 1px solid var(--cor61);
+        font-weight: 500;
+        padding: 2px 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--cor72);
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: var(--cor7);
+    }
+
+    em {
+        font-style: normal;
+        color: var(--cor71);
+    }
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+
+    section {
+        padding: 1em;
+
+        p {
+            margin: 10px 0;
+        }
+    }
+
+    .primeiro {
+        background-color: var(--cor3);
+        color: var(--cor4);
+    }
+
+    .segundo {
+        background-color: var(--cor2);
+        color: var(--cor3);
+    }
+
+    .terceiro {
+        background-color: var(--cor3);
+        color: var(--cor4);
+
+        .txtcd {
+            background-color: var(--cor5);
+            border: 1px solid var(--cor61);
+            padding: 10px;
+            margin: 20px auto;
+
+            textarea {
+                align-self: center;
+                border: none;
+                resize: none;
+                width: 100%;
+            }
+
+            p {
+                margin: 0 10px;
+            }
+        }
+    }
+}
+ul {
+    li {
+        list-style-position: inside;
+    }
+}
+
+
+footer {
+    background-image: linear-gradient(90deg, var(--cor5) 5%, var(--cor1) 20%, var(--cor1) 80%, var(--cor5) 95%);
+    border-top: solid 2px var(--cor7);
+    box-shadow: 0 0 5px var(--cor62);
+    width: 100%;
+
+    text-align: center;
+    color: var(--cor0);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+        padding: 5px 0;
+        font-weight: 500;
+        font-size: 1.2em;
+    }
+}

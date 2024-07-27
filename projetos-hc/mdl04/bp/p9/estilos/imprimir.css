@@ -1,0 +1,139 @@
+/* Paleta de Cores */
+:root {
+    /* Backgrounds */
+    --cor0: #ffffff;
+    --cor1: #0B0B1D;
+    --cor2: #f7f7f7;
+
+    /* Background secundários */
+    --cor3: #090825; /* azul escuro */
+    --cor4: #e6e6e6; /* Txt desses bgs */
+    --cor5: #1a0034; /* roxo escuro */
+    --cor51: #1a003436;
+
+    --cor6: #BF71F0;
+    --cor61: #bf71f039;
+    --cor62: #443752;
+    --cor63: #3d1864af;
+    --cor7: #E5FF0A;
+    --cor71: #e6ff0a89;
+    --cor72: #e6ff0ad2;
+}
+*{
+    padding: 0; margin: 0; 
+    box-sizing: border-box;
+    font-family: 'Elaine Sans', 'Work Sans', sans-serif;
+}
+html,body{
+    height: 100%;
+    flex-direction: column;
+}
+body{
+    background-color: var(--cor0);
+    color: var(--cor1);
+}
+
+header{
+    border-bottom: 0;
+    width: 100%;
+    
+    color: black;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1{
+        font-size: 2.5em;
+        font-variant: small-caps;
+    }
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    .click{
+        display: none;
+    }
+
+    .primeiro{
+        color: black;
+    }
+    .segundo{
+        color: black;
+        h2{
+            margin: 0 0;
+        }
+        em{
+            color: black;
+        }
+    }
+    .terceiro{
+        color: black;
+
+        p{
+            margin: 0 0 10px 0; padding: 0;
+        }
+        .txtcd{
+            border: 1px solid rgba(128, 128, 128, 0.562);
+            padding: 0 5px; margin: 0px auto;
+            
+            .apply{
+                border: 1px solid rgba(0, 0, 0, 0.589);
+                padding: 0 5px;
+            }
+            .lastapply{
+                border: 1px solid rgba(0, 0, 0, 0.589);
+                padding: 0 5px; 
+            }
+            h3{
+                margin: 0 0 5px 5px;
+            }
+            textarea{
+                border: none;
+                resize: none;
+                width: 90%;
+            }
+            .sobre{
+                margin: 0 0 8px 10px;
+            }
+            .sobre2{
+                margin: 0 0 5px 10px;
+            }
+        }
+    }
+}
+ul{
+    h3{
+        padding: 20px 0 0 0;
+    }
+    li{
+        list-style-position: inside;
+        padding: 5px 0 5px 10px;
+        em{
+            font-weight: 600;
+            color: black;
+            font-style: normal;
+        }
+    }
+}
+
+
+footer{
+    border-top: 0;
+    box-shadow: 0;
+    width: 100%;
+
+    text-align: center;
+    color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h3{
+        padding: 5px 0;
+        font-weight: 500;
+        font-size: 1.2em;
+    }
+}

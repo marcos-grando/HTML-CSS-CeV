@@ -1,0 +1,203 @@
+/* Paleta de Cores */
+:root {
+    /* Backgrounds */
+    --cor0: #ffffff;
+    --cor1: #0B0B1D;
+    --cor2: #f7f7f7;
+
+    /* Background secundários */
+    --cor3: #090825; /* azul escuro */
+    --cor4: #e6e6e6; /* Txt desses bgs */
+    --cor5: #1a0034; /* roxo escuro */
+    --cor51: #1a003436;
+
+    --cor6: #BF71F0;
+    --cor61: #bf71f039;
+    --cor62: #443752;
+    --cor63: #3d1864af;
+    --cor7: #E5FF0A;
+    --cor71: #e6ff0a89;
+    --cor72: #e6ff0ad2;
+}
+*{
+    padding: 0; margin: 0; 
+    box-sizing: border-box;
+    font-family: 'Elaine Sans', 'Work Sans', sans-serif;
+}
+html,body{
+    height: 100%;
+    flex-direction: column;
+}
+body{
+    background-color: var(--cor0);
+    color: var(--cor1);
+}
+
+header{
+    background-image: linear-gradient(90deg, var(--cor5) 5%, var(--cor1) 20%, var(--cor1) 80%, var(--cor5) 95%);
+    border-bottom: solid 2px var(--cor7);
+    width: 100%;
+    
+    text-align: center;
+    color: var(--cor0);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1{
+        padding: 10px 0;
+        font-size: 2.5em;
+        font-variant: small-caps;
+    }
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    .click{
+        font-weight: 500;
+        font-size: 1em;
+        a{
+            text-decoration: none;
+            color: var(--cor72);
+        }
+        a:hover{
+            text-decoration: underline;
+            color: var(--cor7);
+        }
+        em{
+            font-style: normal;
+            color: var(--cor71);
+        }
+    }
+    section{
+        padding: 1em;
+        p{
+            margin: 10px 0;
+        }
+    }
+    .primeiro{
+        background-color: var(--cor3);
+        color: var(--cor4);
+    }
+    .segundo{
+        background-color: var(--cor2);
+        color: var(--cor3);
+        h2{
+            margin: 0 0;
+        }
+    }
+    .terceiro{
+        background-color: var(--cor3);
+        color: var(--cor4);
+
+        .simpapply{
+            background-color: var(--cor5);
+            border: 1px solid var(--cor61);
+            padding: 8px 8px; margin: 0;
+            textarea{
+                border: none;
+                resize: none;
+                width: 100%;
+                padding: 1px 1px 5px 5px;
+                
+                box-sizing: border-box;
+            }
+            p{
+                padding: 0; margin: 0;
+            }
+            .sobre{
+                margin: 0 0 8px 5px;
+            }
+            .sobre2{
+                margin: 5px 0 5px 10px;
+            }
+        }
+        .txtcd{
+            background-color: var(--cor51);
+            border: 1px solid var(--cor63);
+            padding: 0 5px; margin: 20px auto;
+            width: 100%;
+            
+            .apply{
+                background-color: var(--cor5);
+                border: 1px solid var(--cor61);
+                margin-bottom: 20px;
+                padding: 5px;
+            }
+            .lastapply{
+                background-color: var(--cor5);
+                border: 1px solid var(--cor61);
+                padding: 5px; 
+                margin-bottom: 5px;
+            }
+            h3{
+                margin: 5px 0 7px 5px;
+            }
+            textarea{
+                border: none;
+                resize: none;
+                width: 100%;
+                min-height: 2em; /* Ajuste conforme necessário */
+                max-height: 20em;
+                padding: 1px 1px 5px 5px;
+                
+                box-sizing: border-box;
+            }
+            textarea:focus {
+                outline: none;
+            }
+            .sobre{
+                margin: 0 0 8px 5px;
+            }
+            .sobre2{
+                margin: 5px 0 5px 10px;
+            }
+        }
+    }
+}
+ul{
+    h3{
+        padding: 20px 0 0 0;
+    }
+    li{
+        list-style-position: inside;
+        padding: 5px 0 5px 10px;
+        em{
+            font-weight: 600;
+            color: var(--cor5);
+            font-style: normal;
+        }
+    }
+}
+
+
+footer{
+    background-image: linear-gradient(90deg, var(--cor5) 5%, var(--cor1) 20%, var(--cor1) 80%, var(--cor5) 95%);
+    border-top: solid 2px var(--cor7);
+    box-shadow: 0 0 5px var(--cor62);
+    width: 100%;
+
+    text-align: center;
+    color: var(--cor0);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h3{
+        padding: 5px 0;
+        font-weight: 500;
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 762px){
+
+    main section .center {
+        width: 100%;
+        max-width: 761px;
+        margin: auto;
+    }
+}

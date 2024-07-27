@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="estilos/styles.css">
+    <link rel="stylesheet" href="estilos/imprimir.css" media="print">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Media Query</h1>
+        </div>
+    </header>
+    <main>
+        <section class="primeiro">
+            <div class="center">
+                <p class="click">
+                    <a href="index.html">Início</a> | <em>Mobile First/Device Breakpoints</em> | <a href="">Projeto</a>
+                </p>
+                <h2>Mobile First</h2>
+                <p>Mobile First é uma abordagem de design web que foca primeiro em criar sites e aplicativos para dispositivos móveis. A ideia é começar com um layout simples e eficiente para telas pequenas e, depois, adicionar melhorias e funcionalidades para dispositivos maiores, como tablets e desktops. Isso garante que o conteúdo principal e a usabilidade sejam mantidos em todos os dispositivos.</p>
+                <p>Media Queries são essenciais para o Mobile First. Elas permitem que os desenvolvedores apliquem estilos CSS que se adaptam a diferentes tamanhos de tela. No Mobile First, os estilos básicos são definidos para dispositivos móveis, e media queries, como @media (min-width: 768px), são usadas para adicionar ou ajustar estilos para telas maiores. Isso assegura que o site fique bom em todos os tamanhos de tela, começando pela experiência móvel.</p>
+            </div>
+        </section>
+
+        <section class="segundo">
+            <div class="center">
+                <h2>Device Breakpoints</h2>
+                <p>Device Breakpoints são pontos no design responsivo onde o layout de um site muda para se adaptar a diferentes tamanhos de tela, como smartphones, tablets e desktops. Esses breakpoints são definidos com base na largura da tela e ajudam a garantir que o site fique bonito e funcional em qualquer dispositivo.</p>
+
+                <h2>Breakpoints:</h2>
+                <ul>
+                    <li><em>Telinha: </em>@media (max-width: 575.98px){...}
+                    </li>
+                    <li><em>Celular: </em>@media (min-width: 576px) and (max-width: 767.98px){...}
+                    </li>
+                    <li><em>Tablet: </em>@media (min-width: 576px) and (max-width: 767.98px){...}
+                    </li>
+                    <li><em>Desktop: </em>@media (min-width: 992px) and (max-width: 1199.98px){...}
+                    </li>
+                    <li><em>Telona: </em>@media (min-width: 1200px){...}
+                    </li>
+                </ul>
+                <p>Exemplos tirados com IA</p>
+            </div>
+        </section>
+
+        <section class="terceiro">
+            <div class="center">
+                <h2>O que fiz até aqui:</h2>
+                <p>Neste conteúdo sobre 'Media Query', explorei o uso de 'media queries' para estilização responsiva. Foi minha primeira experiência com essa ferramente, então é um trabalho simples apenas para anotação de conteúdo + testes e entendimento do assunto.</p>
+                <p>Adotei o conceito 'Mobile First', em seguida fiz pequenas alterações para atender outras duas necessidades: impressão e telas maiores. Ou seja, utilizei 'media queries' para ajustar aparência para impressão e para telas com largura superior a 762.</p>
+                <p>Inicialmente, criei dois arquivos CSS:</p>
+                <div class="simpapply">
+                    <textarea readonly oninput="autoResize(this)" class="codeTextarea">
+                        <link rel="stylesheet" href="estilos/styles.css">
+                        <link rel="stylesheet" href="estilos/imprimir.css" media="print">
+                    </textarea>
+                </div>
+                <p>Depois, adicoinei uma 'media query' dentro de 'style.css':</p>
+                <div class="simpapply">
+                    <textarea readonly oninput="autoResize(this)" class="codeTextarea">
+                        @media screen and (min-width: 762px){
+                        .
+                        ... main section .center {
+                        ... ... width: 100%;
+                        ... ... max-width: 761px;
+                        ... ... margin: auto;
+                        ... }
+                        }
+                    </textarea>
+                </div>
+                <p>Dessa forma, consegui testar o uso de 'media queries' diretamento no arquivo  HTML e também no arquivo CSS.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <h3>Desenvolvido por Marcos Grando</h3>
+        </div>
+    </footer>
+
+    <script>
+        const textareas = document.querySelectorAll(".codeTextarea");
+        textareas.forEach(function(textarea) {
+            const text = textarea.value;
+            textarea.value = text.replace(/^\s+/gm, '');
+
+            autoResize(textarea);
+            textarea.addEventListener('input', function() {
+                autoResize(this);
+            });
+        });
+
+        function autoResize(textarea) {
+            textarea.style.height = 'auto';
+            textarea.style.height = textarea.scrollHeight + 'px';
+        }
+    </script>
+</body>
+
+</html>

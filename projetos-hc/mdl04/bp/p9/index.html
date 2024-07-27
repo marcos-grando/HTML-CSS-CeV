@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="estilos/styles.css">
+    <link rel="stylesheet" href="estilos/imprimir.css" media="print">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>Media Query</h1>
+        </div>
+    </header>
+    <main>
+        <section class="primeiro">
+            <div class="center">
+                <p class="click">
+                    <em>Início</em> | <a href="page002.html">Mobile First/Device Breakpoints</a> | <a href="">Projeto</a>
+                </p>
+                <h2>Conhecendo Media Query</h2>
+                <p>Conhecendo um pouco sobre 'Media Query', suas categorias ('Media Types'), suas propriedades ('Media Features') e como elas se relacionam e podem ser aplicadas.</p>
+                <p><strong>Media Query</strong>: uma técnica de CSS que permite aplicar estilos específicos com base na tela de cada dispositivo que está exibindo o conteúdo.</p>
+                <p><strong>Media Types</strong>: são categorias gerais que permitem escolher o tipo de mídia para o qual o estilo será aplicado. Exemplos incluem tela (screen), impressão (print), entre outros.</p>
+                <p><strong>Media Features</strong>: são propriedades ou configurações específicas que definem as condições necessárias para que o estilo CSS seja aplicado.</p>
+            </div>
+        </section>
+
+        <section class="segundo">
+            <div class="center">
+                <h2>Definições:</h2>
+                <ul>
+                    <h3>¬ Media Queries</h3>
+                    <li><em>No HTML:</em> criando uma opção de 'link' para cada media type e feature desejados;</li>
+                    <li><em>No CSS:</em> utilizando @media dentro do próprio arquivo CSS para cada media type e feature desejados;</li>
+                </ul>
+                <ul>
+                    <h3>¬ Media Types</h3>
+                    <li><em>'all':</em> estilo aplicado a todos os dispositivos;</li>
+                    <li><em>'print':</em> estilo aplicado apenas em documentos para impressão;</li>
+                    <li><em>'screen':</em> estilo aplicado em telas em geral;</li>
+                    <li><em>'speech':</em> estilo aplicado para sintetizadores de voz;</li>
+                    <li><em>'projection':</em> estilo aplicado para projeções;</li>
+                </ul>
+                <ul>
+                    <h3>¬ Media Features</h3>
+                    <li><em>OBS:</em> Sempre usar a definição entre parênteses (features);</li>
+                    <li><em>'width/height':</em> define a aplicação pela largura e/ou altura da viewport;</li>
+                    <li><em>'device-width/height':</em> define a aplicação pela largura ou/e altura da tela do dispositivo;</li>
+                    <li><em>'orientation':</em> define a aplicação pela orientação da tela (portrait ou landscape), conhecido como "em pé ou deitado";</li>
+                    <li><em>'resolution':</em> define a aplicação pela resolução da tela (dpi ou dpcm).</li>
+                </ul>                
+            </div>
+        </section>
+
+        <section class="terceiro">
+            <div class="center">
+                <h2>Um pouco mais sobre:</h2>
+                <p>De forma geral, uma 'media query' utiliza 'media types' e/ou 'media features' para definir as condições necessárias para que estilos específicos sejam aplicados.</p>
+                <p>Basicamente, uma 'media query' é uma regra que avalia um ou mais 'media types' e/ou 'media features' para aplicar estilos CSS conforme os critérios definidos.</p>
+
+                <h2>Colocando em prática</h2>
+                <p>Fazendo na prática o uso de 'media query', junto de 'media="type and (feature)"', no HTML e no CSS.</p>
+
+                <div class="txtcd">
+                    <h3>'media query + media type'</h3>
+                    <div class="apply">
+                        <p class="sobre">media query em HTML:</p>
+                        <textarea readonly oninput="autoResize(this)" class="codeTextarea">
+                            <link rel="" href=".css" media="screen">
+                            <link rel="" href=".css" media="print">
+                        </textarea>
+                        <p class="sobre">'media query' em CSS:</p>
+                        <textarea readonly oninput="autoResize(this)" class="codeTextarea">
+                            @media screen { código css... }                            
+                            @media print { código css... }
+                        </textarea>
+                        <p class="sobre2">Aqui, há um estilo definido para telas e outro para impressão. O primeiro será aplicado em dispositivos de tela, enquanto o segundo é usado apenas para documentos impressos.</p>
+                        <p class="sobre2">Ou seja, as definições dentro de {...} serão aplicadas apenas quando as condições especificadas nos 'media types' forem atendidas.</p>
+                    </div>
+
+                    <h3>'media query + (media features)'</h3>
+                    <div class="apply">
+                        <p class="sobre">media query em HTML:</p>
+                        <textarea readonly oninput="autoResize(this)" class="codeTextarea">
+                            <link rel="" href=".css" media="(max-width: 800px)">
+                            <link rel="" href=".css" media="(min-width: 801px)">
+                        </textarea>
+                        <p class="sobre">'media query' em CSS:</p>
+                        <textarea readonly oninput="autoResize(this)" class="codeTextarea">
+                            @media (max-width: 800px) { código css... }
+                            @media (min-width: 801px) { código css... }
+                        </textarea>
+                        <p class="sobre2">Aqui, há um estilo para dispositivos com largura de até 800 pixels e outro para dispositivos com largura a partir de 801 pixels.</p>
+                        <p class="sobre2">Ou seja, as definições dentro de {...} serão aplicadas apenas quando as condições especificadas nas 'media features' forem atendidas.</p>
+                    </div>
+
+                    <h3> media query + media type and (media features)</h3>
+                    <div class="lastapply">
+                        <p class="sobre">media query em HTML:</p>
+                        <textarea readonly oninput="autoResize(this)" class="codeTextarea">
+                            <link rel="" href=".css">
+                            <link rel="" href=".css" media="screen and (orientation: portrait)">
+                            <link rel="" href=".css" media="screen and (orientation: landscape)">
+                        </textarea>
+                        <p class="sobre">'media query' em CSS:</p>
+                        <textarea readonly oninput="autoResize(this)" class="codeTextarea">
+                            @media all {...} // Ou escrever direto no arquivo
+                            @media screen and (orientation: portrait) { código css... }
+                            @media screen and (orientation: landscape) { código css... }
+                        </textarea>
+                        <p class="sobre2">Aqui foi definido um estilo geral para todos os dispositivos junto de dois estilos específicos para 'telas' (com orientação determinada para 'retrato' ou 'paisagem').</p>
+                        <p class="sobre2">Ou seja, as definições dentro de {...} serão aplicadas quando as condições dentro de 'media type' e ('media features') forem atendidas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <h3>Desenvolvido por Marcos Grando</h3>
+        </div>
+    </footer>
+
+    <script>
+        const textareas = document.querySelectorAll(".codeTextarea");
+        textareas.forEach(function(textarea) {
+            const text = textarea.value;
+            textarea.value = text.replace(/^\s+/gm, '');
+
+            autoResize(textarea);
+            textarea.addEventListener('input', function() {
+                autoResize(this);
+            });
+        });
+
+        function autoResize(textarea) {
+            textarea.style.height = 'auto';
+            textarea.style.height = textarea.scrollHeight + 'px';
+        }
+    </script>
+</body>
+
+</html>

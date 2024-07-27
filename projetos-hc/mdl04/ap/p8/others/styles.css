@@ -212,7 +212,6 @@ main{
                 align-self: center;
                 border: none;
                 resize: none;
-                width: auto;
                 box-sizing: border-box;
                 width: 100%;
                 max-width: 600px;
