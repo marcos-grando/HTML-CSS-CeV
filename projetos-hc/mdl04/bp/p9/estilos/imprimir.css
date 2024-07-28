@@ -53,10 +53,18 @@ header{
 main{
     display: flex;
     flex-direction: column;
+    
     .click{
         display: none;
     }
-
+    section{
+        padding: 0; margin: 0;
+        margin-bottom: 25px;
+        p{
+            padding: 0; margin: 0;
+            margin-bottom: 5px;
+        }
+    }
     .primeiro{
         color: black;
     }
@@ -75,6 +83,12 @@ main{
         p{
             margin: 0 0 10px 0; padding: 0;
         }
+        .formatprint{
+            margin-top: 70px;
+        }
+        .formatprint1{
+            margin-top: 30px;
+        }
         .txtcd{
             border: 1px solid rgba(128, 128, 128, 0.562);
             padding: 0 5px; margin: 0px auto;
@@ -87,9 +101,6 @@ main{
                 border: 1px solid rgba(0, 0, 0, 0.589);
                 padding: 0 5px; 
             }
-            h3{
-                margin: 0 0 5px 5px;
-            }
             textarea{
                 border: none;
                 resize: none;
@@ -101,6 +112,10 @@ main{
             .sobre2{
                 margin: 0 0 5px 10px;
             }
+        }
+        .formatprint2{
+            margin: 0;
+            margin-top: 20px;
         }
     }
 }
