@@ -53,7 +53,6 @@ header{
         font-variant: small-caps;
     }
     .click{
-        display: none;
         font-weight: 500;
         font-size: 1em;
         a{
@@ -69,56 +68,6 @@ header{
             color: var(--cor71);
         }
     }
-}
-header menu{
-    display: none;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-
-    ul{
-        list-style-type: none;
-        text-align: left;
-        margin: 0;
-        width: 100%;
-        border-top: 2px solid var(--cor5);
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-
-        li{
-            width: 300px;
-            border-bottom: 1px solid var(--cor63);
-            border-left: none;
-            border-right: none;
-            padding: 2px 0;
-        }
-        li a{
-            display: block;
-            text-decoration: none;
-            color: var(--cor7);
-        }
-        li a:hover{
-            text-decoration: underline;
-        }
-        li em{
-            display: block;
-            color: var(--cor71);
-        }
-    }
-}
-header .ico-menu{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-
-    color: var(--cor72);
-    font-weight: 600;
-    font-size: 32px;
 }
 
 
@@ -203,7 +152,6 @@ footer{
 
 @media screen and (min-width: 768px) and (max-width: 991.98px){
 
-
     main .primeiro{
         background: url(../imagens/back-tablet.jpg) no-repeat center center/cover;
     
@@ -218,10 +166,6 @@ footer{
 
 @media screen and (min-width: 992px) and (max-width: 1199.98px){
 
-    header .click{display: block;}
-    header menu{display: none;}
-    header .ico-menu{display: none;}
-
     main .primeiro{
         background: url(../imagens/back-pc.jpg) no-repeat center center/cover;
     
@@ -235,10 +179,6 @@ footer{
 }
 
 @media screen and (min-width: 1200px){
-
-    header .click{display: block;}
-    header menu{display: none;}
-    header .ico-menu{display: none;}
 
     main .primeiro{
         background: url(../imagens/back-tv.jpg) no-repeat center center/cover;
