@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
     <link rel="stylesheet" href="estilos/styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,100,1,200" rel="stylesheet" />
 </head>
 
 <body>
@@ -13,8 +15,22 @@
 
         <section class="login-section">
             <div class="img-div"></div>
+
             <div class="form-div">
-                    
+                <form action="#" method="post" autocomplete="off">
+                    <h2>Login</h2>
+                    <div class="profile-div">
+                        <label for="id-email"><span class="material-symbols-outlined">person</span></label>
+                        <input class="login-dados" id="id-email" type="email" name="your-email"placeholder="seuemail@..." required><br>
+                    </div>
+
+                    <div class="profile-div">
+                        <label for="id-password"><span class="material-symbols-outlined">lock</span></label>
+                        <input class="login-dados" id="id-password" type="password" name="your-password"min="8" max="20" required><br>
+                    </div>
+                    <input class="login-entrar" id="id-entrar" type="submit" value="Entrar">
+                    <p>Não tem conta? <a class="cadastre-se" href="#">Cadastre-se!</a></p>
+                </form>        
             </div>
         </section>
 
@@ -22,6 +38,7 @@
             <h3>Desenvolvido por Marcos Grando</h3>
         </div>
     </main>
+    <script src="script.js"></script>
 </body>
 
 </html>
