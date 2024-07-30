@@ -128,6 +128,11 @@ main .login-section{
 
     .login-dados{
         background-image: linear-gradient(135deg, var(--cor4) 0%, var(--cor61) 80%, var(--cor6) 140%);
+        font-family: 'Work Sans', 'Elaine Sans', sans-serif;
+        color: var(--cor1);
+
+        outline: none;
+        
         width: 100%; height: 100%;
         margin: 0; padding: 5px;
         border-radius: 7px;
