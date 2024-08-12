@@ -121,7 +121,7 @@ MySQL finalizado em 02/julho/2024</p>
 
 <h3><a href="https://github.com/marcos-grando/HTML-CSS-CeV">4º - HTML5/CSS3</a></h3>
 <p>html5/css3 iniciado em 03/junho/2024<br>
-html5/css3 finalizado em xx/xx/2024<br>
+html5/css3 finalizado em 29/07/2024<br>
 (Fiz 1ºmdl > MySQL > 2º,3º,4ºmdls)</p>
 
 <p>(Organizado sob ordem cronológica)<br>(Histórico youtube)</p>
