@@ -121,7 +121,7 @@ Desafio 2 -  Tabelas com dados reais + scoups
 <h2>Projetos</h2>
 <a href="https://marcos-grando.github.io/HTML-CSS-CeV/projetos-hc/mdl04/p6/" target="_blank">Projeto 1 1v - "Projeto Repositório" em sua primeira versão</a><br>
 <a href="https://marcos-grando.github.io/HTML-CSS-CeV/projetos-hc/mdl04/p6v2/" target="_blank">Projeto 1 2v - (inacabado) Tentativas de melhorias</a><br>
-<a href="https://marcos-grando.github.io/HTML-CSS-CeV/projetos-hc/mdl04/p6vfinal/" target="_blank">Projeto 1 2v - "Projeto Repositório" versão final finalizada</a><br>
+<a href="https://marcos-grando.github.io/HTML-CSS-CeV/projetos-hc/view-mdls/" target="_blank">Projeto 1 2v - "Projeto Repositório" versão final finalizada</a><br>
 
 <a href="https://marcos-grando.github.io/HTML-CSS-CeV/projetos-hc/mdl04/p10/" target="_blank">Projeto 2 - Login responsivo (media query) com formulário</a><br>
 
