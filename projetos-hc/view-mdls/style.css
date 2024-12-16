@@ -220,3 +220,20 @@ section.container {
     }
 }
 
+section.pagehere {
+    height: 100%; width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        background-color: var(--cor61);
+        border-radius: 3px;
+        padding: 30px 40px;
+
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 3rem;
+        color: var(--cor7);
+    }
+}
