@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     const buttons = document.querySelectorAll('.button');
     const button1 = document.getElementById('button1');
-    const modulos = document.querySelectorAll('.modulos');
-    const opcao1Modulos = document.querySelector('.opcao1-modulos');
-    const opcao2Modulos = document.querySelector('.opcao2-modulos');
+    const modulos = document.querySelectorAll('.modulos'); 
+    const opcao1Modulos = document.querySelector('.opcao1-modulos'); // aba HTMLCSS
+    const opcao2Modulos = document.querySelector('.opcao2-modulos'); // aba JavaScript
     const iframe = document.querySelector('iframe[name="conteudo"]');
     const caixaurl = document.querySelector('.caixaurl'); // Seleciona o contêiner da caixaurl
 
@@ -38,14 +38,14 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Recolhe as infos ao clicar em button1
             if (this === button1) {
-                document.querySelectorAll('.infos, .info').forEach(info => info.style.display = 'none');
+                document.querySelectorAll('.infos').forEach(info => info.style.display = 'none');
                 caixaurl.style.display = 'none'; // Esconde caixaurl
             }
         });
     });
 
     function toggleInfos(modulo) {
-        const info = modulo.querySelector('.infos, .info');
+        const info = modulo.querySelector('.infos');
         if (info) {
             info.style.display = info.style.display === 'block' ? 'none' : 'block';
         }
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
 
-            document.querySelectorAll('.infos').forEach(info => {
+            document.querySelectorAll('.info, .infos').forEach(info => {
                 if (info !== this.querySelector('.infos')) {
                     info.style.display = 'none';
                 }
@@ -67,15 +67,15 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    document.addEventListener('click', function(event) {
-        if (!event.target.closest('.modulos, .info')) {
-            document.querySelectorAll('.infos, .info').forEach(info => {
-                info.style.display = 'none';
-            });
-        }
-    });
+    // document.addEventListener('click', function(event) {
+    //     if (!event.target.closest('.modulos')) {
+    //         document.querySelectorAll('.infos, .info').forEach(info => {
+    //             info.style.display = 'none';
+    //         });
+    //     }
+    // });
 
-    document.querySelectorAll('.infos a, .info a').forEach(link => {
+    document.querySelectorAll('.infos a').forEach(link => {
         link.addEventListener('click', function(event) {
             event.preventDefault(); // Previne o comportamento padrão do link
             const url = this.href;
@@ -83,6 +83,11 @@ document.addEventListener('DOMContentLoaded', function() {
             caixaurl.querySelector('a').href = url; // Atualiza o href do link dentro da caixaurl
             caixaurl.querySelector('a').textContent = `Visite o link: ${url}`; // Atualiza o texto do link dentro da caixaurl
             caixaurl.style.display = 'block'; // Garante que caixaurl esteja visível
+
+            setTimeout(() => {
+                document.querySelectorAll('.infos a').forEach(btn => btn.classList.remove('active'));
+                this.classList.add('active');
+            }, 100);
         });
     });
 

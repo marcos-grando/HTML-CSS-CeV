@@ -116,7 +116,7 @@ section.container {
             }
         }
 
-        .modulos, .modulo {
+        .modulos {
             background-color: var(--cor9);
             border: 1px solid var(--cor5);
             border-radius: 1px;
@@ -130,20 +130,13 @@ section.container {
             &:hover{
                 background-color: var(--cor61);
             }
-
             h1 {
                 padding: 10px 20px; margin: 0;
                 color: var(--cor3);
                 font-weight: 700;
                 font-variant: small-caps;
             }
-            .info{
-                height: 602px;
-            }
-            .infos{
-                max-height: 495px; /* Incluindo mais módulos, reduzir esse tamanho */
-            }
-            .infos, .info {
+            .infos {
                 background-color: var(--cor2);
                 border-top: 1px solid var(--cor5);
                 border-radius: 1px;
@@ -165,13 +158,16 @@ section.container {
                     color: var(--cor4);
                     text-decoration: none;
                     display: block;
-                    margin: 5px 0;
+                    margin: 2px 0;
 
                     &:hover {
                         text-decoration: underline;
                     }
-                }
 
+                }
+                a.active {
+                    color: var(--cor72);
+                }
                 &::-webkit-scrollbar {
                     width: 12px;
                 }
@@ -187,6 +183,13 @@ section.container {
                     background-color: darken(var(--cor7), 20%);
                 }
             }
+        }
+
+        .opcao1-modulos .modulos .infos {
+            max-height: 495px;
+        }
+        .opcao2-modulos .modulos .infos {
+            height: 602px
         }
 
         .opcao1-modulos.active,
