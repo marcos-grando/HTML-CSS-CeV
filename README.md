@@ -5,8 +5,8 @@
 
 ---
 
-<h2><a href="https://marcos-grando.github.io/HTML-CSS-CeV/projetos-hc/view-mdls/" target="_blank">"Projeto Repositório"</a></h2>
-<p>Explore meus repositórios de HTML/CSS e JavaScript em um ambiente desenvolvido para visualizá-los de forma prática.</p>
+<h2><a href="https://marcos-grando.github.io/HTML-CSS-CeV/projetos-hc/view-mdls/" target="_blank">Projeto Repositório - Visualize meus repositórios</a></h2>
+<p>Explore meus repositórios de HTML/CSS e JavaScript em um ambiente desenvolvido para visualização de forma rápida e prática.</p>
 <p>O ambiente foi criado ao finalizar o Módulo 4 de HTML/CSS do Curso em Vídeo, com o objetivo de centralizar e exibir os repositórios desenvolvidos durante os cursos.</p>
 
 
